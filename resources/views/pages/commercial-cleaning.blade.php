@@ -36,7 +36,8 @@
                                     <div class="elementor-element elementor-element-d1d1429 elementor-widget elementor-widget-text-editor"
                                         data-id="d1d1429" data-element_type="widget" data-widget_type="text-editor.default"
                                         style="text-align: center; max-width: 1100px; margin: 0 auto;">
-
+                                        <span class="healthcare-label">COMMERCIAL CLEANING SERVICES</span><br>
+                                        <br>
                                         <h2><Strong> A Cleaner Workplace Starts with the Right Cleaning Partner</Strong>
                                         </h2><br>
 
@@ -94,37 +95,43 @@
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-wipe"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-dusting.png') }}"
+                                                        alt="Dusting & Surface Cleaning">
                                                     <h4>Dusting & Surface Cleaning</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-data-cleaning-1"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-vacuum.png') }}"
+                                                        alt="Dusting & Surface Cleaning">
                                                     <h4>Vacuuming & Mopping</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-window"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-washroom.png') }}"
+                                                        alt="Dusting & Surface Cleaning">
                                                     <h4>Washroom Cleaning</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-bubbles"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-pantry-and-common-area.png') }}"
+                                                        alt="Dusting & Surface Cleaning">
                                                     <h4>Pantry & Common Area Cleaning</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-data-cleaning-2"></i>
+                                                    <i class="flaticon-wipe"></i>
                                                     <h4>High-Touch Surface Cleaning</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-cloth"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-trash.png') }}"
+                                                        alt="Waste Collection & Disposal">
                                                     <h4>Waste Collection & Disposal</h4>
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <i class="flaticon-house-2"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-floor.png') }}"
+                                                        alt="Routine Floor Cleaning">
                                                     <h4>Routine Floor Cleaning</h4>
                                                 </div>
 
@@ -265,6 +272,7 @@
                                             </div>
                                         </div>
                                     </section>
+
                                 </div>
                             </div>
 
