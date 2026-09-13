@@ -54,7 +54,7 @@
 
                                             <!-- Intro -->
                                             <div class="healthcare-header">
-                                                <span class="healthcare-label">HEALTHCARE CLEANING SERVICES</span><br>
+                                                <span class="healthcare-label">HEALTHCARE CLEANING SERVICES</span><br><br>
 
                                                 <h2 class="healthcare-title">
                                                     Healthcare Cleaning Services <br> in Singapore
@@ -172,7 +172,7 @@
                                                 <div class="healthcare-coverage-grid">
 
                                                     <div class="service-card">
-                                                        <img src="{{ asset('assets/img/icon/icon-reception-area.png') }}"
+                                                        <img src="{{ asset('assets/img/icon/reception-areas.png') }}"
                                                             alt="Reception & Waiting Area Cleaning">
                                                         <h4>Reception & Waiting Areas</h4>
                                                     </div>
@@ -188,7 +188,7 @@
                                                         <h4>Patient-Facing Spaces</h4>
                                                     </div>
                                                     <div class="service-card">
-                                                        <img src="{{ asset('assets/img/icon/icon-administrative-area.png') }}"
+                                                        <img src="{{ asset('assets/img/icon/staff-admin-area.png') }}"
                                                             alt="Staff & Administrative Area Cleaning">
                                                         <h4>Staff & Administrative Areas</h4>
                                                     </div>
@@ -199,18 +199,19 @@
                                                     </div>
 
                                                     <div class="service-card">
-                                                        <img src="{{ asset('assets/img/icon/icon-common-area.png') }}"
+                                                        <img src="{{ asset('assets/img/icon/common-area-resized.png') }}"
                                                             alt="Common & Shared Area Cleaning">
                                                         <h4>Common & Shared Areas</h4>
                                                     </div>
 
                                                     <div class="service-card">
-                                                        <i class="flaticon-cleaning-1"></i>
+                                                    <img src="{{ asset('assets/img/icon/icon-floor.png') }}"
+                                                        alt="Routine Floor Cleaning">
                                                         <h4>Floors & Frequently Used Surfaces</h4>
                                                     </div>
 
                                                     <div class="service-card">
-                                                        <i class="flaticon-cleaning-1"></i>
+                                                        <i class="flaticon-wipe"></i>
                                                         <h4>High-Touch Point Cleaning</h4>
                                                     </div>
 

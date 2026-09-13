@@ -32,7 +32,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </section><br>
+                                    </section><br><br><br>
                                     <div class="elementor-element elementor-element-d1d1429 elementor-widget elementor-widget-text-editor"
                                         data-id="d1d1429" data-element_type="widget" data-widget_type="text-editor.default"
                                         style="text-align: center; max-width: 1100px; margin: 0 auto;">
@@ -113,7 +113,7 @@
                                                 </div>
 
                                                 <div class="service-card">
-                                                    <img src="{{ asset('assets/img/icon/icon-pantry-and-common-area.png') }}"
+                                                    <img src="{{ asset('assets/img/icon/pantry-area.png') }}"
                                                         alt="Dusting & Surface Cleaning">
                                                     <h4>Pantry & Common Area Cleaning</h4>
                                                 </div>
@@ -182,8 +182,8 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                            <i class="flaticon-house-2"></i>
-                                                        </div>
+                                                        <img src="{{ asset('assets/img/icon/office.png') }}"
+                                                            alt="Toilet Rolls">                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Office Cleaning</h3>
                                                             <p class="card-desc">
@@ -192,8 +192,10 @@
                                                                 daily
                                                                 operations.
                                                             </p>
-                                                            <a href="#" class="card-link">View Office Cleaning
-                                                                Services </a>
+                                                            <a href="/pages/office-cleaning" class="card-link">View
+                                                                Office Cleaning
+                                                                Services
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -201,13 +203,13 @@
                                                 <!-- Card 2: Healthcare Cleaning -->
                                                 <div class="card">
                                                     <div class="card-image-wrap">
-                                                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+                                                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80"
                                                             alt="Healthcare Cleaning">
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                            <i class="flaticon-plus"></i>
-                                                        </div>
+                                                        <img src="{{ asset('assets/img/icon/healthcare.png') }}"
+                                                            alt="Healthcare Cleaning">                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Healthcare Cleaning</h3>
                                                             <p class="card-desc">
@@ -215,7 +217,8 @@
                                                                 requirements and cleanliness standards of healthcare
                                                                 environments.
                                                             </p>
-                                                            <a href="#" class="card-link">View Healthcare Cleaning
+                                                            <a href="/pages/healthcare-cleaning" class="card-link">View
+                                                                Healthcare Cleaning
                                                                 Services
                                                             </a>
                                                         </div>
@@ -230,7 +233,8 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                            <i class="flaticon-cleaning-1"></i>
+                                                            <img src="{{ asset('assets/img/icon/institutional.png') }}"
+                                                                alt="Institutional Cleaning">
                                                         </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Institutional Cleaning</h3>
@@ -239,9 +243,11 @@
                                                                 well-maintained
                                                                 institutional environments.
                                                             </p>
-                                                            <a href="#" class="card-link">View Institutional
+                                                            <a href="/pages/institution-cleaning" class="card-link">View
+                                                                Institutional
                                                                 Cleaning
-                                                                Services </a>
+                                                                Services
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -254,15 +260,16 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                            <i class="flaticon-reminder"></i>
-                                                        </div>
+                                                        <img src="{{ asset('assets/img/icon/hotel.png') }}"
+                                                            alt="Hotel Housekeeping">                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Hotel Housekeeping</h3>
                                                             <p class="card-desc">
                                                                 Dedicated housekeeping support for maintaining welcoming,
                                                                 well-presented and comfortable guest-ready environments.
                                                             </p>
-                                                            <a href="#" class="card-link">View Hotel Housekeeping
+                                                            <a href="/pages/hotel-housekeeping-services"
+                                                                class="card-link">View Hotel Housekeeping
                                                                 Services
                                                             </a>
                                                         </div>
@@ -272,11 +279,92 @@
                                             </div>
                                         </div>
                                     </section>
+                                    <section class="commercial-additional-section">
+                                        <div class="commercial-container">
+
+                                            <div class="wide-card-wrapper">
+                                                <div class="wide-card-content">
+                                                    <h3 class="wide-card-title">More Than Routine Cleaning</h3>
+
+                                                    <p class="wide-card-description">
+                                                        Some commercial environments may require additional services beyond
+                                                        their regular cleaning programme. FCFM provides a range of
+                                                        specialised cleaning and facilities support solutions that can
+                                                        complement your day-to-day cleaning requirements, including floor
+                                                        care, carpet cleaning, disinfection, pest control and other
+                                                        facility-related services.
+                                                    </p>
+
+                                                    <a href="/pages/value-added-services" class="wide-card-link">
+                                                        Explore Our Value-Added Services <span>→</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="why-choose-section">
+
+                                                <h2 class="why-choose-title">Why Choose FCFM for Commercial Cleaning?</h2>
+
+                                                <div class="why-choose-body">
+                                                    <p>
+                                                        Choosing a commercial cleaning company in Singapore is not simply
+                                                        about finding someone to clean your premises. It is about partnering
+                                                        with a team that understands that every detail — and every
+                                                        interaction — matters.
+                                                    </p>
+
+                                                    <p>
+                                                        At FCFM, we believe quality cleaning goes beyond maintaining a clean
+                                                        environment. It takes the right manpower, consistent service
+                                                        standards, responsive communication and reliable operational support
+                                                        to deliver an experience that people can feel.
+                                                    </p>
+
+                                                    <p>
+                                                        We put care into the work we do and the people we serve, because a
+                                                        well-maintained environment is not only about how a space looks, but
+                                                        how people experience it.
+                                                    </p>
+                                                </div>
+
+                                                <blockquote class="commercial-quote">
+                                                    “People may not remember how clean a place looked. They remember how
+                                                    your team made them feel.”
+                                                </blockquote>
+
+                                            </div>
+
+
+                                            <div class="commercial-cta">
+
+                                                <h2>Looking for Commercial Cleaning Services in Singapore?</h2>
+
+                                                <p>
+                                                    Every site has different cleaning requirements. Tell us about your
+                                                    premises, operating hours and cleaning needs, and our team can recommend
+                                                    a suitable cleaning arrangement for your business.
+                                                </p>
+
+                                                <div class="cta-actions">
+                                                    <p class="cta-instruction">
+                                                        Contact FCFM today to discuss your commercial cleaning requirements
+                                                        and request a customised quotation:
+                                                    </p>
+
+                                                    <a href="https://wa.me/6583332999" target="_blank"
+                                                        rel="noopener noreferrer" class="whatsapp-cta-button">
+                                                        <i class="flaticon-whatsapp"></i> WhatsApp us here! <span>→</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </section>
 
                                 </div>
                             </div>
-
-
 
                             <div class="elementor-element elementor-element-6b04385 elementor-widget elementor-widget-clenfix-how-work"
                                 data-id="6b04385" data-element_type="widget" data-widget_type="clenfix-how-work.default">
