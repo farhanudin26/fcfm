@@ -182,8 +182,9 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                        <img src="{{ asset('assets/img/icon/office.png') }}"
-                                                            alt="Toilet Rolls">                                                        </div>
+                                                            <img src="{{ asset('assets/img/icon/office.png') }}"
+                                                                alt="Toilet Rolls">
+                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Office Cleaning</h3>
                                                             <p class="card-desc">
@@ -194,7 +195,7 @@
                                                             </p>
                                                             <a href="/pages/office-cleaning" class="card-link">View
                                                                 Office Cleaning
-                                                                Services
+                                                                Services<i class="flaticon-right-arrow"></i>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -208,8 +209,9 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                        <img src="{{ asset('assets/img/icon/healthcare.png') }}"
-                                                            alt="Healthcare Cleaning">                                                        </div>
+                                                            <img src="{{ asset('assets/img/icon/healthcare.png') }}"
+                                                                alt="Healthcare Cleaning">
+                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Healthcare Cleaning</h3>
                                                             <p class="card-desc">
@@ -219,7 +221,7 @@
                                                             </p>
                                                             <a href="/pages/healthcare-cleaning" class="card-link">View
                                                                 Healthcare Cleaning
-                                                                Services
+                                                                Services<i class="flaticon-right-arrow"></i>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -246,7 +248,7 @@
                                                             <a href="/pages/institution-cleaning" class="card-link">View
                                                                 Institutional
                                                                 Cleaning
-                                                                Services
+                                                                Services<i class="flaticon-right-arrow"></i>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -260,8 +262,9 @@
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="icon-circle">
-                                                        <img src="{{ asset('assets/img/icon/hotel.png') }}"
-                                                            alt="Hotel Housekeeping">                                                        </div>
+                                                            <img src="{{ asset('assets/img/icon/hotel.png') }}"
+                                                                alt="Hotel Housekeeping">
+                                                        </div>
                                                         <div class="card-text-content">
                                                             <h3 class="card-title">Hotel Housekeeping</h3>
                                                             <p class="card-desc">
@@ -270,7 +273,7 @@
                                                             </p>
                                                             <a href="/pages/hotel-housekeeping-services"
                                                                 class="card-link">View Hotel Housekeeping
-                                                                Services
+                                                                Services<i class="flaticon-right-arrow"></i>
                                                             </a>
                                                         </div>
                                                     </div>

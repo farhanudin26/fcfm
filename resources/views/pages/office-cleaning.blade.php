@@ -86,7 +86,7 @@
                                         <section class="coverage-section">
                                             <div class="container">
                                                 <div class="section-header">
-                                                    <h2><strong>What Does Our Office Cleaning Services Cover?</strong></h2>
+                                                    <h2><strong>What Does Our Office Cleaning <br>Services Cover?</strong></h2>
                                                     <p>Every office has different cleaning priorities depending on its size,
                                                         layout, occupancy and daily activities. Our cleaning scope can be
                                                         customised according to the requirements of your workplace.</p>
@@ -113,7 +113,8 @@
                                                         <h4>Pantry &amp; Break Areas</h4>
                                                     </div>
                                                     <div class="service-card">
-                                                        <div><i class="flaticon-towel"></i></div>
+                                                        <img src="{{ asset('assets/img/icon/icon-washroom.png') }}"
+                                                            alt="Washroom Cleaning">
                                                         <h4>Washrooms</h4>
                                                     </div>
                                                     <div class="service-card">
@@ -245,32 +246,32 @@
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/programmes.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Cleaning programmes tailored to your workplace</h4>
+                                                        <h4>Cleaning Programmes Tailored to Your Workplace</h4>
                                                     </div>
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/trained-personnel.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Trained cleaning personnel</h4>
+                                                        <h4>Trained Cleaning Personnel</h4>
                                                     </div>
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/flexible-schedule.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Flexible scheduling</h4>
+                                                        <h4>Flexible Scheduling</h4>
                                                     </div>
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/responsive-ops-support.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Responsive operational support</h4>
+                                                        <h4>Responsive Operational Support</h4>
                                                     </div>
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/routine-and-periodic.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Routine and periodic cleaning solutions</h4>
+                                                        <h4>Routine &amp; Periodic Cleaning Solutions</h4>
                                                     </div>
                                                     <div class="service-card">
                                                         <img src="{{ asset('assets/img/icon/service-quality.png') }}"
                                                             alt="Toilet Rolls">
-                                                        <h4>Consistent attention to service quality</h4>
+                                                        <h4>Consistent Attention to Service Quality</h4>
                                                     </div>
                                                 </div>
                                                 <p class="expect-footnote">Because a well-maintained workplace does more

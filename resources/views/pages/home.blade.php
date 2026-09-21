@@ -209,8 +209,8 @@
                                                 <div class="col-lg-4 col-md-6">
                                                     <div class="feature__info-box">
                                                         <span>Our Features</span>
-                                                        <h3 class="title">A cleaning solution from <br> System Cleaner
-                                                            offers</h3>
+                                                        <h3 class="title">Cleaning solutions built <br> around your site
+                                                        </h3>
                                                         <div>
                                                             <div class="feature__info-box-item d-flex">
                                                                 <div class="icon">
@@ -590,8 +590,15 @@
                                                                     background: white;
                                                                     text-align: -webkit-center;
                                                                 }
-                                                            </style>Certified Cleaning Business Licence (Class 2) by
-                                                            NEA<br>BCA Registered - FM02/03
+
+                                                                /* Tambahkan style ini agar teks di baris pertama tidak terpotong */
+                                                                .title .line-one {
+                                                                    white-space: nowrap;
+                                                                }
+                                                            </style>
+                                                            <span class="line-one">Certified Cleaning Business Licence
+                                                                (Class 2) by NEA<br>
+                                                                BCA Registered - FM02/03</span>
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -1049,13 +1056,12 @@
                                         <!-- process start -->
                                         <div class="process">
                                             <div class="container">
+                                                <!-- Section Title (Tanpa Animasi) -->
                                                 <div class="row justify-content-center">
                                                     <div class="col-lg-6">
                                                         <div class="sec-title sec-title__two text-center mb-45">
-                                                            <span class="subtitle wow fadeInUp" data-wow-delay="0s"
-                                                                data-wow-duration="1500ms">Cleaning Company</span>
-                                                            <h2 class="title wow fadeInUp" data-wow-delay=".3s"
-                                                                data-wow-duration="1500ms">
+                                                            <span class="subtitle">Cleaning Company</span>
+                                                            <h2 class="title">
                                                                 Our Solid Working Process
                                                             </h2>
                                                         </div>
@@ -1063,110 +1069,132 @@
                                                 </div>
 
                                                 <style>
-                                                    /* Styling teks dan warna dasar */
-                                                    .process__item:hover .process__icon .number,
-                                                    .process__icon .number,
-                                                    .process__item>h3 {
-                                                        color: #000000;
+                                                    /* Reset dan hilangkan semua jenis efek animasi */
+                                                    .process *,
+                                                    .process *::before,
+                                                    .process *::after {
+                                                        animation: none !important;
+                                                        transition: none !important;
                                                     }
 
-                                                    .process__item:not(:last-child)::before {
-                                                        background-color: transparent;
-                                                    }
-
+                                                    /* Wrapper Utama (Background Kuning Diperbesar) */
                                                     .process__wrap {
-                                                        display: flex;
-                                                        flex-wrap: wrap;
-                                                        align-items: center;
-                                                        justify-content: space-between;
-                                                        gap: 30px 40px;
+                                                        background-color: #FFDC00 !important;
+                                                        border-radius: 900px !important;
+                                                        /* Kelengkungan sudut diperbesar */
+                                                        padding: 60px 75px !important;
+                                                        /* PADDING DIPERBESAR (Atas-bawah & Kiri-kanan) */
+                                                        margin: 0 auto !important;
+                                                        max-width: 1140px !important;
+                                                        /* LEBAR MAKSIMAL DIPERBESAR */
+                                                        width: 100% !important;
+
+                                                        display: flex !important;
+                                                        align-items: center !important;
+                                                        justify-content: space-between !important;
+                                                        gap: 40px !important;
+                                                        box-sizing: border-box !important;
+                                                        opacity: 1 !important;
+                                                        visibility: visible !important;
                                                     }
 
+                                                    /* Item Process */
                                                     .process__item {
-                                                        display: flex;
-                                                        align-items: center;
-                                                        gap: 18px;
-                                                        flex: 1 1 280px;
-                                                        cursor: pointer;
+                                                        display: flex !important;
+                                                        align-items: center !important;
+                                                        flex: 1 1 0 !important;
+                                                        gap: 18px !important;
+                                                        margin: 0 !important;
+                                                        padding: 0 !important;
+                                                        cursor: default !important;
+                                                        position: relative !important;
                                                     }
 
-                                                    .process__item h3 {
-                                                        margin: 0;
-                                                        font-size: 18px;
-                                                        line-height: 1.4;
-                                                        font-weight: 500;
-                                                        color: #000000;
-                                                    }
-
-                                                    /* Lingkaran pembungkus angka & ikon */
+                                                    /* Lingkaran Angka */
                                                     .process__icon {
-                                                        position: relative;
-                                                        width: 60px;
-                                                        height: 60px;
-                                                        flex-shrink: 0;
-                                                        border-radius: 50%;
-                                                        background: rgba(0, 0, 0, 0.08);
-                                                        overflow: hidden;
+                                                        width: 60px !important;
+                                                        height: 60px !important;
+                                                        min-width: 60px !important;
+                                                        min-height: 60px !important;
+                                                        border-radius: 50% !important;
+                                                        background: rgba(0, 0, 0, 0.08) !important;
+
+                                                        display: flex !important;
+                                                        align-items: center !important;
+                                                        justify-content: center !important;
+                                                        flex-shrink: 0 !important;
+                                                        position: relative !important;
+                                                        top: 0 !important;
+                                                        left: 0 !important;
+                                                        transform: none !important;
                                                     }
 
-                                                    /* Elemen Angka & Ikon */
-                                                    .process__icon .number,
-                                                    .process__icon .icon {
-                                                        position: absolute;
-                                                        inset: 0;
-                                                        display: flex;
-                                                        align-items: center;
-                                                        justify-content: center;
-                                                        transition: all 0.3s ease-in-out;
+                                                    .process__icon::before,
+                                                    .process__icon::after,
+                                                    .process__item::before,
+                                                    .process__item::after {
+                                                        content: none !important;
+                                                        display: none !important;
                                                     }
 
-                                                    /* Tampilan Normal (Angka Muncul) */
+                                                    /* Teks Angka */
                                                     .process__icon .number {
-                                                        font-size: 22px;
-                                                        font-weight: 600;
-                                                        opacity: 1;
-                                                        visibility: visible;
-                                                        transform: scale(1);
+                                                        position: relative !important;
+                                                        top: 0 !important;
+                                                        left: 0 !important;
+                                                        transform: none !important;
+                                                        color: #000000 !important;
+                                                        font-size: 22px !important;
+                                                        font-weight: 700 !important;
+                                                        line-height: 1 !important;
+                                                        margin: 0 !important;
+                                                        padding: 0 !important;
                                                     }
 
-                                                    /* Tampilan Normal (Ikon Sembunyi) */
-                                                    .process__icon .icon {
-                                                        opacity: 0;
-                                                        visibility: hidden;
-                                                        transform: scale(0.4);
-                                                        color: #000000;
-                                                        /* Memastikan warna ikon terlihat jelas */
+                                                    /* Judul Langkah */
+                                                    .process__item>h3 {
+                                                        margin: 0 !important;
+                                                        padding: 0 !important;
+                                                        color: #000000 !important;
+                                                        font-size: 17px !important;
+                                                        font-weight: 600 !important;
+                                                        line-height: 1.35 !important;
                                                     }
 
-                                                    .process__icon .icon i {
-                                                        font-size: 26px;
-                                                        line-height: 1;
-                                                        display: block;
+                                                    /* Matikan Hover */
+                                                    .process__item:hover,
+                                                    .process__icon:hover,
+                                                    .process__item:hover h3,
+                                                    .process__item:hover .number {
+                                                        transform: none !important;
+                                                        transition: none !important;
+                                                        box-shadow: none !important;
+                                                        opacity: 1 !important;
+                                                        color: #000000 !important;
                                                     }
 
-                                                    /* Efek HOVER pada area process__item (Teks atau Nomor) */
-                                                    .process__item:hover .process__icon .number {
-                                                        opacity: 0;
-                                                        visibility: hidden;
-                                                        transform: scale(0.4);
-                                                    }
+                                                    /* Responsif Mobile */
+                                                    @media (max-width: 767px) {
+                                                        .process__wrap {
+                                                            flex-direction: column !important;
+                                                            align-items: flex-start !important;
+                                                            border-radius: 30px !important;
+                                                            padding: 30px 25px !important;
+                                                            gap: 25px !important;
+                                                        }
 
-                                                    .process__item:hover .process__icon .icon {
-                                                        opacity: 1;
-                                                        visibility: visible;
-                                                        transform: scale(1);
+                                                        .process__item {
+                                                            width: 100% !important;
+                                                            flex: none !important;
+                                                        }
                                                     }
                                                 </style>
 
-                                                <div class="process__wrap wow fadeInUp" data-wow-delay=".5s"
-                                                    data-wow-duration="1500ms">
-
+                                                <!-- Content Process -->
+                                                <div class="process__wrap">
                                                     <div class="process__item">
                                                         <div class="process__icon">
                                                             <span class="number">1</span>
-                                                            <div class="icon">
-                                                                <i class="flaticon flaticon-reminder"></i>
-                                                            </div>
                                                         </div>
                                                         <h3>We receive your enquiry</h3>
                                                     </div>
@@ -1174,9 +1202,6 @@
                                                     <div class="process__item">
                                                         <div class="process__icon">
                                                             <span class="number">2</span>
-                                                            <div class="icon">
-                                                                <i class="flaticon flaticon-house-2"></i>
-                                                            </div>
                                                         </div>
                                                         <h3>We visit your space & understand your needs</h3>
                                                     </div>
@@ -1184,13 +1209,9 @@
                                                     <div class="process__item">
                                                         <div class="process__icon">
                                                             <span class="number">3</span>
-                                                            <div class="icon">
-                                                                <i class="flaticon flaticon-data-cleaning-1"></i>
-                                                            </div>
                                                         </div>
                                                         <h3>We send you a quote!</h3>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>

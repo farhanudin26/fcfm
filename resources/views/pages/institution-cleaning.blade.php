@@ -133,77 +133,175 @@
                                         {{-- ================================================
        3. WHAT OUR INSTITUTIONAL CLEANING SERVICES CAN COVER — icon list
   ================================================= --}}
-                                        <section class="coverage-section">
-                                            <div class="container">
-                                                <div class="section-header">
-                                                    <h2><strong>What Our Institutional Cleaning Services Can Cover</strong>
-                                                    </h2>
+                                        <section class="cvs-section">
+                                            <div class="cvs-container">
+
+                                                <div class="cvs-header">
+                                                    <h2>What Our Institutional Cleaning Services Can Cover</h2>
                                                     <p>With many people using the same spaces throughout the day,
                                                         maintaining frequently used areas is an important part of
                                                         institutional cleaning. Depending on your facility's requirements,
                                                         our cleaning scope may include:</p>
                                                 </div>
-                                                <div class="services-grid">
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-house-1"></i></div>
-                                                        <span>Classrooms and Learning Spaces</span>
+
+                                                <div class="cvs-slider">
+                                                    <button class="cvs-arrow cvs-arrow-prev" aria-label="Sebelumnya">
+                                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                                        </svg>
+                                                    </button>
+
+                                                    <div class="cvs-viewport">
+                                                        <div class="cvs-track" id="cvsTrack">
+
+                                                            <!-- Slide 1 -->
+                                                            <div class="cvs-slide">
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Classrooms and Learning Spaces"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Classrooms and Learning Spaces</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Offices and Administrative Areas"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Offices and Administrative Areas</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Entrances and Reception Areas"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Entrances and Reception Areas</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Slide 2 -->
+                                                            <div class="cvs-slide">
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Corridors and Common Areas"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Corridors and Common Areas</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Multi-Purpose and Activity Spaces"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Multi-Purpose and Activity Spaces</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Washrooms"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Washrooms</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Slide 3 -->
+                                                            <div class="cvs-slide">
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Pantry and Staff Areas"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Pantry and Staff Areas</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Canteens and Cafeterias"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Canteens and Cafeterias</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Staircases and Lift Areas"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Staircases and Lift Areas</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Slide 4 -->
+                                                            <div class="cvs-slide">
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="High-Touch Surfaces"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>High-Touch Surfaces</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Floor Cleaning and Maintenance"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Floor Cleaning and Maintenance</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="Waste Collection and Disposal"></div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>Waste Collection and Disposal</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Slide 5 -->
+                                                            <div class="cvs-slide">
+                                                                <div class="cvs-card">
+                                                                    <div class="cvs-card-photo"><img
+                                                                            src="https://images.unsplash.com/photo-1527515545081-5db817172677?auto=format&fit=crop&w=500&q=60"
+                                                                            alt="General Dusting and Surface Cleaning">
+                                                                    </div>
+                                                                    <div class="cvs-card-body">
+                                                                        <h4>General Dusting and Surface Cleaning</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-portfolio"></i></div>
-                                                        <span>Offices and Administrative Areas</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-house"></i></div>
-                                                        <span>Entrances and Reception Areas</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-window"></i></div>
-                                                        <span>Corridors and Common Areas</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-house-2"></i></div>
-                                                        <span>Multi-Purpose and Activity Spaces</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-towel"></i></div>
-                                                        <span>Washrooms</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-home"></i></div>
-                                                        <span>Pantry and Staff Areas</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-bubbles"></i></div>
-                                                        <span>Canteens and Cafeterias</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-window"></i></div>
-                                                        <span>Staircases and Lift Areas</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-cloth"></i></div>
-                                                        <span>High-Touch Surfaces</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-data-cleaning"></i>
-                                                        </div><span>Floor Cleaning and Maintenance</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-data-cleaning-1"></i>
-                                                        </div><span>Waste Collection and Disposal</span>
-                                                    </div>
-                                                    <div class="service-card">
-                                                        <div><i class="flaticon-wipe"></i></div>
-                                                        <span>General Dusting and Surface Cleaning</span>
-                                                    </div>
+
+                                                    <button class="cvs-arrow cvs-arrow-next" aria-label="Berikutnya">
+                                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                                        </svg>
+                                                    </button>
                                                 </div>
-                                                <p class="coverage-footnote">Cleaning frequency can be adjusted according
-                                                    to usage levels and areas requiring greater attention. As institutional
+
+                                                <div class="cvs-dots" id="cvsDots"></div>
+
+                                                <p class="cvs-footnote">Cleaning frequency can be adjusted according to
+                                                    usage levels and areas requiring greater attention. As institutional
                                                     facilities can experience significant changes in activity throughout the
                                                     day, cleaning arrangements should therefore complement your operations
                                                     rather than interfere with them. Hence, certain cleaning tasks may be
                                                     scheduled during quieter periods where appropriate to minimise
                                                     disruption to the people using the facility.</p>
+
                                             </div>
                                         </section>
                                     </div>
@@ -448,4 +546,62 @@
         </div>
 
     </div><!-- #content -->
+
+    <script>
+        (function() {
+            var track = document.getElementById('cvsTrack');
+            var slides = track.querySelectorAll('.cvs-slide');
+            var dotsWrap = document.getElementById('cvsDots');
+            var prevBtn = document.querySelector('.cvs-arrow-prev');
+            var nextBtn = document.querySelector('.cvs-arrow-next');
+            var current = 0;
+            var total = slides.length;
+
+            slides.forEach(function(_, i) {
+                var dot = document.createElement('button');
+                dot.className = 'cvs-dot' + (i === 0 ? ' is-active' : '');
+                dot.addEventListener('click', function() {
+                    goTo(i);
+                });
+                dotsWrap.appendChild(dot);
+            });
+            var dots = dotsWrap.querySelectorAll('.cvs-dot');
+
+            function update() {
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                dots.forEach(function(d, i) {
+                    d.classList.toggle('is-active', i === current);
+                });
+                prevBtn.disabled = current === 0;
+                nextBtn.disabled = current === total - 1;
+            }
+
+            function goTo(index) {
+                current = Math.max(0, Math.min(total - 1, index));
+                update();
+            }
+
+            prevBtn.addEventListener('click', function() {
+                goTo(current - 1);
+            });
+            nextBtn.addEventListener('click', function() {
+                goTo(current + 1);
+            });
+
+            // swipe support
+            var startX = 0;
+            track.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+            }, {
+                passive: true
+            });
+            track.addEventListener('touchend', function(e) {
+                var diff = e.changedTouches[0].clientX - startX;
+                if (diff > 50) goTo(current - 1);
+                else if (diff < -50) goTo(current + 1);
+            });
+
+            update();
+        })();
+    </script>
 @endsection
