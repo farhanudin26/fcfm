@@ -270,9 +270,9 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/institution-cleaning') ? 'active' : '' }}">
 
-                                        <a title="Institution Cleaning" href="{{ url('/pages/institution-cleaning') }}"
+                                        <a title="Institutional Cleaning" href="{{ url('/pages/institution-cleaning') }}"
                                             class="dropdown-items">
-                                            Institution Cleaning
+                                            Institutional Cleaning
                                         </a>
 
                                     </li>
@@ -426,7 +426,8 @@
 
                     <div class="header__btn ml-40">
 
-                        <a class="thm-btn thm-btn--transparent" href="#">
+                        <a class="thm-btn thm-btn--transparent" href="#quoteModal" data-bs-toggle="modal"
+                            data-bs-target="#quoteModal">
 
                             <span class="btn-wrap">
 
@@ -444,6 +445,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -453,7 +455,160 @@
     </div>
 
 </header>
+                    <!-- Modal Get A Quote Form -->
+                    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content text-start">
+                                <div class="modal-header bg-warning text-dark">
+                                    <h5 class="modal-title fw-bold" id="quoteModalLabel">Get A Quote</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-4">
+                                    <form action="#" method="POST" id="quoteForm">
+                                        @csrf
 
+                                        <!-- Company Information -->
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="company_name" class="form-label font-weight-bold">Name
+                                                    of Company *</label>
+                                                <input type="text" class="form-control" id="company_name"
+                                                    name="company_name" required placeholder="e.g. Acme Corp">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="facility_type" class="form-label font-weight-bold">Type
+                                                    of Facility *</label>
+                                                <select class="form-select form-control" id="facility_type"
+                                                    name="facility_type" required>
+                                                    <option value="" selected disabled>Select Facility
+                                                        Type</option>
+                                                    <option value="Office">Office
+                                                    </option>
+                                                    <option value="Warehouse / Industrial">
+                                                        Warehouse / Industrial
+                                                    </option>
+                                                    <option value="School / Institution / Childcare">
+                                                        School / Institution /
+                                                        Childcare</option>
+                                                    <option value="Church">Church
+                                                    </option>
+                                                    <option
+                                                        value="Hospital / Clinic / Dental / Nursing Home / Care Facility">
+                                                        Hospital / Clinic / Dental /
+                                                        Nursing Home / Care Facility
+                                                    </option>
+                                                    <option value="F&B">F&B
+                                                    </option>
+                                                    <option value="Studio / Gym">
+                                                        Studio / Gym</option>
+                                                    <option value="Condominium / Apartment Complex">
+                                                        Condominium / Apartment
+                                                        Complex</option>
+                                                    <option value="Retail">Retail
+                                                    </option>
+                                                    <option value="Shopping Mall">
+                                                        Shopping Mall</option>
+                                                    <option value="Hotel">Hotel
+                                                    </option>
+                                                    <option value="Others">Others
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="company_address" class="form-label font-weight-bold">Address
+                                                of Company *</label>
+                                            <textarea class="form-control" id="company_address" name="company_address" rows="2" required
+                                                placeholder="Full company address"></textarea>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <!-- Representative Information -->
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="representative_name"
+                                                    class="form-label font-weight-bold">Name
+                                                    of Representative *</label>
+                                                <input type="text" class="form-control" id="representative_name"
+                                                    name="representative_name" required placeholder="John Doe">
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="contact_number"
+                                                    class="form-label font-weight-bold">Contact
+                                                    Number *</label>
+                                                <input type="tel" class="form-control" id="contact_number"
+                                                    name="contact_number" required placeholder="+65 xxxx xxxx">
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="email_address" class="form-label font-weight-bold">E-mail
+                                                    Address *</label>
+                                                <input type="email" class="form-control" id="email_address"
+                                                    name="email_address" required placeholder="name@company.com">
+                                            </div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <!-- Service Details -->
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start_date" class="form-label font-weight-bold">Estimated
+                                                    Start Date *</label>
+                                                <input type="date" class="form-control" id="start_date"
+                                                    name="start_date" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="estimated_budget"
+                                                    class="form-label font-weight-bold">Estimated
+                                                    Budget per month</label>
+                                                <input type="text" class="form-control" id="estimated_budget"
+                                                    name="estimated_budget" placeholder="e.g. $1,500">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="cleaning_days_per_week"
+                                                    class="form-label font-weight-bold">No.
+                                                    of cleaning days required per
+                                                    week *</label>
+                                                <input type="number" class="form-control"
+                                                    id="cleaning_days_per_week" name="cleaning_days_per_week"
+                                                    min="1" max="7" required placeholder="e.g. 5">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="hours_per_session" class="form-label font-weight-bold">No.
+                                                    of hours per cleaning session
+                                                    *</label>
+                                                <input type="number" step="0.5" class="form-control"
+                                                    id="hours_per_session" name="hours_per_session" min="0.5"
+                                                    required placeholder="e.g. 3">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="special_requirements" class="form-label font-weight-bold">Any
+                                                other special requirements</label>
+                                            <textarea class="form-control" id="special_requirements" name="special_requirements" rows="3"
+                                                placeholder="Tell us if you need specific equipment, eco-friendly products, etc."></textarea>
+                                        </div>
+
+                                        <div class="text-end mt-4">
+                                            <button type="button" class="btn btn-secondary me-2"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit"
+                                                class="btn btn-warning font-weight-bold px-4">Submit
+                                                Request</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
 <!-- =====================================================
@@ -489,8 +644,7 @@
 
             <a href="{{ url('/') }}">
 
-                <img src="{{ asset('assets/img/uploads/2025/09/horizontal-fcfm-logo.png') }}"
-                    alt="logo">
+                <img src="{{ asset('assets/img/uploads/2025/09/horizontal-fcfm-logo.png') }}" alt="logo">
 
             </a>
 
@@ -500,39 +654,62 @@
         <!-- About -->
 
         <div class="sidebar-content mb-45">
-
             <h4 class="s-title">
-                About us
+                <strong>About FCFM</strong>
             </h4>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip
-                ex ea commodo consequat.
+                Professional cleaning and facility solutions designed around the needs of commercial, healthcare,
+                hospitality and institutional environments.
             </p>
 
-
             <div class="sidebar__btn">
-
-                <a class="thm-btn br-0" href="#">
-
+                <a class="thm-btn br-0" href="{{ url('/pages/about-us') }}">
                     <span class="btn-wrap">
-
-                        <span>
-                            Contact us
-                        </span>
-
-                        <span>
-                            Contact us
-                        </span>
-
+                        <span>Discover FCFM</span>
+                        <span>Discover FCFM</span>
                     </span>
-
                 </a>
-
             </div>
 
+            <!-- ================= BAGIAN WHAT WE DO ================= -->
+            <div class="what-we-do-section mt-4" style="margin-top: 30px;">
+                <h4 class="s-title">
+                    <strong>What We Do</strong>
+                </h4>
+
+                <ul class="what-we-do-list" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <a href="/pages/commercial-cleaning"
+                            style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>Commercial Cleaning</span>
+                            <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/pages/healthcare-cleaning"
+                            style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>Healthcare Cleaning</span>
+                            <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/pages/institution-cleaning"
+                            style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>Institutional Cleaning</span>
+                            <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="/pages/hotel-housekeeping-services"
+                            style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>Hotel Housekeeping</span>
+                            <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ================= END BAGIAN WHAT WE DO ================= -->
         </div>
 
 
@@ -541,9 +718,8 @@
         <div class="contact_list mb-30">
 
             <h4 class="s-title">
-                Contact us
+                <strong>Get In Touch</strong>
             </h4>
-
 
             <ul class="sidebar-info-list">
 
@@ -551,7 +727,7 @@
 
                     <i class="fas fa-map-marker-alt"></i>
 
-                    18 Sin Ming Lane, #06-27,
+                    18 Sin Ming Lane, #06-26/27,
                     Midview City, Singapore 573960
 
                 </li>
@@ -742,9 +918,9 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/institution-cleaning') ? 'active' : '' }}">
 
-                        <a title="Institution Cleaning" href="{{ url('/pages/institution-cleaning') }}"
+                        <a title="Institutional Cleaning" href="{{ url('/pages/institution-cleaning') }}"
                             class="dropdown-items">
-                            Institution Cleaning
+                            Institutional Cleaning
                         </a>
 
                     </li>

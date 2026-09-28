@@ -217,6 +217,19 @@
                                         <!-- ============================
                                              COLUMN 2: GET IN TOUCH
                                         ============================= -->
+                                        <style>
+                                            .footer__info li {
+                                                display: flex;
+                                                align-items: flex-start;
+                                                gap: 12px;
+                                                /* Menjaga jarak ikon dengan teks alamat */
+                                            }
+
+                                            .footer__info li span .nobreak {
+                                                white-space: nowrap;
+                                                /* Mencegah kata Midview City terpotong ke bawah */
+                                            }
+                                        </style>
                                         <div class="col-lg-3 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <h3><b>Get In Touch</b></h3>
@@ -224,8 +237,11 @@
                                                 <ul class="footer__info list-unstyled mt-35">
                                                     <li>
                                                         <i class="fas fa-map-marker-alt"></i>
-                                                        <span>18 Sin Ming Lane, #06-27, Midview City, Singapore
-                                                            573960</span>
+                                                        <span>
+                                                            18 Sin Ming Lane<br>
+                                                            <span class="nobreak">#06-26/27, Midview City</span><br>
+                                                            Singapore 573960
+                                                        </span>
                                                     </li>
                                                     <li>
                                                         <i class="fas fa-phone-alt"></i>

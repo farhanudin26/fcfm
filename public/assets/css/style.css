@@ -3715,6 +3715,16 @@ h6 {
 .clinex-service-item-2 .inner-text p {
     padding-bottom: 30px;
     transition: 500ms all ease;
+
+    /* Batasi teks maksimal 3 baris */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Menjaga tinggi area teks tetap sama untuk 3 baris */
+    min-height: calc(1.5em * 3);
 }
 
 .clinex-service-item-2 .inner-text .read-more {
@@ -5537,7 +5547,35 @@ h6 {
     width: 100px;
     margin: 0 auto;
 }
+/* Kontainer tiap item slider */
+.clenix-sponsor-section .slider-inner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Pembungkus gambar logo */
+.clenix-sponsor-section .clenix-sponsor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Atur batas tinggi area logo */
+    width: 100%;
+}
+
+/* Pengaturan elemen gambar */
+.clenix-sponsor-section .clenix-sponsor-img img {
+    max-height: 100%;
+    max-width: 175px; /* Atur lebar maksimal tiap logo */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%); /* Bisa diubah jika ingin memberikan efek konsisten */
+}
+/* Menggeser logo SNEF ke kanan tanpa merusak tata letak baris */
+.clenix-sponsor-section .slider-inner-item:last-child {
+    transform: translateX(20px); /* Geser ke kanan sejauh 30px */
+}
 /*---------------------------------------------------- */
 
 /*Project area*/
@@ -7870,7 +7908,7 @@ select {
     padding: 35px;
     padding-top: 85px;
     border: 1px solid #ebebeb;
-    margin-top: -160px;
+    margin-top: -255px;
     z-index: 1;
     position: relative;
     background-color: var(--color-white);
@@ -8575,7 +8613,7 @@ select {
 }
 
 .sec-title__two .title {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 @media (max-width: 767px) {
@@ -16011,7 +16049,7 @@ select {
 }
 
 /* ================================================
-     2. SERVICE COVERAGE — icon -
+     2. SERVICE COVERAGE — icon cards
   ================================================= */
 .fcfm-office .coverage-section {
     padding: 64px 0;
@@ -17245,7 +17283,7 @@ select {
     display: block;
     width: 64px;
     height: 3px;
-    background: #0e6b64;
+    background: #007bff;
     margin: 16px auto 0;
     border-radius: 2px;
 }

@@ -46,7 +46,7 @@
                                                                 }
 
                                                                 .hero__content-two {
-                                                                    margin-top: 40px;
+                                                                    margin-top: -50px;
                                                                 }
 
                                                                 .hero__right {
@@ -81,9 +81,7 @@
 
                                                                 .hero__experince-box .counter {
                                                                     font-size: 72px;
-                                                                    /* Membuat angka 9 lebih besar */
                                                                     font-weight: 1000;
-                                                                    /* Membuat angka 9 lebih tebal */
                                                                     line-height: 1;
                                                                     display: inline-block;
                                                                 }
@@ -96,17 +94,35 @@
                                                                     color: #111;
                                                                     white-space: nowrap;
                                                                 }
-                                                            </style>Professional Cleaning Company
+
+                                                                /* Mengatur jarak atas tombol agar naik lebih pas */
+                                                                .hero__btn {
+                                                                    margin-top: 20px;
+                                                                }
+                                                            </style>Professional Cleaning & Facility Solutions
                                                         </span>
+
                                                         <h2 class="wow fadeInUp" data-wow-delay=".3s"
-                                                            data-wow-duration="1500ms">HOTELS . COMMERCIAL . INDUSTRIAL</h2>
-                                                        <p class="wow fadeInUp" data-wow-delay=".6s"
-                                                            data-wow-duration="1500ms">Can consent to the use of such
-                                                            technologies byclosing this notice <br>
-                                                            senectus amet sodales habitant dapibus</p>
+                                                            data-wow-duration="1500ms">CLEANER SPACES,<br> BETTER
+                                                            EXPERIENCES.</h2>
+
+                                                        <p class="wow fadeInUp"
+                                                            style="color: #ffffff; font-style: italic; font-size: 1.25rem; margin-bottom: 15px;"
+                                                            data-wow-delay=".6s" data-wow-duration="1500ms">
+                                                            Every interaction matters.
+                                                        </p>
+
+                                                        <!-- Body text: Menambahkan margin-bottom agar tombol tidak menempel rapat -->
+                                                        <p
+                                                            style="color: #ffffff; font-size: 1rem; line-height: 1.6; margin-bottom: 25px;">
+                                                            Supporting businesses with reliable cleaning solutions built
+                                                            around their spaces, people and operational needs.
+                                                        </p>
+
                                                         <div class="hero__btn wow fadeInUp" data-wow-delay=".8s"
                                                             data-wow-duration="1500ms">
-                                                            <a class="thm-btn br-0" href="{{ url('/pages/contact') }}">
+                                                            <a class="thm-btn br-0" href="#quoteModal"
+                                                                data-bs-toggle="modal" data-bs-target="#quoteModal">
                                                                 <span class="btn-wrap">
                                                                     <span>
                                                                         <style>
@@ -120,21 +136,193 @@
                                                                         </style>Get a quote
                                                                     </span>
                                                                     <span>
-                                                                        <style>
-                                                                            .elementor-1226 .elementor-element.elementor-element-5682c6d .thm-btn:hover {
-                                                                                background-color: white;
-                                                                            }
-
-                                                                            .elementor-1226 .elementor-element.elementor-element-5682c6d .thm-btn .btn-wrap span:hover {
-                                                                                color: black;
-                                                                            }
-                                                                        </style>Get a quote
+                                                                        Get a quote
                                                                     </span>
                                                                 </span>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- Modal Get A Quote Form -->
+                                                <div class="modal fade" id="quoteModal" tabindex="-1"
+                                                    aria-labelledby="quoteModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                        <div class="modal-content text-start">
+                                                            <div class="modal-header bg-warning text-dark">
+                                                                <h5 class="modal-title fw-bold" id="quoteModalLabel">Get A
+                                                                    Quote</h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body p-4">
+                                                                <form action="#" method="POST" id="quoteForm">
+                                                                    @csrf
+
+                                                                    <!-- Company Information -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="company_name"
+                                                                                class="form-label font-weight-bold">Name
+                                                                                of Company *</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="company_name" name="company_name"
+                                                                                required placeholder="e.g. Acme Corp">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="facility_type"
+                                                                                class="form-label font-weight-bold">Type
+                                                                                of Facility *</label>
+                                                                            <select class="form-select form-control"
+                                                                                id="facility_type" name="facility_type"
+                                                                                required>
+                                                                                <option value="" selected disabled>
+                                                                                    Select Facility
+                                                                                    Type</option>
+                                                                                <option value="Office">Office
+                                                                                </option>
+                                                                                <option value="Warehouse / Industrial">
+                                                                                    Warehouse / Industrial
+                                                                                </option>
+                                                                                <option
+                                                                                    value="School / Institution / Childcare">
+                                                                                    School / Institution /
+                                                                                    Childcare</option>
+                                                                                <option value="Church">Church
+                                                                                </option>
+                                                                                <option
+                                                                                    value="Hospital / Clinic / Dental / Nursing Home / Care Facility">
+                                                                                    Hospital / Clinic / Dental /
+                                                                                    Nursing Home / Care Facility
+                                                                                </option>
+                                                                                <option value="F&B">F&B
+                                                                                </option>
+                                                                                <option value="Studio / Gym">
+                                                                                    Studio / Gym</option>
+                                                                                <option
+                                                                                    value="Condominium / Apartment Complex">
+                                                                                    Condominium / Apartment
+                                                                                    Complex</option>
+                                                                                <option value="Retail">Retail
+                                                                                </option>
+                                                                                <option value="Shopping Mall">
+                                                                                    Shopping Mall</option>
+                                                                                <option value="Hotel">Hotel
+                                                                                </option>
+                                                                                <option value="Others">Others
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mb-3">
+                                                                        <label for="company_address"
+                                                                            class="form-label font-weight-bold">Address
+                                                                            of Company *</label>
+                                                                        <textarea class="form-control" id="company_address" name="company_address" rows="2" required
+                                                                            placeholder="Full company address"></textarea>
+                                                                    </div>
+
+                                                                    <hr class="my-4">
+
+                                                                    <!-- Representative Information -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 mb-3">
+                                                                            <label for="representative_name"
+                                                                                class="form-label font-weight-bold">Name
+                                                                                of Representative *</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="representative_name"
+                                                                                name="representative_name" required
+                                                                                placeholder="John Doe">
+                                                                        </div>
+                                                                        <div class="col-md-4 mb-3">
+                                                                            <label for="contact_number"
+                                                                                class="form-label font-weight-bold">Contact
+                                                                                Number *</label>
+                                                                            <input type="tel" class="form-control"
+                                                                                id="contact_number" name="contact_number"
+                                                                                required placeholder="+65 xxxx xxxx">
+                                                                        </div>
+                                                                        <div class="col-md-4 mb-3">
+                                                                            <label for="email_address"
+                                                                                class="form-label font-weight-bold">E-mail
+                                                                                Address *</label>
+                                                                            <input type="email" class="form-control"
+                                                                                id="email_address" name="email_address"
+                                                                                required placeholder="name@company.com">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <hr class="my-4">
+
+                                                                    <!-- Service Details -->
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="start_date"
+                                                                                class="form-label font-weight-bold">Estimated
+                                                                                Start Date *</label>
+                                                                            <input type="date" class="form-control"
+                                                                                id="start_date" name="start_date"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="estimated_budget"
+                                                                                class="form-label font-weight-bold">Estimated
+                                                                                Budget per month</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="estimated_budget"
+                                                                                name="estimated_budget"
+                                                                                placeholder="e.g. $1,500">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="cleaning_days_per_week"
+                                                                                class="form-label font-weight-bold">No.
+                                                                                of cleaning days required per
+                                                                                week *</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="cleaning_days_per_week"
+                                                                                name="cleaning_days_per_week"
+                                                                                min="1" max="7" required
+                                                                                placeholder="e.g. 5">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label for="hours_per_session"
+                                                                                class="form-label font-weight-bold">No.
+                                                                                of hours per cleaning session
+                                                                                *</label>
+                                                                            <input type="number" step="0.5"
+                                                                                class="form-control"
+                                                                                id="hours_per_session"
+                                                                                name="hours_per_session" min="0.5"
+                                                                                required placeholder="e.g. 3">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mb-3">
+                                                                        <label for="special_requirements"
+                                                                            class="form-label font-weight-bold">Any
+                                                                            other special requirements</label>
+                                                                        <textarea class="form-control" id="special_requirements" name="special_requirements" rows="3"
+                                                                            placeholder="Tell us if you need specific equipment, eco-friendly products, etc."></textarea>
+                                                                    </div>
+
+                                                                    <div class="text-end mt-4">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-2"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <button type="submit"
+                                                                            class="btn btn-warning font-weight-bold px-4">Submit
+                                                                            Request</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <div class="col-lg-6 mt-30">
                                                     <div class="hero__right pos-rel">
                                                         <div class="hero__image text-end wow fadeInRight"
@@ -143,8 +331,8 @@
                                                                 src="{{ asset('assets/img/uploads/2025/09/main-home-fcfm-portrait.png') }}"
                                                                 alt="main home fcfm" />
                                                         </div>
-                                                        <div class="hero__experince-box wow fadeInLeft" data-wow-delay=".4s"
-                                                            data-wow-duration="1500ms">
+                                                        <div class="hero__experince-box wow fadeInLeft"
+                                                            data-wow-delay=".4s" data-wow-duration="1500ms">
                                                             <div>
                                                                 <h2>
                                                                     <span class="counter">9</span>
@@ -163,9 +351,11 @@
                                             </div>
                                         </div>
                                         <div class="hero__text-box">
-                                            <img decoding="async" src="{{ asset('assets/img/widgets/5-hero/h_text.png') }}"
+                                            <img decoding="async"
+                                                src="{{ asset('assets/img/widgets/5-hero/h_text.png') }}"
                                                 alt="widgets 5 hero h text fcfm">
-                                            <img decoding="async" src="{{ asset('assets/img/widgets/5-hero/h_icon.png') }}"
+                                            <img decoding="async"
+                                                src="{{ asset('assets/img/widgets/5-hero/h_icon.png') }}"
                                                 alt="widgets 5 hero h icon fcfm">
                                         </div>
 
@@ -177,12 +367,12 @@
                                                 data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon2.png') }}"
                                                 alt="widgets 5 hero h icon 2 fcfm">
-                                            <img decoding="async" class="icon icon--3 wow fadeInRight" data-wow-delay=".4s"
-                                                data-wow-duration="1500ms"
+                                            <img decoding="async" class="icon icon--3 wow fadeInRight"
+                                                data-wow-delay=".4s" data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon3.png') }}"
                                                 alt="widgets 5 hero h icon 3 fcfm">
-                                            <img decoding="async" class="icon icon--4 wow fadeInLeft" data-wow-delay=".6s"
-                                                data-wow-duration="1500ms"
+                                            <img decoding="async" class="icon icon--4 wow fadeInLeft"
+                                                data-wow-delay=".6s" data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon4.png') }}"
                                                 alt="widgets 5 hero h icon 4 fcfm">
                                         </div>
@@ -208,7 +398,7 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-md-6">
                                                     <div class="feature__info-box">
-                                                        <span>Our Features</span>
+                                                        <span>Why FCFM</span>
                                                         <h3 class="title">Cleaning solutions built <br> around your site
                                                         </h3>
                                                         <div>
@@ -217,9 +407,9 @@
                                                                     <i class="flaticon-house"></i>
                                                                 </div>
                                                                 <div class="content">
-                                                                    <h3>Top-Rated Company</h3>
-                                                                    <p>Our products are handcrafted with care, then hand
-                                                                        mixed </p>
+                                                                    <h3>Tailored Cleaning Solutions</h3>
+                                                                    <p>Cleaning plans adapted to your site requirements,
+                                                                        operating hours and cleaning needs</p>
                                                                 </div>
                                                             </div>
                                                             <div class="feature__info-box-item d-flex">
@@ -227,18 +417,22 @@
                                                                     <i class="flaticon-data-cleaning"></i>
                                                                 </div>
                                                                 <div class="content">
-                                                                    <h3>Top-Rated Company</h3>
-                                                                    <p>Our products are handcrafted with care, then hand
-                                                                        mixed </p>
+                                                                    <h3>Reliable Operational Support</h3>
+                                                                    <p>Structured manpower planning and ongoing support to
+                                                                        keep cleaning operations</p>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <style>
+                                                            html {
+                                                                scroll-behavior: smooth;
+                                                            }
+                                                        </style>
                                                         <div class="feature__btn mt-40">
-                                                            <a class="thm-btn br-0"
-                                                                href="A cleaning solution from <br> System Cleaner offers">
+                                                            <a class="thm-btn br-0" href="#why-choose-us">
                                                                 <span class="btn-wrap">
-                                                                    <span>More features</span>
-                                                                    <span>More features</span>
+                                                                    <span>Why Choose Us</span>
+                                                                    <span>Why Choose Us</span>
                                                                 </span>
                                                             </a>
                                                         </div>
@@ -657,6 +851,14 @@
                                                             sizes="(max-width: 1523px) 100vw, 1523px" />
                                                     </div>
                                                 </div>
+
+                                                <div class="slider-inner-item snef-item">
+                                                    <div class="clenix-sponsor-img">
+                                                        <img decoding="async" width="275" height="183"
+                                                            src="{{ asset('assets/img/icon/snef-member-logo.png') }}"
+                                                            class="attachment-full size-full" alt="SNEF Member Logo" />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </section>
@@ -753,7 +955,7 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Institution Cleaning</a>
+                                                    <h3><a href={{ url('/pages/project-detail') }}>Institutional Cleaning</a>
                                                     </h3>
                                                     <span></span>
                                                     <a class="project__action" href={{ url('/pages/project-detail') }}><i
@@ -828,8 +1030,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-scrubbing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Floor
-                                                                Scrubbing</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> Floor
+                                                                    Scrubbing</strong></a></h3>
                                                         <p>Beyond regular mopping, clean off embedded dirt from your
                                                             flooring surfaces</p>
                                                         <ul class="service__list list-unstyled">
@@ -847,8 +1049,9 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/landscape-management.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Landscape
-                                                                Management</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                    Landscape
+                                                                    Management</strong></a></h3>
                                                         <p>Healthy landscapes improve air quality!</p>
                                                         <ul class="service__list list-unstyled">
                                                             <li>Maintenance of greenery</li>
@@ -866,8 +1069,9 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/electrical-works.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Electrical
-                                                                Works</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                    Electrical
+                                                                    Works</strong></a></h3>
                                                         <p>Ensuring safe & efficient electrical systems with professional
                                                             electrical solutions tailored to your operational needs</p>
                                                         <ul class="service__list list-unstyled">
@@ -886,8 +1090,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/robot-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Robotic
-                                                                Cleaning</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> Robotic
+                                                                    Cleaning</strong></a></h3>
                                                         <p>Improve productivity with minimal manual intervention</p>
                                                         <ul class="service__list list-unstyled">
                                                             <li>Scheduled cleaning tasks</li>
@@ -904,8 +1108,9 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/anti-microbial-service.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Anti-Microbial
-                                                                Service</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                    Anti-Microbial
+                                                                    Service</strong></a></h3>
                                                         <p>Give germs less room to stay with a protective service that helps
                                                             reduce growth and spread of bacteria, fungi, mould and other
                                                             harmful microorganisms on surfaces!</p>
@@ -925,8 +1130,9 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/jetwash.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> High Pressure
-                                                                Jet Washing</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> High
+                                                                    Pressure<br>
+                                                                    Jet Washing</strong></a></h3>
                                                         <p>Make powerful washes to remove slippery substances, reducing
                                                             slip-and-fall risks!</p>
                                                         <ul class="service__list list-unstyled">
@@ -944,8 +1150,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/carpet-shampoo.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Carpet
-                                                                Cleaning</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> Carpet
+                                                                    Cleaning</strong></a></h3>
                                                         <p>Refresh & revitalize dull carpet fibres with a deep cleaning
                                                             session!</p>
                                                         <ul class="service__list list-unstyled">
@@ -963,8 +1169,9 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/disinfecting-services.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Disinfecting
-                                                                Services</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                    Disinfecting
+                                                                    Services</strong></a></h3>
                                                         <p>Disinfecting Services
                                                             Disinfecting helps create healthier spaces for happier employees
                                                         </p>
@@ -985,8 +1192,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-polishing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Floor
-                                                                Polishing</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> Floor
+                                                                    Polishing</strong></a></h3>
                                                         <p>Create lasting impressions from ground up – enhance and protect
                                                             your flooring surfaces through floor polishing!</p>
                                                         <ul class="service__list list-unstyled">
@@ -1004,8 +1211,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/pest-control-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"> Pest
-                                                                Control</a></h3>
+                                                                href="{{ url('/pages/project-detail') }}"><strong> Pest
+                                                                    Control</strong></a></h3>
                                                         <p>Protect your environment and employees from infestations that
                                                             affect hygiene, safety and property conditions</p>
                                                         <ul class="service__list list-unstyled">
@@ -1077,22 +1284,25 @@
                                                         transition: none !important;
                                                     }
 
-                                                    /* Wrapper Utama (Background Kuning Diperbesar) */
+                                                    /* Wrapper Utama (Background Kuning Lebih Lebar) */
                                                     .process__wrap {
                                                         background-color: #FFDC00 !important;
                                                         border-radius: 900px !important;
-                                                        /* Kelengkungan sudut diperbesar */
-                                                        padding: 60px 75px !important;
-                                                        /* PADDING DIPERBESAR (Atas-bawah & Kiri-kanan) */
+
+                                                        /* Padding atas-bawah & kiri-kanan diperbesar */
+                                                        padding: 60px 85px !important;
+
                                                         margin: 0 auto !important;
-                                                        max-width: 1140px !important;
-                                                        /* LEBAR MAKSIMAL DIPERBESAR */
+
+                                                        /* Max-width diperbesar ke 1350px agar area teks jauh lebih lapang */
+                                                        max-width: 1350px !important;
+
                                                         width: 100% !important;
 
                                                         display: flex !important;
                                                         align-items: center !important;
                                                         justify-content: space-between !important;
-                                                        gap: 40px !important;
+                                                        gap: 30px !important;
                                                         box-sizing: border-box !important;
                                                         opacity: 1 !important;
                                                         visibility: visible !important;
@@ -1103,11 +1313,16 @@
                                                         display: flex !important;
                                                         align-items: center !important;
                                                         flex: 1 1 0 !important;
-                                                        gap: 18px !important;
+                                                        gap: 16px !important;
                                                         margin: 0 !important;
                                                         padding: 0 !important;
                                                         cursor: default !important;
                                                         position: relative !important;
+                                                    }
+
+                                                    /* Khusus Poin 2 diberi min-width sedikit lebih besar agar teks tidak tertekan */
+                                                    .process__item:nth-child(2) {
+                                                        flex: 1.3 1 0 !important;
                                                     }
 
                                                     /* Lingkaran Angka */
@@ -1159,6 +1374,7 @@
                                                         font-size: 17px !important;
                                                         font-weight: 600 !important;
                                                         line-height: 1.35 !important;
+                                                        white-space: normal !important;
                                                     }
 
                                                     /* Matikan Hover */
@@ -1179,11 +1395,12 @@
                                                             flex-direction: column !important;
                                                             align-items: flex-start !important;
                                                             border-radius: 30px !important;
-                                                            padding: 30px 25px !important;
+                                                            padding: 35px 30px !important;
                                                             gap: 25px !important;
                                                         }
 
-                                                        .process__item {
+                                                        .process__item,
+                                                        .process__item:nth-child(2) {
                                                             width: 100% !important;
                                                             flex: none !important;
                                                         }
@@ -1203,7 +1420,7 @@
                                                         <div class="process__icon">
                                                             <span class="number">2</span>
                                                         </div>
-                                                        <h3>We visit your space & understand your needs</h3>
+                                                        <h3>We visit your space &<br>understand your needs</h3>
                                                     </div>
 
                                                     <div class="process__item">
@@ -1218,16 +1435,13 @@
                                         <!-- process end -->
                                         <br>
                                         <!-- about start -->
-                                        <div class="about about__bg-two pt-45 pb-45">
+                                        <div id="why-choose-us" class="about about__bg-two pt-45 pb-45">
                                             <div class="container">
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-6">
                                                         <div class="sec-title sec-title__two mb-50">
                                                             <span class="subtitle wow fadeInUp" data-wow-delay="0s"
                                                                 data-wow-duration="1500ms"></span>
-                                                            {{-- <h2 class="title wow fadeInUp" data-wow-delay=".3s"
-                                                                data-wow-duration="1500ms">
-                                                                Why Choose Us </h2> --}}
                                                             <h2 class="title wow fadeInUp" data-wow-delay=".3s"
                                                                 data-wow-duration="1500ms">
                                                                 Cleaning You Don’t Have to Think About </h2>
@@ -1303,7 +1517,7 @@
 
                                                                 .tab-info__footer p {
                                                                     margin: 0;
-                                                                    font-size: 15px;
+                                                                    font-size: 20px;
                                                                     font-weight: 500;
                                                                     color: #555555;
                                                                     line-height: 1.5;
@@ -1316,7 +1530,8 @@
                                                             </style>
                                                             <div class="tab-info__footer wow fadeInUp"
                                                                 data-wow-delay=".4s">
-                                                                <p>You focus on your operations; <span>we’ll take care of
+                                                                <p>You focus on your operations; <br><span>we’ll take care
+                                                                        of
                                                                         the cleaning.</span></p>
                                                             </div>
                                                         </div>
@@ -1392,13 +1607,56 @@
                                                                         management our clients can depend on.</p>
                                                                 </div>
                                                                 <div class="tab-info__wrap">
+                                                                    <style>
+                                                                        /* Menyejajarkan ikon dan teks di tengah secara vertikal */
+                                                                        .tab-info__item {
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            /* Membuat teks sejajar vertikal di tengah ikon */
+                                                                            gap: 20px;
+                                                                            /* Memberikan jarak sejajar horizontal antara ikon dan teks */
+                                                                            margin-bottom: 25px;
+                                                                            /* Jarak antar baris */
+                                                                        }
+
+                                                                        /* CSS Tambahan untuk Ikon Gambar */
+                                                                        .tab-info__item .icon {
+                                                                            position: relative;
+                                                                            display: inline-flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                            flex-shrink: 0;
+                                                                            /* Mencegah ikon menyusut */
+                                                                        }
+
+                                                                        .tab-info__item .icon i img {
+                                                                            width: 70px;
+                                                                            height: 70px;
+                                                                            object-fit: contain;
+                                                                            position: relative;
+                                                                            z-index: 2;
+                                                                            display: block;
+                                                                        }
+
+                                                                        .tab-info__item .icon img[src*="a_shape.svg"] {
+                                                                            position: absolute;
+                                                                            z-index: 1;
+                                                                        }
+
+                                                                        /* Menghilangkan margin bawaan h3 agar pas berada di tengah */
+                                                                        .tab-info__item .content h3 {
+                                                                            margin: 0;
+                                                                            font-size: 32px;
+                                                                            line-height: 1.2;
+                                                                        }
+                                                                    </style>
                                                                     <!-- Item 1: "To care for spaces" (Menggunakan ikon rumah/properti) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i class="flaticon-house"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/care-for-spaces.png') }}"
+                                                                                    alt="To care for spaces">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3 style="font-size: 32px;">To care for
@@ -1409,10 +1667,8 @@
                                                                     <!-- Item 2: "To improve how they work" (Menggunakan ikon pembersihan/optimasi kerja) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i class="flaticon-data-cleaning"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                            <i> <img src="{{ asset('assets/img/icon/improve-how-they-work.png') }}"
+                                                                                    alt="To improve how they work"></i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3 style="font-size: 32px;">To improve how
@@ -1423,10 +1679,8 @@
                                                                     <!-- Item 3: "To make every experience better" (Menggunakan ikon kepuasan/kualitas) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i class="flaticon-thumbs-up"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                            <i><img src="{{ asset('assets/img/icon/make-every-experience-better.png') }}"
+                                                                                    alt="To make every experience better"></i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3 style="font-size: 32px;">To make every
@@ -1434,8 +1688,8 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <p style="color: #ffffff; font-size: 20px;">
-                                                                        We don’t just manage facilities. We care for the
+                                                                    <p style="color: #ffffff; font-size: 22px;">
+                                                                        We don’t just manage facilities. <br>We care for the
                                                                         spaces people depend on every day.
                                                                     </p>
                                                                 </div>
@@ -1689,7 +1943,8 @@
                         data-id="12139ed" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
                             <div class="elementor-element elementor-element-7b070a8 elementor-widget elementor-widget-clenfix-client"
-                                data-id="7b070a8" data-element_type="widget" data-widget_type="clenfix-client.default">
+                                data-id="7b070a8" data-element_type="widget"
+                                data-widget_type="clenfix-client.default">
                                 <div class="elementor-widget-container">
 
                                     <section id="clenix-sponsor" class="clenix-sponsor-section">
@@ -2060,6 +2315,27 @@
                 observer.observe(counter);
             });
 
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const link = document.querySelector('a[href="#why-choose-us"]');
+
+            if (link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Mencegah loncatan instan browser
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
         });
     </script>
     </div><!-- #page -->

@@ -35,7 +35,7 @@
                                 <div class="elementor-widget-container">
 
                                     <section id="clenix-breadcrumb"
-                                        data-background="{{ asset('assets/img/uploads/2025/10/fcfm-valueadd-landscape.jpg') }}"
+                                        data-background="{{ asset('assets/img/header/hotel-housekeeping.png') }}"
                                         class="clenix-breadcrumb-section position-relative top-position">
                                         <div class="container">
                                             <div class="breadcrumb-content headline ul-li position-relative">
@@ -271,7 +271,30 @@
                                                             <span class="pr-text-in_item3">
                                                                 <style>
                                                                     .clenix-how-work-section {
-                                                                        background-color: #f9da00 !important
+                                                                        background-color: #f9da00 !important;
+                                                                    }
+
+                                                                    /* CSS Tambahan untuk Hover Icon */
+                                                                    .clenix-how-work-item .inner-icon {
+                                                                        position: relative;
+                                                                    }
+
+                                                                    .clenix-how-work-item .inner-icon img {
+                                                                        transition: opacity 0.3s ease;
+                                                                    }
+
+                                                                    .clenix-how-work-item .inner-icon .icon-hover {
+                                                                        position: absolute;
+                                                                        opacity: 0;
+                                                                    }
+
+                                                                    /* Saat kursor diarahkan ke item/layanan */
+                                                                    .clenix-how-work-item:hover .inner-icon .icon-default {
+                                                                        opacity: 0;
+                                                                    }
+
+                                                                    .clenix-how-work-item:hover .inner-icon .icon-hover {
+                                                                        opacity: 1;
                                                                     }
                                                                 </style>
                                                             </span>
@@ -282,7 +305,7 @@
                                                     <span class="pr-text-in_item1">
                                                         <span class="pr-text-in_item2">
                                                             <span class="pr-text-in_item3">
-                                                                HOW WE WORK
+                                                                OUR SERVICE PROCESS
                                                             </span>
                                                         </span>
                                                     </span>
@@ -299,6 +322,7 @@
                                                 </span>
                                                 <div class="row justify-content-center">
 
+                                                    <!-- Item 01 -->
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms"
                                                         data-wow-duration="1500ms">
                                                         <div class="clenix-how-work-item text-center position-relative">
@@ -307,17 +331,23 @@
                                                             <div
                                                                 class="inner-icon position-relative d-flex justify-content-center align-items-center">
                                                                 <img decoding="async" width="51" height="50"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic27.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
+                                                                    src="{{ asset('assets/img/icon/service-needs-orange.png') }}"
+                                                                    class="attachment-full size-full icon-default"
+                                                                    alt="Site Assessment" />
+                                                                <img decoding="async" width="51" height="50"
+                                                                    src="{{ asset('assets/img/icon/service-needs-white.png') }}"
+                                                                    class="attachment-full size-full icon-hover"
+                                                                    alt="Site Assessment" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3>Book Appointment</h3>
-                                                                <p>Our agency can only be as strong as our people &
-                                                                    because of this.</p>
+                                                                <h3>Tell Us Your Needs</h3>
+                                                                <p>Share your site requirements, cleaning needs and
+                                                                    operational considerations with us</p>
                                                             </div>
                                                         </div>
                                                     </div>
 
+                                                    <!-- Item 02 -->
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms"
                                                         data-wow-duration="1500ms">
                                                         <div class="clenix-how-work-item text-center position-relative">
@@ -326,17 +356,23 @@
                                                             <div
                                                                 class="inner-icon position-relative d-flex justify-content-center align-items-center">
                                                                 <img decoding="async" width="46" height="50"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic25.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
+                                                                    src="{{ asset('assets/img/icon/site-assessment-orange.png') }}"
+                                                                    class="attachment-full size-full icon-default"
+                                                                    alt="Site Assessment" />
+                                                                <img decoding="async" width="46" height="50"
+                                                                    src="{{ asset('assets/img/icon/site-assessment-white.png') }}"
+                                                                    class="attachment-full size-full icon-hover"
+                                                                    alt="Site Assessment" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3>Choose Services</h3>
-                                                                <p>Our agency can only be as strong as our people &
-                                                                    because of this.</p>
+                                                                <h3>Site Assessment & Planning</h3>
+                                                                <p>We assess your requirements and plan the appropriate work
+                                                                    scope, manpower and service arrangements</p>
                                                             </div>
                                                         </div>
                                                     </div>
 
+                                                    <!-- Item 03 -->
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms"
                                                         data-wow-duration="1500ms">
                                                         <div class="clenix-how-work-item text-center position-relative">
@@ -345,16 +381,22 @@
                                                             <div
                                                                 class="inner-icon position-relative d-flex justify-content-center align-items-center">
                                                                 <img decoding="async" width="50" height="50"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic26.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
+                                                                    src="{{ asset('assets/img/icon/service-implementation-orange.png') }}"
+                                                                    class="attachment-full size-full icon-default"
+                                                                    alt="Service Implementation" />
+                                                                <img decoding="async" width="50" height="50"
+                                                                    src="{{ asset('assets/img/icon/service-implementation-white.png') }}"
+                                                                    class="attachment-full size-full icon-hover"
+                                                                    alt="Service Implementation" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3>Book Appointment</h3>
-                                                                <p>Our agency can only be as strong as our people &
-                                                                    because of this.</p>
+                                                                <h3>Service Implementation</h3>
+                                                                <p>Our team carries out the agreed service plan, with
+                                                                    ongoing support where required.</p>
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -418,9 +460,11 @@
 
                                                                 <div class="banner-btn-wrapper d-flex align-items-center">
 
+                                                                    <!-- Tombol Membuka Modal -->
                                                                     <div class="banner-btn">
                                                                         <a class="d-flex justify-content-center align-items-center"
-                                                                            href="#">
+                                                                            href="#quoteModal" data-bs-toggle="modal"
+                                                                            data-bs-target="#quoteModal">
                                                                             <span>Get A Quote</span>
                                                                         </a>
                                                                     </div>
@@ -441,6 +485,190 @@
                                                             </div>
                                                         </div>
                                                     </section>
+
+                                                    <!-- Modal Get A Quote Form -->
+                                                    <div class="modal fade" id="quoteModal" tabindex="-1"
+                                                        aria-labelledby="quoteModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content text-start">
+                                                                <div class="modal-header bg-warning text-dark">
+                                                                    <h5 class="modal-title fw-bold" id="quoteModalLabel">
+                                                                        Get A Quote</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body p-4">
+                                                                    <form action="#" method="POST" id="quoteForm">
+                                                                        @csrf
+
+                                                                        <!-- Company Information -->
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="company_name"
+                                                                                    class="form-label font-weight-bold">Name
+                                                                                    of Company *</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="company_name" name="company_name"
+                                                                                    required placeholder="e.g. Acme Corp">
+                                                                            </div>
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="facility_type"
+                                                                                    class="form-label font-weight-bold">Type
+                                                                                    of Facility *</label>
+                                                                                <select class="form-select form-control"
+                                                                                    id="facility_type"
+                                                                                    name="facility_type" required>
+                                                                                    <option value="" selected
+                                                                                        disabled>Select Facility
+                                                                                        Type</option>
+                                                                                    <option value="Office">Office
+                                                                                    </option>
+                                                                                    <option value="Warehouse / Industrial">
+                                                                                        Warehouse / Industrial
+                                                                                    </option>
+                                                                                    <option
+                                                                                        value="School / Institution / Childcare">
+                                                                                        School / Institution /
+                                                                                        Childcare</option>
+                                                                                    <option value="Church">Church
+                                                                                    </option>
+                                                                                    <option
+                                                                                        value="Hospital / Clinic / Dental / Nursing Home / Care Facility">
+                                                                                        Hospital / Clinic / Dental /
+                                                                                        Nursing Home / Care Facility
+                                                                                    </option>
+                                                                                    <option value="F&B">F&B
+                                                                                    </option>
+                                                                                    <option value="Studio / Gym">
+                                                                                        Studio / Gym</option>
+                                                                                    <option
+                                                                                        value="Condominium / Apartment Complex">
+                                                                                        Condominium / Apartment
+                                                                                        Complex</option>
+                                                                                    <option value="Retail">Retail
+                                                                                    </option>
+                                                                                    <option value="Shopping Mall">
+                                                                                        Shopping Mall</option>
+                                                                                    <option value="Hotel">Hotel
+                                                                                    </option>
+                                                                                    <option value="Others">Others
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="mb-3">
+                                                                            <label for="company_address"
+                                                                                class="form-label font-weight-bold">Address
+                                                                                of Company *</label>
+                                                                            <textarea class="form-control" id="company_address" name="company_address" rows="2" required
+                                                                                placeholder="Full company address"></textarea>
+                                                                        </div>
+
+                                                                        <hr class="my-4">
+
+                                                                        <!-- Representative Information -->
+                                                                        <div class="row">
+                                                                            <div class="col-md-4 mb-3">
+                                                                                <label for="representative_name"
+                                                                                    class="form-label font-weight-bold">Name
+                                                                                    of Representative *</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="representative_name"
+                                                                                    name="representative_name" required
+                                                                                    placeholder="John Doe">
+                                                                            </div>
+                                                                            <div class="col-md-4 mb-3">
+                                                                                <label for="contact_number"
+                                                                                    class="form-label font-weight-bold">Contact
+                                                                                    Number *</label>
+                                                                                <input type="tel" class="form-control"
+                                                                                    id="contact_number"
+                                                                                    name="contact_number" required
+                                                                                    placeholder="+65 xxxx xxxx">
+                                                                            </div>
+                                                                            <div class="col-md-4 mb-3">
+                                                                                <label for="email_address"
+                                                                                    class="form-label font-weight-bold">E-mail
+                                                                                    Address *</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="email_address"
+                                                                                    name="email_address" required
+                                                                                    placeholder="name@company.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <hr class="my-4">
+
+                                                                        <!-- Service Details -->
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="start_date"
+                                                                                    class="form-label font-weight-bold">Estimated
+                                                                                    Start Date *</label>
+                                                                                <input type="date" class="form-control"
+                                                                                    id="start_date" name="start_date"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="estimated_budget"
+                                                                                    class="form-label font-weight-bold">Estimated
+                                                                                    Budget per month</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="estimated_budget"
+                                                                                    name="estimated_budget"
+                                                                                    placeholder="e.g. $1,500">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="cleaning_days_per_week"
+                                                                                    class="form-label font-weight-bold">No.
+                                                                                    of cleaning days required per
+                                                                                    week *</label>
+                                                                                <input type="number" class="form-control"
+                                                                                    id="cleaning_days_per_week"
+                                                                                    name="cleaning_days_per_week"
+                                                                                    min="1" max="7" required
+                                                                                    placeholder="e.g. 5">
+                                                                            </div>
+                                                                            <div class="col-md-6 mb-3">
+                                                                                <label for="hours_per_session"
+                                                                                    class="form-label font-weight-bold">No.
+                                                                                    of hours per cleaning session
+                                                                                    *</label>
+                                                                                <input type="number" step="0.5"
+                                                                                    class="form-control"
+                                                                                    id="hours_per_session"
+                                                                                    name="hours_per_session"
+                                                                                    min="0.5" required
+                                                                                    placeholder="e.g. 3">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="mb-3">
+                                                                            <label for="special_requirements"
+                                                                                class="form-label font-weight-bold">Any
+                                                                                other special requirements</label>
+                                                                            <textarea class="form-control" id="special_requirements" name="special_requirements" rows="3"
+                                                                                placeholder="Tell us if you need specific equipment, eco-friendly products, etc."></textarea>
+                                                                        </div>
+
+                                                                        <div class="text-end mt-4">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary me-2"
+                                                                                data-bs-dismiss="modal">Close</button>
+                                                                            <button type="submit"
+                                                                                class="btn btn-warning font-weight-bold px-4">Submit
+                                                                                Request</button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

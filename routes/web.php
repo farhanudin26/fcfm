@@ -30,6 +30,26 @@ Route::view('/pages/job-listings', 'pages.job-listings')->name('job-listings');
 
 Route::view('/pages/office-cleaning', 'pages.office-cleaning')->name('office-cleaning');
 
+Route::view('/pages/pest-control', 'pages.pest-control')->name('pest-control');
+
+Route::view('/pages/high-pressure-jetwash', 'pages.high-pressure-jetwash')->name('high-pressure-jetwash');
+
+Route::view('/pages/floor-scrubbing', 'pages.floor-scrubbing')->name('floor-scrubbing');
+
+Route::view('/pages/landscape-management', 'pages.landscape-management')->name('landscape-management');
+
+Route::view('/pages/floor-polishing', 'pages.floor-polishing')->name('floor-polishing');
+
+Route::view('/pages/disinfecting-services', 'pages.disinfecting-services')->name('disinfecting-services');
+
+Route::view('/pages/carpet-cleaning', 'pages.carpet-cleaning')->name('carpet-cleaning');
+
+Route::view('/pages/electrical-works', 'pages.electrical-works')->name('electrical-works');
+
+Route::view('/pages/anti-microbial', 'pages.anti-microbial')->name('anti-microbial');
+
+Route::view('/pages/robotic-cleaning', 'pages.robotic-cleaning')->name('robotic-cleaning');
+
 Route::view('/pages/portfolio', 'pages.portfolio')->name('portfolio');
 
 Route::view('/pages/pricing', 'pages.pricing')->name('pricing');
