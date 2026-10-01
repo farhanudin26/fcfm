@@ -144,184 +144,6 @@
                                                     </div>
                                                 </div>
                                                 <!-- Modal Get A Quote Form -->
-                                                <div class="modal fade" id="quoteModal" tabindex="-1"
-                                                    aria-labelledby="quoteModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                                                        <div class="modal-content text-start">
-                                                            <div class="modal-header bg-warning text-dark">
-                                                                <h5 class="modal-title fw-bold" id="quoteModalLabel">Get A
-                                                                    Quote</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body p-4">
-                                                                <form action="#" method="POST" id="quoteForm">
-                                                                    @csrf
-
-                                                                    <!-- Company Information -->
-                                                                    <div class="row">
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="company_name"
-                                                                                class="form-label font-weight-bold">Name
-                                                                                of Company *</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="company_name" name="company_name"
-                                                                                required placeholder="e.g. Acme Corp">
-                                                                        </div>
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="facility_type"
-                                                                                class="form-label font-weight-bold">Type
-                                                                                of Facility *</label>
-                                                                            <select class="form-select form-control"
-                                                                                id="facility_type" name="facility_type"
-                                                                                required>
-                                                                                <option value="" selected disabled>
-                                                                                    Select Facility
-                                                                                    Type</option>
-                                                                                <option value="Office">Office
-                                                                                </option>
-                                                                                <option value="Warehouse / Industrial">
-                                                                                    Warehouse / Industrial
-                                                                                </option>
-                                                                                <option
-                                                                                    value="School / Institution / Childcare">
-                                                                                    School / Institution /
-                                                                                    Childcare</option>
-                                                                                <option value="Church">Church
-                                                                                </option>
-                                                                                <option
-                                                                                    value="Hospital / Clinic / Dental / Nursing Home / Care Facility">
-                                                                                    Hospital / Clinic / Dental /
-                                                                                    Nursing Home / Care Facility
-                                                                                </option>
-                                                                                <option value="F&B">F&B
-                                                                                </option>
-                                                                                <option value="Studio / Gym">
-                                                                                    Studio / Gym</option>
-                                                                                <option
-                                                                                    value="Condominium / Apartment Complex">
-                                                                                    Condominium / Apartment
-                                                                                    Complex</option>
-                                                                                <option value="Retail">Retail
-                                                                                </option>
-                                                                                <option value="Shopping Mall">
-                                                                                    Shopping Mall</option>
-                                                                                <option value="Hotel">Hotel
-                                                                                </option>
-                                                                                <option value="Others">Others
-                                                                                </option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="mb-3">
-                                                                        <label for="company_address"
-                                                                            class="form-label font-weight-bold">Address
-                                                                            of Company *</label>
-                                                                        <textarea class="form-control" id="company_address" name="company_address" rows="2" required
-                                                                            placeholder="Full company address"></textarea>
-                                                                    </div>
-
-                                                                    <hr class="my-4">
-
-                                                                    <!-- Representative Information -->
-                                                                    <div class="row">
-                                                                        <div class="col-md-4 mb-3">
-                                                                            <label for="representative_name"
-                                                                                class="form-label font-weight-bold">Name
-                                                                                of Representative *</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="representative_name"
-                                                                                name="representative_name" required
-                                                                                placeholder="John Doe">
-                                                                        </div>
-                                                                        <div class="col-md-4 mb-3">
-                                                                            <label for="contact_number"
-                                                                                class="form-label font-weight-bold">Contact
-                                                                                Number *</label>
-                                                                            <input type="tel" class="form-control"
-                                                                                id="contact_number" name="contact_number"
-                                                                                required placeholder="+65 xxxx xxxx">
-                                                                        </div>
-                                                                        <div class="col-md-4 mb-3">
-                                                                            <label for="email_address"
-                                                                                class="form-label font-weight-bold">E-mail
-                                                                                Address *</label>
-                                                                            <input type="email" class="form-control"
-                                                                                id="email_address" name="email_address"
-                                                                                required placeholder="name@company.com">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <hr class="my-4">
-
-                                                                    <!-- Service Details -->
-                                                                    <div class="row">
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="start_date"
-                                                                                class="form-label font-weight-bold">Estimated
-                                                                                Start Date *</label>
-                                                                            <input type="date" class="form-control"
-                                                                                id="start_date" name="start_date"
-                                                                                required>
-                                                                        </div>
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="estimated_budget"
-                                                                                class="form-label font-weight-bold">Estimated
-                                                                                Budget per month</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="estimated_budget"
-                                                                                name="estimated_budget"
-                                                                                placeholder="e.g. $1,500">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="row">
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="cleaning_days_per_week"
-                                                                                class="form-label font-weight-bold">No.
-                                                                                of cleaning days required per
-                                                                                week *</label>
-                                                                            <input type="number" class="form-control"
-                                                                                id="cleaning_days_per_week"
-                                                                                name="cleaning_days_per_week"
-                                                                                min="1" max="7" required
-                                                                                placeholder="e.g. 5">
-                                                                        </div>
-                                                                        <div class="col-md-6 mb-3">
-                                                                            <label for="hours_per_session"
-                                                                                class="form-label font-weight-bold">No.
-                                                                                of hours per cleaning session
-                                                                                *</label>
-                                                                            <input type="number" step="0.5"
-                                                                                class="form-control"
-                                                                                id="hours_per_session"
-                                                                                name="hours_per_session" min="0.5"
-                                                                                required placeholder="e.g. 3">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="mb-3">
-                                                                        <label for="special_requirements"
-                                                                            class="form-label font-weight-bold">Any
-                                                                            other special requirements</label>
-                                                                        <textarea class="form-control" id="special_requirements" name="special_requirements" rows="3"
-                                                                            placeholder="Tell us if you need specific equipment, eco-friendly products, etc."></textarea>
-                                                                    </div>
-
-                                                                    <div class="text-end mt-4">
-                                                                        <button type="button"
-                                                                            class="btn btn-secondary me-2"
-                                                                            data-bs-dismiss="modal">Close</button>
-                                                                        <button type="submit"
-                                                                            class="btn btn-warning font-weight-bold px-4">Submit
-                                                                            Request</button>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
                                                 <div class="col-lg-6 mt-30">
                                                     <div class="hero__right pos-rel">
@@ -892,10 +714,10 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Commercial Cleaning</a>
+                                                    <h3><a href={{ url('/pages/commercial-cleaning') }}>Commercial Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/project-detail') }}><i
+                                                    <a class="project__action" href={{ url('/pages/commercial-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">
@@ -918,9 +740,9 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Office Cleaning</a></h3>
+                                                    <h3><a href={{ url('/pages/office-cleaning') }}>Office Cleaning</a></h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/project-detail') }}><i
+                                                    <a class="project__action" href={{ url('/pages/office-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">02</span>
@@ -936,10 +758,10 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Healthcare Cleaning</a>
+                                                    <h3><a href={{ url('/pages/healthcare-cleaning') }}>Healthcare Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/project-detail') }}><i
+                                                    <a class="project__action" href={{ url('/pages/healthcare-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">03</span>
@@ -955,10 +777,10 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Institutional Cleaning</a>
+                                                    <h3><a href={{ url('/pages/institution-cleaning') }}>Institutional Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/project-detail') }}><i
+                                                    <a class="project__action" href={{ url('/pages/institution-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">04</span>
@@ -975,10 +797,10 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/project-detail') }}>Hotel Housekeeping
+                                                    <h3><a href={{ url('/pages/hotel-housekeeping-services') }}>Hotel Housekeeping
                                                             Services</a></h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/project-detail') }}><i
+                                                    <a class="project__action" href={{ url('/pages/hotel-housekeeping-services') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">05</span>
@@ -1030,7 +852,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-scrubbing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> Floor
+                                                                href="{{ url('/pages/floor-scrubbing') }}"><strong> Floor
                                                                     Scrubbing</strong></a></h3>
                                                         <p>Beyond regular mopping, clean off embedded dirt from your
                                                             flooring surfaces</p>
@@ -1040,7 +862,7 @@
                                                             <li>Reduce unpleasant odours</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/floor-scrubbing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1049,7 +871,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/landscape-management.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                href="{{ url('/pages/landscape-management') }}"><strong>
                                                                     Landscape
                                                                     Management</strong></a></h3>
                                                         <p>Healthy landscapes improve air quality!</p>
@@ -1059,7 +881,7 @@
                                                             <li>Reduce breeding of insects, rodents & pests</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/landscape-management') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -1069,7 +891,7 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/electrical-works.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                href="{{ url('/pages/electrical-works') }}"><strong>
                                                                     Electrical
                                                                     Works</strong></a></h3>
                                                         <p>Ensuring safe & efficient electrical systems with professional
@@ -1081,7 +903,7 @@
                                                             <li>Troubleshooting and repair of electrical issues</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/electrical-works') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1090,7 +912,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/robot-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> Robotic
+                                                                href="{{ url('/pages/robotic-cleaning') }}"><strong> Robotic
                                                                     Cleaning</strong></a></h3>
                                                         <p>Improve productivity with minimal manual intervention</p>
                                                         <ul class="service__list list-unstyled">
@@ -1099,7 +921,7 @@
                                                             <li>Consistent cleaning performance</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/robotic-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1108,7 +930,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/anti-microbial-service.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                href="{{ url('/pages/anti-microbial') }}"><strong>
                                                                     Anti-Microbial
                                                                     Service</strong></a></h3>
                                                         <p>Give germs less room to stay with a protective service that helps
@@ -1120,7 +942,7 @@
                                                             <li>Promotes a healthier environment</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/anti-microbial') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -1130,7 +952,7 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/jetwash.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> High
+                                                                href="{{ url('/pages/high-pressure-jetwash') }}"><strong> High
                                                                     Pressure<br>
                                                                     Jet Washing</strong></a></h3>
                                                         <p>Make powerful washes to remove slippery substances, reducing
@@ -1141,7 +963,7 @@
                                                                 areas</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/high-pressure-jetwash') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -1150,7 +972,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/carpet-shampoo.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> Carpet
+                                                                href="{{ url('/pages/carpet-cleaning') }}"><strong> Carpet
                                                                     Cleaning</strong></a></h3>
                                                         <p>Refresh & revitalize dull carpet fibres with a deep cleaning
                                                             session!</p>
@@ -1160,7 +982,7 @@
                                                             </li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/carpet-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1169,7 +991,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/disinfecting-services.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong>
+                                                                href="{{ url('/pages/disinfecting-services') }}"><strong>
                                                                     Disinfecting
                                                                     Services</strong></a></h3>
                                                         <p>Disinfecting Services
@@ -1183,7 +1005,7 @@
                                                             </li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/disinfecting-services') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -1192,7 +1014,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-polishing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> Floor
+                                                                href="{{ url('/pages/floor-polishing') }}"><strong> Floor
                                                                     Polishing</strong></a></h3>
                                                         <p>Create lasting impressions from ground up – enhance and protect
                                                             your flooring surfaces through floor polishing!</p>
@@ -1202,7 +1024,7 @@
                                                                 granite, concrete, terrazzo</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/floor-polishing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1211,7 +1033,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/pest-control-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/project-detail') }}"><strong> Pest
+                                                                href="{{ url('/pages/pest-control') }}"><strong> Pest
                                                                     Control</strong></a></h3>
                                                         <p>Protect your environment and employees from infestations that
                                                             affect hygiene, safety and property conditions</p>
@@ -1222,7 +1044,7 @@
                                                             <li>Elimination of insects & rodents</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/project-detail') }}"><i
+                                                            href="{{ url('/pages/pest-control') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
                                                 </div>
@@ -1727,11 +1549,11 @@
                                                                 <div class="tab-info__wrap">
                                                                     <!-- F - FAIRNESS: Keadilan, kesetaraan, privasi/keamanan hak -->
                                                                     <div class="tab-info__item d-flex">
-                                                                        <div class="icon">
-                                                                            <i class="flaticon-privacy"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                       <div class="icon">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/fairness.png') }}"
+                                                                                    alt="F – FAIRNESS">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>F – FAIRNESS</h3>
@@ -1743,10 +1565,10 @@
                                                                     <!-- A - ACCOUNTABILITY: Tanggung jawab, jaminan, garansi -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i class="flaticon-insurance"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/accountability.png') }}"
+                                                                                    alt="A – ACCOUNTABILITY">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>A – ACCOUNTABILITY</h3>
@@ -1756,11 +1578,11 @@
 
                                                                     <!-- M - MASTERY: Keahlian tinggi, portofolio kerja profesional -->
                                                                     <div class="tab-info__item d-flex">
-                                                                        <div class="icon">
-                                                                            <i class="flaticon-portfolio"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                       <div class="icon">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/mastery.png') }}"
+                                                                                    alt="M – MASTERY">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>M – MASTERY</h3>
@@ -1772,11 +1594,11 @@
 
                                                                     <!-- I² - INTEGRITY & INITIATIVE: Tindakan pembersihan data/proses yang jujur & proaktif -->
                                                                     <div class="tab-info__item d-flex">
-                                                                        <div class="icon">
-                                                                            <i class="flaticon-data-cleaning"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                       <div class="icon">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/integrity-initiative.png') }}"
+                                                                                    alt="I² - INTEGRITY & INITIATIVE">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>I² - INTEGRITY & INITIATIVE</h3>
@@ -1786,11 +1608,11 @@
 
                                                                     <!-- L - LIFELONG LEARNING: Pengingat/reminder untuk terus berkembang dan belajar -->
                                                                     <div class="tab-info__item d-flex">
-                                                                        <div class="icon">
-                                                                            <i class="flaticon-reminder"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                       <div class="icon">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/lifelong-learning.png') }}"
+                                                                                    alt="L – LIFELONG LEARNING">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>L – LIFELONG LEARNING</h3>
@@ -1802,11 +1624,11 @@
 
                                                                     <!-- Y - YOU: Kepuasan klien, kepedulian utama -->
                                                                     <div class="tab-info__item d-flex">
-                                                                        <div class="icon">
-                                                                            <i class="flaticon-thumbs-up"></i>
-                                                                            <img decoding="async"
-                                                                                src="{{ asset('assets/img/widgets/4-tab-info/a_shape.svg') }}"
-                                                                                alt="">
+                                                                       <div class="icon">
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/you.png') }}"
+                                                                                    alt="Y – YOU">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3>Y – YOU</h3>

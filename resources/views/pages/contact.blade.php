@@ -1,14 +1,20 @@
 @extends('layouts.app')
 
 @section('title', 'Contact – Fresh Cleaning Facilities Management')
-@section('meta_description', 'Get in touch with Fresh Cleaning Facilities Management. Contact us at 18 Sin Ming Lane, #06-27, Midview City, Singapore 573960, call +65 8333 2999, or email hello@fcfm.sg for a free quote.')
-@section('meta_keywords', 'contact fcfm, cleaning company contact singapore, get a quote cleaning services, fresh cleaning facilities management contact')
-@section('body_class', 'wp-singular page-template page-template-elementor_header_footer page page-id-429 wp-theme-clinox ehf-template-clinox ehf-stylesheet-clinox elementor-default elementor-template-full-width elementor-kit-1756 elementor-page elementor-page-429')
+@section('meta_description',
+    'Get in touch with Fresh Cleaning Facilities Management. Contact us at 18 Sin Ming Lane,
+    #06-27, Midview City, Singapore 573960, call +65 8333 2999, or email hello@fcfm.sg for a free quote.')
+@section('meta_keywords',
+    'contact fcfm, cleaning company contact singapore, get a quote cleaning services, fresh
+    cleaning facilities management contact')
+@section('body_class',
+    'wp-singular page-template page-template-elementor_header_footer page page-id-429 wp-theme-clinox
+    ehf-template-clinox ehf-stylesheet-clinox elementor-default elementor-template-full-width elementor-kit-1756
+    elementor-page elementor-page-429')
 @section('elementor_post_id', 429)
 
 @push('elementor-post-css')
-    <link rel='stylesheet' id='elementor-post-429-css' href='{{ asset('assets/css/elementor/post-429.css') }}'
-        media='all' />
+    <link rel='stylesheet' id='elementor-post-429-css' href='{{ asset('assets/css/elementor/post-429.css') }}' media='all' />
 @endpush
 
 @section('content')
@@ -23,8 +29,7 @@
                         data-id="55f0e7f" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
                             <div class="elementor-element elementor-element-7f53d3c elementor-widget elementor-widget-clenfix-breadcrumb"
-                                data-id="7f53d3c" data-element_type="widget"
-                                data-widget_type="clenfix-breadcrumb.default">
+                                data-id="7f53d3c" data-element_type="widget" data-widget_type="clenfix-breadcrumb.default">
                                 <div class="elementor-widget-container">
 
                                     <section id="clenix-breadcrumb"
@@ -61,7 +66,8 @@
                                 data-widget_type="clenfix-booking-form.default">
                                 <div class="elementor-widget-container">
 
-                                    <section id="clenix-booking-form" class="clenix-booking-form-section page-section-padding">
+                                    <section id="clenix-booking-form"
+                                        class="clenix-booking-form-section page-section-padding">
                                         <div class="container">
                                             <div class="booking-form-content">
                                                 <div class="row">
@@ -70,8 +76,8 @@
                                                             <div class="clenix-faq-img-wrap position-relative">
                                                                 <span class="bg-shape position-absolute"></span>
                                                                 <div class="faq-img1 bg-img-area">
-                                                                    <img fetchpriority="high" decoding="async" width="2560"
-                                                                        height="1920"
+                                                                    <img fetchpriority="high" decoding="async"
+                                                                        width="2560" height="1920"
                                                                         src="{{ asset('assets/img/uploads/2025/10/img_8312-scaled.jpg') }}"
                                                                         class="attachment-full size-full" alt=""
                                                                         srcset="{{ asset('assets/img/uploads/2025/10/img_8312-scaled.jpg') }} 2560w, {{ asset('assets/img/uploads/2025/10/img_8312-300x225.jpg') }} 300w, {{ asset('assets/img/uploads/2025/10/img_8312-1024x768.jpg') }} 1024w, {{ asset('assets/img/uploads/2025/10/img_8312-768x576.jpg') }} 768w, {{ asset('assets/img/uploads/2025/10/img_8312-1536x1152.jpg') }} 1536w, {{ asset('assets/img/uploads/2025/10/img_8312-2048x1536.jpg') }} 2048w"
@@ -96,12 +102,14 @@
                                                                     </p>
                                                                     <ul></ul>
                                                                 </div>
-                                                                <form class="wpcf7-form init" action="{{ url('/pages/contact') }}"
-                                                                    method="POST" aria-label="Contact form" novalidate="novalidate"
+                                                                <form class="wpcf7-form init"
+                                                                    action="{{ url('/pages/contact') }}" method="POST"
+                                                                    aria-label="Contact form" novalidate="novalidate"
                                                                     data-status="init">
                                                                     @csrf
                                                                     <fieldset class="hidden-fields-container">
-                                                                        <input type="hidden" name="_wpcf7" value="5" />
+                                                                        <input type="hidden" name="_wpcf7"
+                                                                            value="5" />
                                                                         <input type="hidden" name="_wpcf7_version"
                                                                             value="6.1.1" />
                                                                         <input type="hidden" name="_wpcf7_locale"
@@ -111,14 +119,15 @@
                                                                         <input type="hidden" name="_wpcf7_container_post"
                                                                             value="429" />
                                                                         <input type="hidden"
-                                                                            name="_wpcf7_posted_data_hash" value="" />
+                                                                            name="_wpcf7_posted_data_hash"
+                                                                            value="" />
                                                                     </fieldset>
                                                                     <div class="clenix-contact-form">
                                                                         <div class="row">
                                                                             <div class="col-md-6"><span
                                                                                     class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-name"><input size="40"
-                                                                                        maxlength="400"
+                                                                                    data-name="your-name"><input
+                                                                                        size="40" maxlength="400"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
@@ -127,18 +136,18 @@
                                                                                         name="your-name" /></span></div>
                                                                             <div class="col-md-6"><span
                                                                                     class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-email"><input size="40"
-                                                                                        maxlength="400"
+                                                                                    data-name="your-email"><input
+                                                                                        size="40" maxlength="400"
                                                                                         class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Email*" value=""
-                                                                                        type="email"
+                                                                                        placeholder="Email*"
+                                                                                        value="" type="email"
                                                                                         name="your-email" /></span></div>
                                                                             <div class="col-md-6"><span
                                                                                     class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-phone"><input size="40"
-                                                                                        maxlength="400"
+                                                                                    data-name="your-phone"><input
+                                                                                        size="40" maxlength="400"
                                                                                         class="wpcf7-form-control wpcf7-text"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Phone" value=""
@@ -161,13 +170,10 @@
                                                                                     </select></span></div>
                                                                             <div class="col-md-12"><span
                                                                                     class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-subject"><textarea
-                                                                                        cols="40" rows="10"
-                                                                                        maxlength="2000"
-                                                                                        class="wpcf7-form-control wpcf7-textarea"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Message"
-                                                                                        name="your-subject"></textarea></span>
+                                                                                    data-name="your-subject">
+                                                                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea"
+                                                                                        aria-invalid="false" placeholder="Message" name="your-subject"></textarea>
+                                                                                </span>
                                                                             </div>
                                                                             <div class="col-md-12"><input
                                                                                     class="wpcf7-form-control wpcf7-submit has-spinner"
@@ -175,8 +181,8 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="wpcf7-response-output"
-                                                                        aria-hidden="true"></div>
+                                                                    <div class="wpcf7-response-output" aria-hidden="true">
+                                                                    </div>
                                                                 </form>
                                                             </div>
                                                         </div>
@@ -188,13 +194,33 @@
                                                         <h2>Fresh Cleaning Facilities Management Pte Ltd</h2>
                                                     </div>
                                                     <div class="row justify-content-center">
+                                                        <style>
+                                                            .booking-cta-item {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                /* Rata tengah secara vertikal */
+                                                                justify-content: center;
+                                                                /* Rata tengah secara horizontal */
+                                                                height: 100%;
+                                                                /* Agar semua kotak memiliki tinggi yang seimbang */
+                                                                padding: 25px 15px;
+                                                                /* Memberikan ruang udara di dalam kotak */
+                                                            }
 
+                                                            /* Menghilangkan tag <br><br><br> kosong agar tidak merusak posisi tengah */
+                                                            .inner-text br:last-child {
+                                                                display: none;
+                                                            }
+                                                        </style>
+                                                        <!-- BOX 1: Office Address -->
                                                         <div class="col-lg-4 col-md-6">
-                                                            <div class="booking-cta-item d-flex">
-                                                                <div class="inner-icon">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
                                                                     <img decoding="async" width="55" height="49"
                                                                         src="{{ asset('assets/img/uploads/2022/05/ic15.png') }}"
-                                                                        class="attachment-full size-full" alt="" />
+                                                                        class="attachment-full size-full" alt=""
+                                                                        style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
                                                                 </div>
                                                                 <div class="inner-text headline">
                                                                     <h4>Office Address:</h4>
@@ -205,34 +231,42 @@
                                                             </div>
                                                         </div>
 
+                                                        <!-- BOX 2: Mail Us -->
                                                         <div class="col-lg-4 col-md-6">
-                                                            <div class="booking-cta-item d-flex">
-                                                                <div class="inner-icon">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
                                                                     <img decoding="async" width="56" height="44"
                                                                         src="{{ asset('assets/img/uploads/2022/05/ic16.png') }}"
-                                                                        class="attachment-full size-full" alt="" />
+                                                                        class="attachment-full size-full" alt=""
+                                                                        style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
                                                                 </div>
                                                                 <div class="inner-text headline">
                                                                     <h4>Mail Us</h4>
-                                                                    <span>hello@fcfm.sg</span><br><br><br>
+                                                                    <span>hello@fcfm.sg</span>
                                                                 </div>
                                                             </div>
                                                         </div>
 
+                                                        <!-- BOX 3: Telephone -->
                                                         <div class="col-lg-4 col-md-6">
-                                                            <div class="booking-cta-item d-flex">
-                                                                <div class="inner-icon">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
                                                                     <img decoding="async" width="45" height="45"
                                                                         src="{{ asset('assets/img/uploads/2022/05/ic17.png') }}"
-                                                                        class="attachment-full size-full" alt="" />
+                                                                        class="attachment-full size-full" alt=""
+                                                                        style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
                                                                 </div>
                                                                 <div class="inner-text headline">
                                                                     <h4>Telephone</h4>
-                                                                    <span>+65 8333 2999</span><br><br><br>
+                                                                    <span>+65 8333 2999</span>
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>

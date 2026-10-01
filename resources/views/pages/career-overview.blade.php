@@ -255,91 +255,79 @@
 
                                                 </div>
 
+                                                    <div class="row justify-content-center">
+                                                        <style>
+                                                            .booking-cta-item {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                /* Rata tengah secara vertikal */
+                                                                justify-content: center;
+                                                                /* Rata tengah secara horizontal */
+                                                                height: 100%;
+                                                                /* Agar semua kotak memiliki tinggi yang seimbang */
+                                                                padding: 25px 15px;
+                                                                /* Memberikan ruang udara di dalam kotak */
+                                                            }
 
-                                                <div class="row justify-content-center">
-
-
-                                                    <div class="col-lg-4 col-md-6">
-
-                                                        <div class="booking-cta-item d-flex">
-
-                                                            <div class="inner-icon">
-
-                                                                <img decoding="async" width="55" height="49"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic15.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
-
+                                                            /* Menghilangkan tag <br><br><br> kosong agar tidak merusak posisi tengah */
+                                                            .inner-text br:last-child {
+                                                                display: none;
+                                                            }
+                                                        </style>
+                                                        <!-- BOX 1: Office Address -->
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
+                                                                    <img decoding="async" width="55" height="49"
+                                                                        src="{{ asset('assets/img/uploads/2022/05/ic15.png') }}"
+                                                                        class="attachment-full size-full"
+                                                                        alt="" style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
+                                                                </div>
+                                                                <div class="inner-text headline">
+                                                                    <h4>Office Address:</h4>
+                                                                    18 Sin Ming Lane, <br>
+                                                                    #06-27, Midview City, <br>
+                                                                    Singapore 573960
+                                                                </div>
                                                             </div>
+                                                        </div>
 
-                                                            <div class="inner-text headline">
-
-                                                                <h4>Office Address:</h4>
-
-                                                                18 Sin Ming Lane, <br>
-                                                                #06-27, Midview City, <br>
-                                                                Singapore 573960
-
+                                                        <!-- BOX 2: Mail Us -->
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
+                                                                    <img decoding="async" width="56" height="44"
+                                                                        src="{{ asset('assets/img/uploads/2022/05/ic16.png') }}"
+                                                                        class="attachment-full size-full"
+                                                                        alt="" style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
+                                                                </div>
+                                                                <div class="inner-text headline">
+                                                                    <h4>Mail Us</h4>
+                                                                    <span>hello@fcfm.sg</span>
+                                                                </div>
                                                             </div>
+                                                        </div>
 
+                                                        <!-- BOX 3: Telephone -->
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div
+                                                                class="booking-cta-item d-flex align-items-center justify-content-center">
+                                                                <div class="inner-icon me-3">
+                                                                    <img decoding="async" width="45" height="45"
+                                                                        src="{{ asset('assets/img/uploads/2022/05/ic17.png') }}"
+                                                                        class="attachment-full size-full"
+                                                                        alt="" style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
+                                                                </div>
+                                                                <div class="inner-text headline">
+                                                                    <h4>Telephone</h4>
+                                                                    <span>+65 8333 2999</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
-
-
-                                                    <div class="col-lg-4 col-md-6">
-
-                                                        <div class="booking-cta-item d-flex">
-
-                                                            <div class="inner-icon">
-
-                                                                <img decoding="async" width="56" height="44"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic16.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
-
-                                                            </div>
-
-                                                            <div class="inner-text headline">
-
-                                                                <h4>Mail Us</h4>
-
-                                                                <span>hello@fcfm.sg</span>
-                                                                <br><br><br>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
-                                                    <div class="col-lg-4 col-md-6">
-
-                                                        <div class="booking-cta-item d-flex">
-
-                                                            <div class="inner-icon">
-
-                                                                <img decoding="async" width="45" height="45"
-                                                                    src="{{ asset('assets/img/uploads/2022/05/ic17.png') }}"
-                                                                    class="attachment-full size-full" alt="" />
-
-                                                            </div>
-
-                                                            <div class="inner-text headline">
-
-                                                                <h4>Telephone</h4>
-
-                                                                <span>+65 8333 2999</span>
-                                                                <br><br><br>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
-                                                </div>
-
                                             </div>
 
                                         </div>

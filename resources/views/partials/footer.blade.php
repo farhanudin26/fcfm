@@ -259,8 +259,9 @@
 
                                         <!-- ============================
                                              COLUMN 3: EXPLORE
+                                             (offset-lg-1 = geser ke kanan)
                                         ============================= -->
-                                        <div class="col-lg-3 col-md-6 footer__col mt-30">
+                                        <div class="col-lg-3 offset-lg-1 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <h3><b>Explore</b></h3>
 
@@ -324,8 +325,9 @@
 
                                         <!-- ============================
                                              COLUMN 4: (reserved - awards / instagram)
+                                             (dikecilkan jadi col-lg-2 supaya total = 12 kolom)
                                         ============================= -->
-                                        <div class="col-lg-3 col-md-6 footer__col mt-30">
+                                        <div class="col-lg-2 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <div class="footer__awards"></div>
                                                 <div class="footer__instagram d-flex"></div>
