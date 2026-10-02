@@ -90,9 +90,7 @@
                                                         <div class="clenix-contact-form-wrap">
                                                             <div class="clenix-section-title headline pera-content">
                                                                 <span class="sub-title"></span>
-                                                                <h2>Have Any
-                                                                    <span>Question?</span>
-                                                                </h2>
+                                                                <h2>Have Any <span>Question?</span></h2>
                                                             </div>
 
                                                             <div class="wpcf7 no-js" id="wpcf7-f5-p429-o1" lang="en-US"
@@ -102,6 +100,7 @@
                                                                     </p>
                                                                     <ul></ul>
                                                                 </div>
+
                                                                 <form class="wpcf7-form init"
                                                                     action="{{ url('/pages/contact') }}" method="POST"
                                                                     aria-label="Contact form" novalidate="novalidate"
@@ -122,65 +121,80 @@
                                                                             name="_wpcf7_posted_data_hash"
                                                                             value="" />
                                                                     </fieldset>
+
                                                                     <div class="clenix-contact-form">
                                                                         <div class="row">
-                                                                            <div class="col-md-6"><span
-                                                                                    class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-name"><input
-                                                                                        size="40" maxlength="400"
+                                                                            <!-- 1. Name (Lebih Panjang / Full Width) -->
+                                                                            <div class="col-md-12">
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="your-name">
+                                                                                    <input size="40" maxlength="400"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Name*" value=""
+                                                                                        type="text" name="your-name" />
+                                                                                </span>
+                                                                            </div>
+
+                                                                            <!-- 2. Phone (Sebelah Kiri) -->
+                                                                            <div class="col-md-6">
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="your-phone">
+                                                                                    <input size="40" maxlength="400"
+                                                                                        class="wpcf7-form-control wpcf7-text"
+                                                                                        aria-invalid="false"
+                                                                                        placeholder="Phone" value=""
                                                                                         type="text"
-                                                                                        name="your-name" /></span></div>
-                                                                            <div class="col-md-6"><span
-                                                                                    class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-email"><input
-                                                                                        size="40" maxlength="400"
+                                                                                        name="your-phone" />
+                                                                                </span>
+                                                                            </div>
+
+                                                                            <!-- 2. Email (Sebelah Kanan) -->
+                                                                            <div class="col-md-6">
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="your-email">
+                                                                                    <input size="40" maxlength="400"
                                                                                         class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Email*"
                                                                                         value="" type="email"
-                                                                                        name="your-email" /></span></div>
-                                                                            <div class="col-md-6"><span
-                                                                                    class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-phone"><input
-                                                                                        size="40" maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-text"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Phone" value=""
-                                                                                        type="text"
-                                                                                        name="your-phone" /></span></div>
-                                                                            <div class="col-md-6"><span
-                                                                                    class="wpcf7-form-control-wrap"
-                                                                                    data-name="services"><select
-                                                                                        class="wpcf7-form-control wpcf7-select"
-                                                                                        aria-invalid="false"
-                                                                                        name="services">
-                                                                                        <option value="Choose Services">
-                                                                                            Choose Services</option>
-                                                                                        <option value="Cleaning Service">
-                                                                                            Cleaning Service</option>
-                                                                                        <option value="Glass Cleaning">
-                                                                                            Glass Cleaning</option>
-                                                                                        <option value="Room Cleaning">
-                                                                                            Room Cleaning</option>
-                                                                                    </select></span></div>
-                                                                            <div class="col-md-12"><span
-                                                                                    class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-subject">
-                                                                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea"
-                                                                                        aria-invalid="false" placeholder="Message" name="your-subject"></textarea>
+                                                                                        name="your-email" />
                                                                                 </span>
                                                                             </div>
-                                                                            <div class="col-md-12"><input
+
+                                                                            <!-- 3. Subject (Input Text Full Width) -->
+                                                                            <div class="col-md-12">
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="your-subject">
+                                                                                    <input size="40" maxlength="400"
+                                                                                        class="wpcf7-form-control wpcf7-text"
+                                                                                        aria-invalid="false"
+                                                                                        placeholder="Subject"
+                                                                                        value="" type="text"
+                                                                                        name="your-subject" />
+                                                                                </span>
+                                                                            </div>
+
+                                                                            <!-- 4. Message (Textarea Full Width) -->
+                                                                            <div class="col-md-12">
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="your-message">
+                                                                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea"
+                                                                                        aria-invalid="false" placeholder="Message" name="your-message"></textarea>
+                                                                                </span>
+                                                                            </div>
+
+                                                                            <!-- Tombol Submit -->
+                                                                            <div class="col-md-12">
+                                                                                <input
                                                                                     class="wpcf7-form-control wpcf7-submit has-spinner"
                                                                                     type="submit" value="Submit Now" />
                                                                             </div>
                                                                         </div>
                                                                     </div>
+
                                                                     <div class="wpcf7-response-output" aria-hidden="true">
                                                                     </div>
                                                                 </form>

@@ -119,9 +119,9 @@
                     </div>
                 </div>
             </section>
-            <!-- Tambahkan sedikit CSS custom ini di file stylesheet Anda atau di dalam tag <style> -->
+            <!-- Style CSS Custom -->
             <style>
-                /* Menyamakan tinggi seluruh kartu pada baris yang sama */
+                /* Layout Grid Kartu */
                 .clenix-service-feature-content .row {
                     display: flex;
                     flex-wrap: wrap;
@@ -131,201 +131,427 @@
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 30px;
-                    /* Jarak antar baris kartu */
                 }
 
-                .clenix-service-feature-items {
+                /* Styling Kartu Ringkas */
+                .role-card-item {
+                    background: #2b88d8;
+                    /* Warna biru sesuai gambar Anda */
+                    color: #ffffff;
+                    border-radius: 12px;
+                    padding: 30px;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    cursor: pointer;
+                    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+                    position: relative;
+                    overflow: hidden;
                 }
 
-                .clenix-service-feature-text {
-                    height: 100%;
+                .role-card-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                    background: #2175be;
+                }
+
+                .role-card-title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: #ffffff;
+                }
+
+                .role-meta-group {
+                    margin-bottom: 12px;
+                    font-size: 15px;
+                    line-height: 1.5;
+                }
+
+                .role-meta-label {
+                    font-weight: 700;
+                    display: block;
+                    margin-bottom: 3px;
+                    color: #ffffff;
+                }
+
+                .role-meta-value {
+                    margin: 0;
+                    opacity: 0.95;
+                }
+
+                /* Tautan Pemicu Pop-up di Bagian Bawah Kartu */
+                .role-click-trigger {
+                    margin-top: 20px;
+                    padding-top: 15px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.25);
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #ffffff;
                 }
 
-                /* Mendorong informasi lokasi & employment type ke paling bawah kartu */
-                .clenix-service-feature-text ul {
-                    flex-grow: 1;
+                .role-click-trigger i {
+                    font-size: 16px;
+                    transition: transform 0.2s ease;
+                }
+
+                .role-card-item:hover .role-click-trigger i {
+                    transform: translateX(5px);
+                }
+
+                /* =======================================
+                   STYLING POP-UP MODAL
+                ======================================= */
+                .role-modal-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.65);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 99999;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    padding: 20px;
+                }
+
+                .role-modal-overlay.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .role-modal-container {
+                    background: #ffffff;
+                    color: #333333;
+                    width: 100%;
+                    max-width: 650px;
+                    max-height: 85vh;
+                    border-radius: 16px;
+                    overflow-y: auto;
+                    padding: 30px;
+                    position: relative;
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                    transform: scale(0.85);
+                    transition: transform 0.3s ease;
+                }
+
+                .role-modal-overlay.active .role-modal-container {
+                    transform: scale(1);
+                }
+
+                .role-modal-close {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    background: #f1f3f5;
+                    border: none;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #555;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background 0.2s;
+                }
+
+                .role-modal-close:hover {
+                    background: #e2e6ea;
+                    color: #000;
+                }
+
+                .role-modal-title {
+                    font-size: 26px;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    margin-bottom: 5px;
+                }
+
+                .role-modal-subtitle {
+                    font-size: 15px;
+                    color: #666666;
+                    margin-bottom: 20px;
+                    font-style: italic;
+                }
+
+                /* List Poin Pekerjaan (Ceklis Modal) */
+                .role-modal-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .role-modal-list li {
+                    position: relative;
+                    padding-left: 32px;
+                    margin-bottom: 12px;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #444444;
+                }
+
+                /* Ikon Ceklis */
+                .role-modal-list li::before {
+                    content: '✓';
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    width: 22px;
+                    height: 22px;
+                    background-color: #2b88d8;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    font-weight: bold;
                 }
             </style>
 
-            <div class="elementor-element elementor-element-0c7e822 e-flex e-con-boxed e-con e-parent" data-id="0c7e822"
-                data-element_type="container">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-7eedee8 elementor-widget elementor-widget-clenfix-service-feature"
-                        data-id="7eedee8" data-element_type="widget" data-widget_type="clenfix-service-feature.default">
-                        <div class="elementor-widget-container">
-                            <section id="clenix-service-feature" class="clenix-service-feature-section">
-                                <div class="container">
-                                    <div class="clenix-service-feature-content">
-                                        <div class="row">
+            <!-- Structure HTML Utama -->
+            <section id="clenix-service-feature" class="clenix-service-feature-section">
+                <div class="container">
+                    <div class="clenix-service-feature-content">
+                        <div class="row">
 
-                                            <!-- KARTU 1: Team Lead / Supervisor -->
-                                            <div class="col-lg-6">
-                                                <div class="clenix-service-feature-items headline pera-content ul-li-block position-relative"
-                                                    data-background="{{ asset('assets/img/elementor-placeholder.png') }}">
-                                                    <div class="background_overlay"></div>
-                                                    <div class="clenix-service-feature-text position-relative">
-                                                        <h3>Team Lead / Supervisor</h3>
-                                                        <p>What your day may look like..</p>
-                                                        <ul>
-                                                            <li>Coordinating and assigning daily cleaning duties</li>
-                                                            <li>Checking that cleaning standards and site requirements are
-                                                                met</li>
-                                                            <li>Guiding, supporting and training team members where needed
-                                                            </li>
-                                                            <li>Helping new employees understand their assigned duties and
-                                                                site routines</li>
-                                                            <li>Monitoring attendance and highlighting manpower shortages or
-                                                                operational issues</li>
-                                                            <li>Checking cleaning supplies and equipment and arranging
-                                                                replenishment when required</li>
-                                                            <li>Reporting maintenance, equipment or site issues to the
-                                                                relevant team</li>
-                                                            <li>Communicating with Operations and clients on day-to-day site
-                                                                matters</li>
-                                                            <li>Supporting cleaning duties when additional assistance is
-                                                                required</li>
-                                                            <li>Ensuring the team follows company procedures, safety
-                                                                requirements and site guidelines</li>
-                                                        </ul>
-                                                        <div class="meta-bottom mt-auto pt-3">
-                                                            <p>General Work Location: Islandwide / Based on assigned site
-                                                            </p>
-                                                            <p>Employment Type: Full-Time</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <!-- KARTU 1: Team Lead / Supervisor -->
+                            <div class="col-lg-6">
+                                <div class="role-card-item" onclick="openRoleModal('modal-team-lead')">
+                                    <div>
+                                        <h3 class="role-card-title">Team Lead / Supervisor</h3>
 
-                                            <!-- KARTU 2: Cleaning Specialist -->
-                                            <div class="col-lg-6">
-                                                <div class="clenix-service-feature-items headline pera-content ul-li-block position-relative"
-                                                    data-background="{{ asset('assets/img/elementor-placeholder.png') }}">
-                                                    <div class="background_overlay"></div>
-                                                    <div class="clenix-service-feature-text position-relative">
-                                                        <h3>Cleaning Specialist</h3>
-                                                        <p>What your day may look like…</p>
-                                                        <ul>
-                                                            <li>Starting your day by preparing the tools and supplies needed
-                                                                for your assigned area</li>
-                                                            <li>Keeping work areas, washrooms and common spaces clean,
-                                                                comfortable and presentable</li>
-                                                            <li>Replenishing cleaning supplies and ensuring essential items
-                                                                are available</li>
-                                                            <li>Taking care of your assigned area independently or working
-                                                                alongside a team, depending on the site</li>
-                                                            <li>Keeping an eye out for maintenance or site issues and
-                                                                reporting them when needed</li>
-                                                            <li>Learning different cleaning methods, equipment and site
-                                                                requirements as you gain experience</li>
-                                                        </ul>
-                                                        <div class="meta-bottom mt-auto pt-3">
-                                                            <p>General Work Location: Islandwide / Based on assigned site
-                                                            </p>
-                                                            <p>Employment Type: Full-Time / Part-Time</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">General Work Location:</span>
+                                            <p class="role-meta-value">Islandwide / Based on assigned site</p>
+                                        </div><br>
 
-                                            <!-- KARTU 3: Operations Manager -->
-                                            <div class="col-lg-6">
-                                                <div class="clenix-service-feature-items headline pera-content ul-li-block position-relative"
-                                                    data-background="{{ asset('assets/img/elementor-placeholder.png') }}">
-                                                    <div class="background_overlay"></div>
-                                                    <div class="clenix-service-feature-text position-relative">
-                                                        <h3>Operations Manager</h3>
-                                                        <p>What your day may look like…</p>
-                                                        <ul>
-                                                            <li>Planning and coordinating manpower deployment across
-                                                                assigned sites</li>
-                                                            <li>Checking staffing levels, attendance and operational
-                                                                coverage</li>
-                                                            <li>Visiting sites to review cleaning standards and overall
-                                                                performance</li>
-                                                            <li>Guiding and supporting Team Leads and Supervisors</li>
-                                                            <li>Following up on manpower shortages, urgent replacements and
-                                                                operational issues</li>
-                                                            <li>Communicating with clients on service requirements, feedback
-                                                                and site matters</li>
-                                                            <li>Coordinating with HR on recruitment, attendance, employee
-                                                                matters and manpower needs</li>
-                                                            <li>Monitoring cleaning equipment, supplies and site
-                                                                requirements</li>
-                                                            <li>Handling escalated issues and working with the relevant
-                                                                teams to find practical solutions</li>
-                                                            <li>Supporting the onboarding and deployment of new employees
-                                                            </li>
-                                                            <li>Reviewing site performance and identifying areas for
-                                                                improvement</li>
-                                                            <li>Ensuring company procedures, safety requirements and client
-                                                                expectations are followed</li>
-                                                        </ul>
-                                                        <div class="meta-bottom mt-auto pt-3">
-                                                            <p>General Work Location: HQ Office & dropping by various
-                                                                jobsites</p>
-                                                            <p>Employment Type: Full-Time</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- KARTU 4: HR Assistant -->
-                                            <div class="col-lg-6">
-                                                <div class="clenix-service-feature-items headline pera-content ul-li-block position-relative"
-                                                    data-background="{{ asset('assets/img/elementor-placeholder.png') }}">
-                                                    <div class="background_overlay"></div>
-                                                    <div class="clenix-service-feature-text position-relative">
-                                                        <h3>HR Assistant</h3>
-                                                        <p>What your day may look like…</p>
-                                                        <ul>
-                                                            <li>Assisting with recruitment, including arranging interviews
-                                                                and following up with candidates</li>
-                                                            <li>Preparing employment documents, letters and employee records
-                                                            </li>
-                                                            <li>Supporting the onboarding of new employees</li>
-                                                            <li>Checking that required employee documents and information
-                                                                are complete</li>
-                                                            <li>Updating attendance, leave and employee information in
-                                                                company systems</li>
-                                                            <li>Responding to employees’ general HR enquiries</li>
-                                                            <li>Coordinating with Operations on manpower movements and
-                                                                employee matters</li>
-                                                            <li>Assisting with work pass and foreign employee administration
-                                                                where required</li>
-                                                            <li>Supporting payroll preparation by checking attendance and
-                                                                relevant records</li>
-                                                            <li>Following up on missing documents, medical certificates or
-                                                                other HR submissions</li>
-                                                            <li>Maintaining organised and accurate employee records</li>
-                                                            <li>Assisting with other HR and administrative duties when
-                                                                required</li>
-                                                        </ul>
-                                                        <div class="meta-bottom mt-auto pt-3">
-                                                            <p>Suitable for: Someone organised, responsible and comfortable
-                                                                communicating with different people. HR or administrative
-                                                                experience is helpful, but willingness to learn and
-                                                                attention to detail are equally important.</p>
-                                                            <p>General Work Location: HQ Office</p>
-                                                            <p>Employment Type: Full-Time</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Employment Type:</span>
+                                            <p class="role-meta-value">Full-Time</p>
                                         </div>
                                     </div>
+
+                                    <div class="role-click-trigger">
+                                        <span>Here's What Your Day May Look Like</span>
+                                        <i>➔</i>
+                                    </div>
                                 </div>
-                            </section>
+                            </div>
+
+                            <!-- KARTU 2: Cleaning Specialist -->
+                            <div class="col-lg-6">
+                                <div class="role-card-item" onclick="openRoleModal('modal-cleaning-specialist')">
+                                    <div>
+                                        <h3 class="role-card-title">Cleaning Specialist</h3>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">General Work Location:</span>
+                                            <p class="role-meta-value">Islandwide / Based on assigned site</p>
+                                        </div><br>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Employment Type:</span>
+                                            <p class="role-meta-value">Full-Time / Part-Time</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="role-click-trigger">
+                                        <span>Here's What Your Day May Look Like</span>
+                                        <i>➔</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KARTU 3: Operations Manager -->
+                            <div class="col-lg-6">
+                                <div class="role-card-item" onclick="openRoleModal('modal-operations-manager')">
+                                    <div>
+                                        <h3 class="role-card-title">Operations Manager</h3>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">General Work Location:</span>
+                                            <p class="role-meta-value">HQ Office & dropping by various jobsites</p>
+                                        </div><br>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Employment Type:</span>
+                                            <p class="role-meta-value">Full-Time</p>
+                                        </div><br>
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Suitable For:</span>
+                                            <p class="role-meta-value">Individuals with experience in operations, cleaning,
+                                                facilities management or manpower coordination, and who are comfortable
+                                                managing people, clients and multiple priorities.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="role-click-trigger">
+                                        <span>Here's What Your Day May Look Like</span>
+                                        <i>➔</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- KARTU 4: HR Assistant -->
+                            <div class="col-lg-6">
+                                <div class="role-card-item" onclick="openRoleModal('modal-hr-assistant')">
+                                    <div>
+                                        <h3 class="role-card-title">HR Assistant</h3>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">General Work Location:</span>
+                                            <p class="role-meta-value">HQ Office</p>
+                                        </div><br>
+
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Employment Type:</span>
+                                            <p class="role-meta-value">Full-Time</p>
+                                        </div><br>
+                                        <div class="role-meta-group">
+                                            <span class="role-meta-label">Suitable For:</span>
+                                            <p class="role-meta-value">Someone organised, responsible and comfortable
+                                                communicating with different people. HR or administrative experience is
+                                                helpful, but willingness to learn and attention to detail are equally
+                                                important.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="role-click-trigger">
+                                        <span>Here's What Your Day May Look Like</span>
+                                        <i>➔</i>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+            </section>
+
+
+            <!-- =========================================================
+                 KONTEN POP-UP MODAL (TERSEMBUNYI, TAMPIL SAAT DIKLIK)
+            ========================================================= -->
+
+            <!-- Modal 1: Team Lead -->
+            <div id="modal-team-lead" class="role-modal-overlay" onclick="closeOnOverlay(event, 'modal-team-lead')">
+                <div class="role-modal-container">
+                    <button class="role-modal-close" onclick="closeRoleModal('modal-team-lead')">&times;</button>
+                    <h3 class="role-modal-title">Team Lead / Supervisor</h3>
+                    <p class="role-modal-subtitle">What your day may look like..</p>
+                    <ul class="role-modal-list">
+                        <li>Coordinating and assigning daily cleaning duties</li>
+                        <li>Checking that cleaning standards and site requirements are met</li>
+                        <li>Guiding, supporting and training team members where needed</li>
+                        <li>Helping new employees understand their assigned duties and site routines</li>
+                        <li>Monitoring attendance and highlighting manpower shortages or operational issues</li>
+                        <li>Checking cleaning supplies and equipment and arranging replenishment when required</li>
+                        <li>Reporting maintenance, equipment or site issues to the relevant team</li>
+                        <li>Communicating with Operations and clients on day-to-day site matters</li>
+                        <li>Supporting cleaning duties when additional assistance is required</li>
+                        <li>Ensuring the team follows company procedures, safety requirements and site guidelines</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Modal 2: Cleaning Specialist -->
+            <div id="modal-cleaning-specialist" class="role-modal-overlay"
+                onclick="closeOnOverlay(event, 'modal-cleaning-specialist')">
+                <div class="role-modal-container">
+                    <button class="role-modal-close"
+                        onclick="closeRoleModal('modal-cleaning-specialist')">&times;</button>
+                    <h3 class="role-modal-title">Cleaning Specialist</h3>
+                    <p class="role-modal-subtitle">What your day may look like…</p>
+                    <ul class="role-modal-list">
+                        <li>Starting your day by preparing the tools and supplies needed for your assigned area</li>
+                        <li>Keeping work areas, washrooms and common spaces clean, comfortable and presentable</li>
+                        <li>Replenishing cleaning supplies and ensuring essential items are available</li>
+                        <li>Taking care of your assigned area independently or working alongside a team, depending on the
+                            site</li>
+                        <li>Keeping an eye out for maintenance or site issues and reporting them when needed</li>
+                        <li>Learning different cleaning methods, equipment and site requirements as you gain experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 3: Operations Manager -->
+            <div id="modal-operations-manager" class="role-modal-overlay"
+                onclick="closeOnOverlay(event, 'modal-operations-manager')">
+                <div class="role-modal-container">
+                    <button class="role-modal-close" onclick="closeRoleModal('modal-operations-manager')">&times;</button>
+                    <h3 class="role-modal-title">Operations Manager</h3>
+                    <p class="role-modal-subtitle">What your day may look like…</p>
+                    <ul class="role-modal-list">
+                        <li>Planning and coordinating manpower deployment across assigned sites</li>
+                        <li>Checking staffing levels, attendance and operational coverage</li>
+                        <li>Visiting sites to review cleaning standards and overall performance</li>
+                        <li>Guiding and supporting Team Leads and Supervisors</li>
+                        <li>Following up on manpower shortages, urgent replacements and operational issues</li>
+                        <li>Communicating with clients on service requirements, feedback and site matters</li>
+                        <li>Coordinating with HR on recruitment, attendance, employee matters and manpower needs</li>
+                        <li>Monitoring cleaning equipment, supplies and site requirements</li>
+                        <li>Handling escalated issues and working with the relevant teams to find practical solutions</li>
+                        <li>Supporting the onboarding and deployment of new employees</li>
+                        <li>Reviewing site performance and identifying areas for improvement</li>
+                        <li>Ensuring company procedures, safety requirements and client expectations are followed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 4: HR Assistant -->
+            <div id="modal-hr-assistant" class="role-modal-overlay"
+                onclick="closeOnOverlay(event, 'modal-hr-assistant')">
+                <div class="role-modal-container">
+                    <button class="role-modal-close" onclick="closeRoleModal('modal-hr-assistant')">&times;</button>
+                    <h3 class="role-modal-title">HR Assistant</h3>
+                    <p class="role-modal-subtitle">What your day may look like…</p>
+                    <ul class="role-modal-list">
+                        <li>Assisting with recruitment, including arranging interviews and following up with candidates</li>
+                        <li>Preparing employment documents, letters and employee records</li>
+                        <li>Supporting the onboarding of new employees</li>
+                        <li>Checking that required employee documents and information are complete</li>
+                        <li>Updating attendance, leave and employee information in company systems</li>
+                        <li>Responding to employees’ general HR enquiries</li>
+                        <li>Coordinating with Operations on manpower movements and employee matters</li>
+                        <li>Assisting with work pass and foreign employee administration where required</li>
+                        <li>Supporting payroll preparation by checking attendance and relevant records</li>
+                        <li>Following up on missing documents, medical certificates or other HR submissions</li>
+                        <li>Maintaining organised and accurate employee records</li>
+                        <li>Assisting with other HR and administrative duties when required</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- JavaScript Interaktif -->
+            <script>
+                function openRoleModal(modalId) {
+                    document.getElementById(modalId).classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Mengunci scroll latar belakang
+                }
+
+                function closeRoleModal(modalId) {
+                    document.getElementById(modalId).classList.remove('active');
+                    document.body.style.overflow = 'auto'; // Mengembalikan scroll
+                }
+
+                function closeOnOverlay(event, modalId) {
+                    if (event.target.id === modalId) {
+                        closeRoleModal(modalId);
+                    }
+                }
+            </script>
             <div class="elementor-element elementor-element-f864fe0 e-flex e-con-boxed e-con e-parent" data-id="f864fe0"
                 data-element_type="container">
                 <div class="e-con-inner">

@@ -355,9 +355,9 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/job-listings') ? 'active' : '' }}">
 
-                                        <a title="Job Listings" href="{{ url('/pages/job-listings') }}"
+                                        <a title="Explore Our Roles" href="{{ url('/pages/job-listings') }}"
                                             class="dropdown-items">
-                                            Job Listings
+                                            Explore Our Roles
                                         </a>
 
                                     </li>
@@ -844,8 +844,8 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/job-listings') ? 'active' : '' }}">
 
-                        <a title="Job Listings" href="{{ url('/pages/job-listings') }}" class="dropdown-items">
-                            Job Listings
+                        <a title="Explore Our Roles" href="{{ url('/pages/job-listings') }}" class="dropdown-items">
+                            Explore Our Roles
                         </a>
 
                     </li>
