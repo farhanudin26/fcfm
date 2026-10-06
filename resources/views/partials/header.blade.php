@@ -62,7 +62,7 @@
 
                                     English
 
-                                    <i class="far fa-chevron-down"></i>
+                                
 
                                 </a>
 
@@ -432,11 +432,11 @@
                             <span class="btn-wrap">
 
                                 <span>
-                                    Get a quote button
+                                    Get a quote
                                 </span>
 
                                 <span>
-                                    Get a quote button
+                                    Get a quote
                                 </span>
 
                             </span>

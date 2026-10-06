@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Institution Cleaning – Fresh Cleaning Facilities Management')
+@section('title', 'Institutional Cleaning – Fresh Cleaning Facilities Management')
 @section('meta_description',
-    'Professional institution cleaning services in Singapore by Fresh Cleaning Facilities
+    'Professional Institutional Cleaning services in Singapore by Fresh Cleaning Facilities
     Management. NEA Certified & BCA Registered, trusted for schools, government buildings, and other institutional
     facilities.')
 @section('meta_keywords',
-    'institution cleaning singapore, school cleaning, government building cleaning, institutional
+    'Institutional Cleaning singapore, school cleaning, government building cleaning, institutional
     facility cleaning services')
 @section('body_class',
     'wp-singular page-template page-template-elementor_header_footer page page-id-2099
@@ -40,12 +40,12 @@
                                         <div class="container">
                                             <div class="breadcrumb-content headline ul-li position-relative">
 
-                                                <h2>Institution Cleaning</h2>
+                                                <h2>Institutional Cleaning</h2>
 
                                                 <ul class="bread-crumb clearfix">
                                                     <li class="breadcrumb-item"><a href="{{ url('/') }}">Home
                                                             &nbsp;</a></li>
-                                                    <li class="breadcrumb-item">Institution Cleaning</li>
+                                                    <li class="breadcrumb-item">Institutional Cleaning</li>
                                                 </ul>
                                             </div>
                                         </div>

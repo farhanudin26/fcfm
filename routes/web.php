@@ -62,6 +62,10 @@ Route::view('/pages/service', 'pages.service')->name('service');
 
 Route::view('/pages/team', 'pages.team')->name('team');
 
+Route::view('/pages/terms-of-use', 'pages.terms-of-use')->name('terms-of-use');
+
+Route::view('/pages/privacy-policy', 'pages.privacy-policy')->name('privacy-policy');
+
 Route::view('/pages/testimonial', 'pages.testimonial')->name('testimonial');
 
 Route::view('/pages/value-added-services', 'pages.value-added-services')->name('value-added-services');

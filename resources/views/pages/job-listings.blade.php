@@ -204,8 +204,8 @@
                 }
 
                 /* =======================================
-                   STYLING POP-UP MODAL
-                ======================================= */
+                           STYLING POP-UP MODAL
+                        ======================================= */
                 .role-modal-overlay {
                     position: fixed;
                     top: 0;
@@ -442,8 +442,8 @@
 
 
             <!-- =========================================================
-                 KONTEN POP-UP MODAL (TERSEMBUNYI, TAMPIL SAAT DIKLIK)
-            ========================================================= -->
+                         KONTEN POP-UP MODAL (TERSEMBUNYI, TAMPIL SAAT DIKLIK)
+                    ========================================================= -->
 
             <!-- Modal 1: Team Lead -->
             <div id="modal-team-lead" class="role-modal-overlay" onclick="closeOnOverlay(event, 'modal-team-lead')">
@@ -552,6 +552,130 @@
                     }
                 }
             </script>
+            <style>
+                /* =======================================
+           STYLING SECTION INTERESTED IN JOINING US
+        ======================================= */
+                .fcfm-cta-section {
+                    padding: 60px 0 80px 0;
+                    background-color: #f9fbfd;
+                    text-align: center;
+                }
+
+                .fcfm-cta-container {
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+
+                .fcfm-cta-title {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    margin-bottom: 15px;
+                }
+
+                .fcfm-cta-description {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    color: #555555;
+                    margin-bottom: 30px;
+                }
+
+                /* Container Tombol Side-by-Side */
+                .fcfm-cta-buttons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    /* Menjaga agar tampilan rapi di mobile */
+                }
+
+                /* Base Styling Tombol */
+                .fcfm-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 12px 28px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                }
+
+                .fcfm-btn i {
+                    margin-right: 8px;
+                    font-size: 18px;
+                }
+
+                /* Tombol Email */
+                .fcfm-btn-email {
+                    background-color: #007bff;
+                    color: #ffffff !important;
+                    border: 1px solid #007bff;
+                }
+
+                .fcfm-btn-email:hover {
+                    background-color: #0056b3;
+                    border-color: #0056b3;
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.25);
+                }
+
+                /* Tombol WhatsApp */
+                .fcfm-btn-whatsapp {
+                    background-color: #25d366;
+                    color: #ffffff !important;
+                    border: 1px solid #25d366;
+                }
+
+                .fcfm-btn-whatsapp:hover {
+                    background-color: #1da851;
+                    border-color: #1da851;
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.25);
+                }
+
+                /* Responsif Mobile */
+                @media (max-width: 576px) {
+                    .fcfm-cta-buttons {
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+                    .fcfm-btn {
+                        width: 100%;
+                    }
+                }
+            </style>
+            <!-- Section Interested in joining us -->
+            <section class="fcfm-cta-section">
+                <div class="container">
+                    <div class="fcfm-cta-container">
+                        <h2 class="fcfm-cta-title">Interested in joining us?</h2>
+
+                        <p class="fcfm-cta-description">
+                            Chat with our HR team on WhatsApp or send in an email to find out more about the role and
+                            application process.
+                        </p>
+
+                        <div class="fcfm-cta-buttons">
+                            <!-- Email Button -->
+                            <a href="mailto:hr@fcfm.sg" class="fcfm-btn fcfm-btn-email">
+                                <i class="far fa-envelope"></i> Email our HR team at hr@fcfm.sg
+                            </a>
+
+                            <!-- WhatsApp Button Link (Ganti nomor WhatsApp sesuai kebutuhan) -->
+                            <a href="https://wa.me/6583332999" target="_blank" rel="noopener noreferrer"
+                                class="fcfm-btn fcfm-btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp our HR team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class="elementor-element elementor-element-f864fe0 e-flex e-con-boxed e-con e-parent" data-id="f864fe0"
                 data-element_type="container">
                 <div class="e-con-inner">
@@ -624,7 +748,7 @@
                                                     </div>
                                                 </div>
 
-                                                <!-- BOX 2: Mail Us -->
+                                                <!-- BOX 2: E-mail Us -->
                                                 <div class="col-lg-4 col-md-6">
                                                     <div
                                                         class="booking-cta-item d-flex align-items-center justify-content-center">
@@ -635,7 +759,7 @@
                                                                 style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
                                                         </div>
                                                         <div class="inner-text headline">
-                                                            <h4>Mail Us</h4>
+                                                            <h4>E-mail Us</h4>
                                                             <span>hello@fcfm.sg</span>
                                                         </div>
                                                     </div>

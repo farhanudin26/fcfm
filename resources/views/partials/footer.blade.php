@@ -296,7 +296,7 @@
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/institution-cleaning') }}">Institution
+                                                                <a href="{{ url('/pages/institution-cleaning') }}">Institutional
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
@@ -316,7 +316,7 @@
                                                     </li>
 
                                                     <li>
-                                                        <a href="{{ url('/pages/contact') }}">Contact Us</a>
+                                                        <a href="{{ url('/pages/contact') }}">Contact</a>
                                                     </li>
 
                                                 </ul>
@@ -343,10 +343,10 @@
                                         </div>
                                         <ul class="footer__nav ul_li mt-15">
 
-                                            <li><a href="{{ url('/pages/project-detail') }}">Terms and conditions</a>
+                                            <li><a href="{{ url('/pages/terms-of-use') }}">Terms of Use</a>
                                             </li>
 
-                                            <li><a href="{{ url('/pages/project-detail') }}">Privacy policy</a></li>
+                                            <li><a href="{{ url('/pages/privacy-policy') }}">Privacy policy</a></li>
                                         </ul>
                                     </div>
                                 </div>

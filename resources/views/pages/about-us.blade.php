@@ -601,7 +601,7 @@
                                                                                     alt="" />
                                                                             </div>
                                                                             <div class="inner-text">
-                                                                                <h4>Mail Us</h4>
+                                                                                <h4>E-mail Us</h4>
                                                                                 <span>hello@fcfm.sg</span>
                                                                             </div>
                                                                         </div>

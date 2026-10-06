@@ -245,7 +245,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- BOX 2: Mail Us -->
+                                                        <!-- BOX 2: E-mail Us -->
                                                         <div class="col-lg-4 col-md-6">
                                                             <div
                                                                 class="booking-cta-item d-flex align-items-center justify-content-center">
@@ -256,7 +256,7 @@
                                                                         style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
                                                                 </div>
                                                                 <div class="inner-text headline">
-                                                                    <h4>Mail Us</h4>
+                                                                    <h4>E-mail Us</h4>
                                                                     <span>hello@fcfm.sg</span>
                                                                 </div>
                                                             </div>

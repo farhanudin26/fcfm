@@ -153,8 +153,8 @@
                                                                 src="{{ asset('assets/img/uploads/2025/09/main-home-fcfm-portrait.png') }}"
                                                                 alt="main home fcfm" />
                                                         </div>
-                                                        <div class="hero__experince-box wow fadeInLeft"
-                                                            data-wow-delay=".4s" data-wow-duration="1500ms">
+                                                        <div class="hero__experince-box wow fadeInLeft" data-wow-delay=".4s"
+                                                            data-wow-duration="1500ms">
                                                             <div>
                                                                 <h2>
                                                                     <span class="counter">9</span>
@@ -173,11 +173,9 @@
                                             </div>
                                         </div>
                                         <div class="hero__text-box">
-                                            <img decoding="async"
-                                                src="{{ asset('assets/img/widgets/5-hero/h_text.png') }}"
+                                            <img decoding="async" src="{{ asset('assets/img/widgets/5-hero/h_text.png') }}"
                                                 alt="widgets 5 hero h text fcfm">
-                                            <img decoding="async"
-                                                src="{{ asset('assets/img/widgets/5-hero/h_icon.png') }}"
+                                            <img decoding="async" src="{{ asset('assets/img/widgets/5-hero/h_icon.png') }}"
                                                 alt="widgets 5 hero h icon fcfm">
                                         </div>
 
@@ -189,12 +187,12 @@
                                                 data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon2.png') }}"
                                                 alt="widgets 5 hero h icon 2 fcfm">
-                                            <img decoding="async" class="icon icon--3 wow fadeInRight"
-                                                data-wow-delay=".4s" data-wow-duration="1500ms"
+                                            <img decoding="async" class="icon icon--3 wow fadeInRight" data-wow-delay=".4s"
+                                                data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon3.png') }}"
                                                 alt="widgets 5 hero h icon 3 fcfm">
-                                            <img decoding="async" class="icon icon--4 wow fadeInLeft"
-                                                data-wow-delay=".6s" data-wow-duration="1500ms"
+                                            <img decoding="async" class="icon icon--4 wow fadeInLeft" data-wow-delay=".6s"
+                                                data-wow-duration="1500ms"
                                                 src="{{ asset('assets/img/widgets/5-hero/h_icon4.png') }}"
                                                 alt="widgets 5 hero h icon 4 fcfm">
                                         </div>
@@ -714,10 +712,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/commercial-cleaning') }}>Commercial Cleaning</a>
+                                                    <h3><a href={{ url('/pages/commercial-cleaning') }}>Commercial
+                                                            Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/commercial-cleaning') }}><i
+                                                    <a class="project__action"
+                                                        href={{ url('/pages/commercial-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">
@@ -740,7 +740,8 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/office-cleaning') }}>Office Cleaning</a></h3>
+                                                    <h3><a href={{ url('/pages/office-cleaning') }}>Office Cleaning</a>
+                                                    </h3>
                                                     <span></span>
                                                     <a class="project__action" href={{ url('/pages/office-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
@@ -758,10 +759,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/healthcare-cleaning') }}>Healthcare Cleaning</a>
+                                                    <h3><a href={{ url('/pages/healthcare-cleaning') }}>Healthcare
+                                                            Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/healthcare-cleaning') }}><i
+                                                    <a class="project__action"
+                                                        href={{ url('/pages/healthcare-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">03</span>
@@ -777,10 +780,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/institution-cleaning') }}>Institutional Cleaning</a>
+                                                    <h3><a href={{ url('/pages/institution-cleaning') }}>Institutional
+                                                            Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/institution-cleaning') }}><i
+                                                    <a class="project__action"
+                                                        href={{ url('/pages/institution-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">04</span>
@@ -797,10 +802,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/hotel-housekeeping-services') }}>Hotel Housekeeping
+                                                    <h3><a href={{ url('/pages/hotel-housekeeping-services') }}>Hotel
+                                                            Housekeeping
                                                             Services</a></h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/hotel-housekeeping-services') }}><i
+                                                    <a class="project__action"
+                                                        href={{ url('/pages/hotel-housekeeping-services') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">05</span>
@@ -912,7 +919,8 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/robot-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/robotic-cleaning') }}"><strong> Robotic
+                                                                href="{{ url('/pages/robotic-cleaning') }}"><strong>
+                                                                    Robotic
                                                                     Cleaning</strong></a></h3>
                                                         <p>Improve productivity with minimal manual intervention</p>
                                                         <ul class="service__list list-unstyled">
@@ -952,7 +960,8 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/jetwash.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/high-pressure-jetwash') }}"><strong> High
+                                                                href="{{ url('/pages/high-pressure-jetwash') }}"><strong>
+                                                                    High
                                                                     Pressure<br>
                                                                     Jet Washing</strong></a></h3>
                                                         <p>Make powerful washes to remove slippery substances, reducing
@@ -1274,10 +1283,10 @@
                                                             <div class="tab-info__item tab-info__item-two d-flex wow fadeInUp"
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
-                                                                    <i class="flaticon flaticon-thumbs-up"></i>
-                                                                    <img decoding="async" class="icon-shape-orange"
-                                                                        src="{{ asset('assets/img/widgets/5-long/a_shape.svg') }}"
-                                                                        alt="">
+                                                                    <i>
+                                                                        <img src="{{ asset('assets/img/icon/reliable-people.png') }}"
+                                                                            alt="Reliable People">
+                                                                    </i>
                                                                 </div>
                                                                 <div class="content">
                                                                     <h3>Reliable People</h3>
@@ -1288,10 +1297,10 @@
                                                             <div class="tab-info__item tab-info__item-two d-flex wow fadeInUp"
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
-                                                                    <i class="flaticon flaticon-insurance"></i>
-                                                                    <img decoding="async" class="icon-shape-orange"
-                                                                        src="{{ asset('assets/img/widgets/5-long/a_shape.svg') }}"
-                                                                        alt="">
+                                                                    <i>
+                                                                        <img src="{{ asset('assets/img/icon/consistent-standards.png') }}"
+                                                                            alt="Consistent Standards">
+                                                                    </i>
                                                                 </div>
                                                                 <div class="content">
                                                                     <h3>Consistent Standards</h3>
@@ -1302,10 +1311,10 @@
                                                             <div class="tab-info__item tab-info__item-two d-flex wow fadeInUp"
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
-                                                                    <i class="flaticon flaticon-cleaning-1"></i>
-                                                                    <img decoding="async" class="icon-shape-orange"
-                                                                        src="{{ asset('assets/img/widgets/5-long/a_shape.svg') }}"
-                                                                        alt="">
+                                                                    <i>
+                                                                        <img src="{{ asset('assets/img/icon/solutions-that-fit.png') }}"
+                                                                            alt="Solutions That Fit">
+                                                                    </i>
                                                                 </div>
                                                                 <div class="content">
                                                                     <h3>Solutions That Fit</h3>
@@ -1317,10 +1326,10 @@
                                                             <div class="tab-info__item tab-info__item-two d-flex wow fadeInUp"
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
-                                                                    <i class="flaticon flaticon-help"></i>
-                                                                    <img decoding="async" class="icon-shape-orange"
-                                                                        src="{{ asset('assets/img/widgets/5-long/a_shape.svg') }}"
-                                                                        alt="">
+                                                                    <i>
+                                                                        <img src="{{ asset('assets/img/icon/responsive-support.png') }}"
+                                                                            alt="Responsive Support">
+                                                                    </i>
                                                                 </div>
                                                                 <div class="content">
                                                                     <h3>Responsive Support</h3>
@@ -1549,7 +1558,7 @@
                                                                 <div class="tab-info__wrap">
                                                                     <!-- F - FAIRNESS: Keadilan, kesetaraan, privasi/keamanan hak -->
                                                                     <div class="tab-info__item d-flex">
-                                                                       <div class="icon">
+                                                                        <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/fairness.png') }}"
                                                                                     alt="F – FAIRNESS">
@@ -1578,7 +1587,7 @@
 
                                                                     <!-- M - MASTERY: Keahlian tinggi, portofolio kerja profesional -->
                                                                     <div class="tab-info__item d-flex">
-                                                                       <div class="icon">
+                                                                        <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/mastery.png') }}"
                                                                                     alt="M – MASTERY">
@@ -1594,7 +1603,7 @@
 
                                                                     <!-- I² - INTEGRITY & INITIATIVE: Tindakan pembersihan data/proses yang jujur & proaktif -->
                                                                     <div class="tab-info__item d-flex">
-                                                                       <div class="icon">
+                                                                        <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/integrity-initiative.png') }}"
                                                                                     alt="I² - INTEGRITY & INITIATIVE">
@@ -1608,7 +1617,7 @@
 
                                                                     <!-- L - LIFELONG LEARNING: Pengingat/reminder untuk terus berkembang dan belajar -->
                                                                     <div class="tab-info__item d-flex">
-                                                                       <div class="icon">
+                                                                        <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/lifelong-learning.png') }}"
                                                                                     alt="L – LIFELONG LEARNING">
@@ -1624,10 +1633,10 @@
 
                                                                     <!-- Y - YOU: Kepuasan klien, kepedulian utama -->
                                                                     <div class="tab-info__item d-flex">
-                                                                       <div class="icon">
+                                                                        <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/you.png') }}"
-                                                                                    alt="Y – YOU">
+                                                                                    alt="Y – YOU ">
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
@@ -1765,8 +1774,7 @@
                         data-id="12139ed" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
                             <div class="elementor-element elementor-element-7b070a8 elementor-widget elementor-widget-clenfix-client"
-                                data-id="7b070a8" data-element_type="widget"
-                                data-widget_type="clenfix-client.default">
+                                data-id="7b070a8" data-element_type="widget" data-widget_type="clenfix-client.default">
                                 <div class="elementor-widget-container">
 
                                     <section id="clenix-sponsor" class="clenix-sponsor-section">
@@ -1864,7 +1872,6 @@
                     max-width: 1400px;
                     margin: 0 auto;
                     display: grid;
-                    /* Membuat 2 kolom sejajar. Kolom akan memiliki tinggi yang sama berkat 'stretch' */
                     grid-template-columns: 1fr 1fr;
                     align-items: stretch;
                 }
@@ -1874,14 +1881,12 @@
                     display: flex;
                     flex-direction: column;
                     z-index: 1;
-                    /* Pastikan berada di bawah kotak biru saat overlap */
                 }
 
                 .title-top {
                     text-align: right;
                     margin-bottom: 30px;
                     padding-right: 40px;
-                    /* Memberi jarak agar tidak tertutup kotak biru */
                 }
 
                 .title-top h2,
@@ -1901,10 +1906,9 @@
                     position: relative;
                     width: 100%;
                     flex-grow: 1;
-                    /* Memaksa gambar mengisi sisa ruang tinggi yang ada */
                     min-height: 420px;
-                    border-radius: 0;
-                    /* Mengubah sudut menjadi tajam sesuai gambar */
+                    /* Menambahkan sudut melengkung pada gambar */
+                    border-radius: 16px;
                     overflow: hidden;
                 }
 
@@ -1923,26 +1927,27 @@
                     display: flex;
                     flex-direction: column;
                     z-index: 2;
-                    /* Memastikan kolom kanan berada di atas gambar */
                 }
 
                 .blue-box {
                     background-color: #3b92d6;
                     color: #ffffff;
-                    padding: 70px 60px;
-                    border-radius: 0;
-                    /* Mengubah sudut menjadi tajam */
+                    /* Padding disesuaikan agar teks mengisi ruang dengan seimbang */
+                    padding: 50px 45px;
+                    /* Menambahkan sudut melengkung pada kotak biru */
+                    border-radius: 16px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-between;
                 }
 
                 .blue-box p {
-                    font-size: 1.1rem;
-                    line-height: 1.6;
-                    margin: 0 0 35px 0;
-                    font-family: Georgia, 'Times New Roman', serif;
-                    /* Font serif seperti di referensi gambar */
+                    /* Menggunakan sans-serif agar sama dengan font website */
+                    font-family: 'Arial', sans-serif;
+                    font-size: 1.25rem;
+                    line-height: 1.7;
+                    margin: 0 0 25px 0;
+                    font-weight: 400;
                 }
 
                 .btn-readmore {
@@ -1951,27 +1956,23 @@
                     color: #000;
                     font-weight: 700;
                     text-decoration: none;
-                    padding: 12px 35px;
+                    padding: 12px 30px;
                     border-radius: 30px;
-                    /* Mempertahankan bentuk pil pada tombol */
-                    font-size: 1rem;
+                    font-size: 0.95rem;
                     transition: opacity 0.3s ease;
                 }
 
                 .btn-readmore:hover {
-                    opacity: 0.8;
+                    opacity: 0.85;
                 }
 
                 .title-bottom {
                     margin-top: 30px;
                     padding-left: 20px;
-                    /* tambahkan ini, sesuaikan angkanya sampai pas */
-
                 }
 
                 .title-bottom h2 {
                     font-size: 3.2rem;
-                    /* Diperbesar sedikit agar proporsional */
                 }
 
                 /* --- Responsivitas untuk Layar Kecil --- */
@@ -1983,7 +1984,6 @@
 
                     .col-right {
                         margin-left: 0;
-                        /* Menghilangkan overlap di versi mobile */
                         margin-top: 0;
                     }
 
@@ -2003,7 +2003,11 @@
                     }
 
                     .blue-box {
-                        padding: 40px;
+                        padding: 35px 25px;
+                    }
+
+                    .blue-box p {
+                        font-size: 1.1rem;
                     }
                 }
             </style>
@@ -2017,7 +2021,6 @@
                             <h2>Our Social<br>Efforts</h2>
                         </div>
                         <div class="image-wrapper">
-                            <!-- Tag image tetap menggunakan sintaks Laravel Anda -->
                             <img src="{{ asset('assets/img/uploads/2025/11/fcfm-homepage-social-efforts-photo-2.jpg') }}"
                                 alt="Social Efforts Volunteer">
                         </div>
@@ -2033,7 +2036,11 @@
                                 homes and children’s social welfare centre such as All Saints Home (Yishun) and Marymount
                                 Centre.
                             </p>
-                            <a href="#" class="btn-readmore">Read More</a>
+                            <!-- Link langsung membuka halaman Pink Coming Soon di tab baru -->
+                            <a href="data:text/html;charset=utf-8,<html><head><title>The Kind Walkers</title></head><body style='background-color:%23ff66aa;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;'><h1 style='color:%23000000;font-family:sans-serif;font-size:3rem;'>Coming Soon</h1></body></html>"
+                                target="_blank" class="btn-readmore">
+                                Visit The Kind Walkers Site
+                            </a>
                         </div>
                         <div class="title-bottom">
                             <h2>Giving back to<br>the community</h2>
