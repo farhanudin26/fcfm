@@ -188,8 +188,8 @@
                 </section>
                 <style>
                     /* =======================================
-               STYLING SECTION INTERESTED IN JOINING US
-            ======================================= */
+                   STYLING SECTION INTERESTED IN JOINING US
+                ======================================= */
                     .fcfm-cta-section {
                         padding: 60px 0 80px 0;
                         background-color: #f9fbfd;
@@ -197,15 +197,9 @@
                     }
 
                     .fcfm-cta-container {
-                        max-width: 700px;
+                        max-width: 900px;
+                        /* Diperluas agar teks muat 1 baris */
                         margin: 0 auto;
-                    }
-
-                    .fcfm-cta-title {
-                        font-size: 32px;
-                        font-weight: 700;
-                        color: #1a1a1a;
-                        margin-bottom: 15px;
                     }
 
                     .fcfm-cta-description {
@@ -213,6 +207,15 @@
                         line-height: 1.6;
                         color: #555555;
                         margin-bottom: 30px;
+                        white-space: nowrap;
+                        /* Memaksa teks tetap 1 baris */
+                    }
+
+                    .fcfm-cta-title {
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: #1a1a1a;
+                        margin-bottom: 15px;
                     }
 
                     /* Container Tombol Side-by-Side */
@@ -302,7 +305,7 @@
                                 </a>
 
                                 <!-- WhatsApp Button Link (Ganti nomor WhatsApp sesuai kebutuhan) -->
-                                <a href="https://wa.me/6583332999" target="_blank" rel="noopener noreferrer"
+                                <a href="https://wa.me/6588552999" target="_blank" rel="noopener noreferrer"
                                     class="fcfm-btn fcfm-btn-whatsapp">
                                     <i class="fab fa-whatsapp"></i> WhatsApp our HR team
                                 </a>

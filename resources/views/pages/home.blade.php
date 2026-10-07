@@ -1284,7 +1284,7 @@
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
                                                                     <i>
-                                                                        <img src="{{ asset('assets/img/icon/reliable-people.png') }}"
+                                                                        <img src="{{ asset('assets/img/icon/reliable-people-2.png') }}"
                                                                             alt="Reliable People">
                                                                     </i>
                                                                 </div>
@@ -1298,7 +1298,7 @@
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
                                                                     <i>
-                                                                        <img src="{{ asset('assets/img/icon/consistent-standards.png') }}"
+                                                                        <img src="{{ asset('assets/img/icon/consistent-standards-2.png') }}"
                                                                             alt="Consistent Standards">
                                                                     </i>
                                                                 </div>
@@ -1312,7 +1312,7 @@
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
                                                                     <i>
-                                                                        <img src="{{ asset('assets/img/icon/solutions-that-fit.png') }}"
+                                                                        <img src="{{ asset('assets/img/icon/solutions-that-fit-2.png') }}"
                                                                             alt="Solutions That Fit">
                                                                     </i>
                                                                 </div>
@@ -1327,7 +1327,7 @@
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
                                                                 <div class="icon">
                                                                     <i>
-                                                                        <img src="{{ asset('assets/img/icon/responsive-support.png') }}"
+                                                                        <img src="{{ asset('assets/img/icon/responsive-support-2.png') }}"
                                                                             alt="Responsive Support">
                                                                     </i>
                                                                 </div>
@@ -2037,7 +2037,7 @@
                                 Centre.
                             </p>
                             <!-- Link langsung membuka halaman Pink Coming Soon di tab baru -->
-                            <a href="data:text/html;charset=utf-8,<html><head><title>The Kind Walkers</title></head><body style='background-color:%23ff66aa;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;'><h1 style='color:%23000000;font-family:sans-serif;font-size:3rem;'>Coming Soon</h1></body></html>"
+                            <a href="/coming-soon"
                                 target="_blank" class="btn-readmore">
                                 Visit The Kind Walkers Site
                             </a>

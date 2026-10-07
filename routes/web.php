@@ -68,4 +68,6 @@ Route::view('/pages/privacy-policy', 'pages.privacy-policy')->name('privacy-poli
 
 Route::view('/pages/testimonial', 'pages.testimonial')->name('testimonial');
 
+Route::view('/coming-soon', 'pages.coming-soon')->name('coming-soon');
+
 Route::view('/pages/value-added-services', 'pages.value-added-services')->name('value-added-services');

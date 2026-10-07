@@ -247,6 +247,10 @@
                                                         <i class="fas fa-phone-alt"></i>
                                                         <a href="tel:+6583332999">+65 8333 2999</a>
                                                     </li>
+                                                    <li>
+                                                        <i class="fas fa-envelope"></i>
+                                                        <a href="mailto:hello@fcfm.sg">hello@fcfm.sg</a>
+                                                    </li>
                                                 </ul>
 
                                                 <a class="footer__whatsapp-btn" href="https://wa.me/6583332999"
@@ -312,7 +316,25 @@
                                                     </li>
 
                                                     <li>
-                                                        <a href="{{ url('/pages/career-overview') }}">Careers</a>
+                                                        <a href="#" class="footer__dropdown-toggle"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#footerCareersMenu" aria-expanded="false"
+                                                            aria-controls="footerCareersMenu">
+                                                            Careers
+                                                            <i class="far fa-chevron-down"></i>
+                                                        </a>
+
+                                                        <ul class="collapse footer__submenu list-unstyled"
+                                                            id="footerCareersMenu">
+                                                            <li>
+                                                                <a href="{{ url('/pages/career-overview') }}">Career
+                                                                    Overview</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{{ url('/pages/job-listings') }}">Explore Our
+                                                                    Roles</a>
+                                                            </li>
+                                                        </ul>
                                                     </li>
 
                                                     <li>
