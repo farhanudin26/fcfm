@@ -102,7 +102,7 @@
                                                                 </div>
 
                                                                 <form class="wpcf7-form init"
-                                                                    action="{{ url('/pages/contact') }}" method="POST"
+                                                                    action="{{ url('/contact') }}" method="POST"
                                                                     aria-label="Contact form" novalidate="novalidate"
                                                                     data-status="init">
                                                                     @csrf

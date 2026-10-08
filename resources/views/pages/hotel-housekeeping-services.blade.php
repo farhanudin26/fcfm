@@ -229,7 +229,7 @@
                                                         <li>Other specialised cleaning solutions</li>
                                                     </ul>
 
-                                                    <a href="/pages/value-added-services" class="wide-card-link">
+                                                    <a href="/value-added-services" class="wide-card-link">
                                                         Explore Our Value-Added Services <span>→</span>
                                                     </a>
                                                 </div>

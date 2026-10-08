@@ -133,7 +133,7 @@
                             <h4>We're always looking for individuals who take pride in what they do, care about the people
                                 around them and want to grow alongside a team that believes<strong> every interaction
                                     matters.</strong></h4>
-                            <a href="/pages/job-listings" class="btn-solid">Explore Career Opportunities <i
+                            <a href="/job-listings" class="btn-solid">Explore Career Opportunities <i
                                     class="flaticon-right-arrow"></i></a>
                         </div>
                     </div>

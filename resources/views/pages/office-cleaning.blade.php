@@ -227,7 +227,7 @@
                                                             standards to a higher level — including floor care and
                                                             polishing, disinfection, pest control and many more.</p>
                                                     </div>
-                                                    <a href="/pages/value-added-services" class="wide-card-link">
+                                                    <a href="/value-added-services" class="wide-card-link">
                                                         Explore Our Value-Added Services <span>→</span>
                                                     </a>
                                                 </div>

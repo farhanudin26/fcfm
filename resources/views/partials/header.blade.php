@@ -62,7 +62,7 @@
 
                                     English
 
-                                
+
 
                                 </a>
 
@@ -186,7 +186,7 @@
                                 class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                 {{ request()->is('pages/about-us') ? 'current-menu-item current_page_item active' : '' }}">
 
-                                <a title="About Us" href="{{ url('/pages/about-us') }}" class="nav-link">
+                                <a title="About Us" href="{{ url('/about-us') }}" class="nav-link">
                                     About Us
                                 </a>
 
@@ -225,7 +225,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/commercial-cleaning') ? 'active' : '' }}">
 
-                                        <a title="Commercial Cleaning" href="{{ url('/pages/commercial-cleaning') }}"
+                                        <a title="Commercial Cleaning" href="{{ url('/commercial-cleaning') }}"
                                             class="dropdown-items">
                                             Commercial Cleaning
                                         </a>
@@ -240,7 +240,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/healthcare-cleaning') ? 'active' : '' }}">
 
-                                        <a title="Healthcare Cleaning" href="{{ url('/pages/healthcare-cleaning') }}"
+                                        <a title="Healthcare Cleaning" href="{{ url('/healthcare-cleaning') }}"
                                             class="dropdown-items">
                                             Healthcare Cleaning
                                         </a>
@@ -255,7 +255,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/office-cleaning') ? 'active' : '' }}">
 
-                                        <a title="Office Cleaning" href="{{ url('/pages/office-cleaning') }}"
+                                        <a title="Office Cleaning" href="{{ url('/office-cleaning') }}"
                                             class="dropdown-items">
                                             Office Cleaning
                                         </a>
@@ -270,7 +270,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/institution-cleaning') ? 'active' : '' }}">
 
-                                        <a title="Institutional Cleaning" href="{{ url('/pages/institution-cleaning') }}"
+                                        <a title="Institutional Cleaning" href="{{ url('/institution-cleaning') }}"
                                             class="dropdown-items">
                                             Institutional Cleaning
                                         </a>
@@ -286,7 +286,7 @@
                                         {{ request()->is('pages/hotel-housekeeping-services') ? 'active' : '' }}">
 
                                         <a title="Hotel Housekeeping Services"
-                                            href="{{ url('/pages/hotel-housekeeping-services') }}"
+                                            href="{{ url('/hotel-housekeeping-services') }}"
                                             class="dropdown-items">
                                             Hotel Housekeeping Services
                                         </a>
@@ -302,7 +302,7 @@
                                         {{ request()->is('pages/value-added-services') ? 'active' : '' }}">
 
                                         <a title="Value-Added Services"
-                                            href="{{ url('/pages/value-added-services') }}" class="dropdown-items">
+                                            href="{{ url('/value-added-services') }}" class="dropdown-items">
                                             Value-Added Services
                                         </a>
 
@@ -340,7 +340,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/career-overview') ? 'active' : '' }}">
 
-                                        <a title="Career Overview" href="{{ url('/pages/career-overview') }}"
+                                        <a title="Career Overview" href="{{ url('/career-overview') }}"
                                             class="dropdown-items">
                                             Career Overview
                                         </a>
@@ -355,7 +355,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                         {{ request()->is('pages/job-listings') ? 'active' : '' }}">
 
-                                        <a title="Explore Our Roles" href="{{ url('/pages/job-listings') }}"
+                                        <a title="Explore Our Roles" href="{{ url('/job-listings') }}"
                                             class="dropdown-items">
                                             Explore Our Roles
                                         </a>
@@ -376,7 +376,7 @@
                                 class="menu-item menu-item-type-post_type menu-item-object-page nav-item
                                 {{ request()->is('pages/contact') ? 'current-menu-item current_page_item active' : '' }}">
 
-                                <a title="Contact" href="{{ url('/pages/contact') }}" class="nav-link">
+                                <a title="Contact" href="{{ url('/contact') }}" class="nav-link">
                                     Contact
                                 </a>
 
@@ -511,7 +511,7 @@
             </p>
 
             <div class="sidebar__btn">
-                <a class="thm-btn br-0" href="{{ url('/pages/about-us') }}">
+                <a class="thm-btn br-0" href="{{ url('/about-us') }}">
                     <span class="btn-wrap">
                         <span>Discover FCFM</span>
                         <span>Discover FCFM</span>
@@ -527,28 +527,28 @@
 
                 <ul class="what-we-do-list" style="list-style: none; padding: 0; margin: 0;">
                     <li style="margin-bottom: 10px;">
-                        <a href="/pages/commercial-cleaning"
+                        <a href="/commercial-cleaning"
                             style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
                             <span>Commercial Cleaning</span>
                             <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
                         </a>
                     </li>
                     <li style="margin-bottom: 10px;">
-                        <a href="/pages/healthcare-cleaning"
+                        <a href="/healthcare-cleaning"
                             style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
                             <span>Healthcare Cleaning</span>
                             <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
                         </a>
                     </li>
                     <li style="margin-bottom: 10px;">
-                        <a href="/pages/institution-cleaning"
+                        <a href="/institution-cleaning"
                             style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
                             <span>Institutional Cleaning</span>
                             <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
                         </a>
                     </li>
                     <li style="margin-bottom: 10px;">
-                        <a href="/pages/hotel-housekeeping-services"
+                        <a href="/hotel-housekeeping-services"
                             style="text-decoration: none; color: inherit; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
                             <span>Hotel Housekeeping</span>
                             <span style="color: #ffa800; font-weight: bold; font-size: 18px;">&rarr;</span>
@@ -686,7 +686,7 @@
                 class="menu-item nav-item
                 {{ request()->is('pages/about-us') ? 'current-menu-item current_page_item active' : '' }}">
 
-                <a title="About Us" href="{{ url('/pages/about-us') }}" class="nav-link">
+                <a title="About Us" href="{{ url('/about-us') }}" class="nav-link">
                     About Us
                 </a>
 
@@ -723,7 +723,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/commercial-cleaning') ? 'active' : '' }}">
 
-                        <a title="Commercial Cleaning" href="{{ url('/pages/commercial-cleaning') }}"
+                        <a title="Commercial Cleaning" href="{{ url('/commercial-cleaning') }}"
                             class="dropdown-items">
                             Commercial Cleaning
                         </a>
@@ -737,7 +737,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/healthcare-cleaning') ? 'active' : '' }}">
 
-                        <a title="Healthcare Cleaning" href="{{ url('/pages/healthcare-cleaning') }}"
+                        <a title="Healthcare Cleaning" href="{{ url('/healthcare-cleaning') }}"
                             class="dropdown-items">
                             Healthcare Cleaning
                         </a>
@@ -751,7 +751,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/office-cleaning') ? 'active' : '' }}">
 
-                        <a title="Office Cleaning" href="{{ url('/pages/office-cleaning') }}"
+                        <a title="Office Cleaning" href="{{ url('/office-cleaning') }}"
                             class="dropdown-items">
                             Office Cleaning
                         </a>
@@ -765,7 +765,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/institution-cleaning') ? 'active' : '' }}">
 
-                        <a title="Institutional Cleaning" href="{{ url('/pages/institution-cleaning') }}"
+                        <a title="Institutional Cleaning" href="{{ url('/institution-cleaning') }}"
                             class="dropdown-items">
                             Institutional Cleaning
                         </a>
@@ -779,7 +779,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/hotel-housekeeping-services') ? 'active' : '' }}">
 
-                        <a title="Hotel Housekeeping Services" href="{{ url('/pages/hotel-housekeeping-services') }}"
+                        <a title="Hotel Housekeeping Services" href="{{ url('/hotel-housekeeping-services') }}"
                             class="dropdown-items">
                             Hotel Housekeeping Services
                         </a>
@@ -793,7 +793,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/value-added-services') ? 'active' : '' }}">
 
-                        <a title="Value-Added Services" href="{{ url('/pages/value-added-services') }}"
+                        <a title="Value-Added Services" href="{{ url('/value-added-services') }}"
                             class="dropdown-items">
                             Value-Added Services
                         </a>
@@ -830,7 +830,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/career-overview') ? 'active' : '' }}">
 
-                        <a title="Career Overview" href="{{ url('/pages/career-overview') }}"
+                        <a title="Career Overview" href="{{ url('/career-overview') }}"
                             class="dropdown-items">
                             Career Overview
                         </a>
@@ -844,7 +844,7 @@
                         class="menu-item nav-item
                         {{ request()->is('pages/job-listings') ? 'active' : '' }}">
 
-                        <a title="Explore Our Roles" href="{{ url('/pages/job-listings') }}" class="dropdown-items">
+                        <a title="Explore Our Roles" href="{{ url('/job-listings') }}" class="dropdown-items">
                             Explore Our Roles
                         </a>
 
@@ -863,7 +863,7 @@
                 class="menu-item nav-item
                 {{ request()->is('pages/contact') ? 'current-menu-item current_page_item active' : '' }}">
 
-                <a title="Contact" href="{{ url('/pages/contact') }}" class="nav-link">
+                <a title="Contact" href="{{ url('/contact') }}" class="nav-link">
                     Contact
                 </a>
 

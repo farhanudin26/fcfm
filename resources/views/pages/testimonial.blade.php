@@ -587,7 +587,7 @@
 									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 										id="menu-item-467"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467 nav-item">
-										<a title="About Us" href="../pages/about-us.html" class="nav-link">About Us</a>
+										<a title="About Us" href="../about-us.html" class="nav-link">About Us</a>
 									</li>
 									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 										id="menu-item-481"
@@ -598,40 +598,40 @@
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2109"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2109 nav-item">
-												<a title="Commercial Cleaning" href="../pages/commercial-cleaning.html"
+												<a title="Commercial Cleaning" href="../commercial-cleaning.html"
 													class="dropdown-items">Commercial Cleaning</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2110"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2110 nav-item">
-												<a title="Healthcare Cleaning" href="../pages/healthcare-cleaning.html"
+												<a title="Healthcare Cleaning" href="../healthcare-cleaning.html"
 													class="dropdown-items">Healthcare Cleaning</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2111"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2111 nav-item">
-												<a title="Office Cleaning" href="../pages/office-cleaning.html"
+												<a title="Office Cleaning" href="../office-cleaning.html"
 													class="dropdown-items">Office Cleaning</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2112"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2112 nav-item">
 												<a title="Institution Cleaning"
-													href="../pages/institution-cleaning.html"
+													href="../institution-cleaning.html"
 													class="dropdown-items">Institution Cleaning</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2113"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2113 nav-item">
 												<a title="Hotel Housekeeping Services"
-													href="../pages/hotel-housekeeping-services.html"
+													href="../hotel-housekeeping-services.html"
 													class="dropdown-items">Hotel Housekeeping Services</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2114"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2114 nav-item">
 												<a title="Value-Added Services"
-													href="../pages/value-added-services.html"
+													href="../value-added-services.html"
 													class="dropdown-items">Value-Added Services</a></li>
 										</ul>
 									</li>
@@ -644,20 +644,20 @@
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2344"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2344 nav-item">
-												<a title="Career Overview" href="../pages/career-overview.html"
+												<a title="Career Overview" href="../career-overview.html"
 													class="dropdown-items">Career Overview</a></li>
 											<li itemscope="itemscope"
 												itemtype="https://www.schema.org/SiteNavigationElement"
 												id="menu-item-2343"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2343 nav-item">
-												<a title="Job Listings" href="../pages/job-listings.html"
+												<a title="Job Listings" href="../job-listings.html"
 													class="dropdown-items">Job Listings</a></li>
 										</ul>
 									</li>
 									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 										id="menu-item-468"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468 nav-item">
-										<a title="Contact" href="../pages/contact.html" class="nav-link">Contact</a>
+										<a title="Contact" href="../contact.html" class="nav-link">Contact</a>
 									</li>
 								</ul>
 							</nav><!-- #site-navigation -->
@@ -775,7 +775,7 @@
 							title="Home" href="/" class="nav-link">Home</a></li>
 					<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-467"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467 nav-item"><a
-							title="About Us" href="../pages/about-us.html" class="nav-link">About Us</a></li>
+							title="About Us" href="../about-us.html" class="nav-link">About Us</a></li>
 					<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-481"
 						class="menu-item menu-item-type-custom menu-item-object-custom dropdown dropdown has-dropdown menu-item-481 nav-item">
 						<a title="Services" href="#" class="nav-link">Services</a>
@@ -783,32 +783,32 @@
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2109"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2109 nav-item">
-								<a title="Commercial Cleaning" href="../pages/commercial-cleaning.html"
+								<a title="Commercial Cleaning" href="../commercial-cleaning.html"
 									class="dropdown-items">Commercial Cleaning</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2110"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2110 nav-item">
-								<a title="Healthcare Cleaning" href="../pages/healthcare-cleaning.html"
+								<a title="Healthcare Cleaning" href="../healthcare-cleaning.html"
 									class="dropdown-items">Healthcare Cleaning</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2111"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2111 nav-item">
-								<a title="Office Cleaning" href="../pages/office-cleaning.html"
+								<a title="Office Cleaning" href="../office-cleaning.html"
 									class="dropdown-items">Office Cleaning</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2112"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2112 nav-item">
-								<a title="Institution Cleaning" href="../pages/institution-cleaning.html"
+								<a title="Institution Cleaning" href="../institution-cleaning.html"
 									class="dropdown-items">Institution Cleaning</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2113"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2113 nav-item">
-								<a title="Hotel Housekeeping Services" href="../pages/hotel-housekeeping-services.html"
+								<a title="Hotel Housekeeping Services" href="../hotel-housekeeping-services.html"
 									class="dropdown-items">Hotel Housekeeping Services</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2114"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2114 nav-item">
-								<a title="Value-Added Services" href="../pages/value-added-services.html"
+								<a title="Value-Added Services" href="../value-added-services.html"
 									class="dropdown-items">Value-Added Services</a></li>
 						</ul>
 					</li>
@@ -819,18 +819,18 @@
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2344"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2344 nav-item">
-								<a title="Career Overview" href="../pages/career-overview.html"
+								<a title="Career Overview" href="../career-overview.html"
 									class="dropdown-items">Career Overview</a></li>
 							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
 								id="menu-item-2343"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2343 nav-item">
-								<a title="Job Listings" href="../pages/job-listings.html" class="dropdown-items">Job
+								<a title="Job Listings" href="../job-listings.html" class="dropdown-items">Job
 									Listings</a></li>
 						</ul>
 					</li>
 					<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-468"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468 nav-item"><a
-							title="Contact" href="../pages/contact.html" class="nav-link">Contact</a></li>
+							title="Contact" href="../contact.html" class="nav-link">Contact</a></li>
 				</ul>
 
 			</nav>

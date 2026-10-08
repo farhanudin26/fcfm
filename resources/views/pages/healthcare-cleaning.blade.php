@@ -278,7 +278,7 @@
                                                     for your facility.
                                                 </p>
 
-                                                <a href="/pages/booking" class="healthcare-cta-button">
+                                                <a href="/booking" class="healthcare-cta-button">
                                                     Request a Customised Healthcare Cleaning Quote
                                                     <span>→</span>
                                                 </a>

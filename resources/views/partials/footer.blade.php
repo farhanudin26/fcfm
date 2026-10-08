@@ -272,7 +272,7 @@
                                                 <ul class="footer__links list-unstyled mt-35">
 
                                                     <li>
-                                                        <a href="{{ url('/pages/about-us') }}">About Us</a>
+                                                        <a href="{{ url('/about-us') }}">About Us</a>
                                                     </li>
 
                                                     <!-- OUR SERVICES (dropdown) -->
@@ -288,28 +288,28 @@
                                                         <ul class="collapse footer__submenu list-unstyled"
                                                             id="footerServicesMenu">
                                                             <li>
-                                                                <a href="{{ url('/pages/commercial-cleaning') }}">Commercial
+                                                                <a href="{{ url('/commercial-cleaning') }}">Commercial
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/healthcare-cleaning') }}">Healthcare
+                                                                <a href="{{ url('/healthcare-cleaning') }}">Healthcare
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/office-cleaning') }}">Office
+                                                                <a href="{{ url('/office-cleaning') }}">Office
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/institution-cleaning') }}">Institutional
+                                                                <a href="{{ url('/institution-cleaning') }}">Institutional
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
                                                                 <a
-                                                                    href="{{ url('/pages/hotel-housekeeping-services') }}">Hotel
+                                                                    href="{{ url('/hotel-housekeeping-services') }}">Hotel
                                                                     Housekeeping Services</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/value-added-services') }}">Value-Added
+                                                                <a href="{{ url('/value-added-services') }}">Value-Added
                                                                     Services</a>
                                                             </li>
                                                         </ul>
@@ -327,18 +327,18 @@
                                                         <ul class="collapse footer__submenu list-unstyled"
                                                             id="footerCareersMenu">
                                                             <li>
-                                                                <a href="{{ url('/pages/career-overview') }}">Career
+                                                                <a href="{{ url('/career-overview') }}">Career
                                                                     Overview</a>
                                                             </li>
                                                             <li>
-                                                                <a href="{{ url('/pages/job-listings') }}">Explore Our
+                                                                <a href="{{ url('/job-listings') }}">Explore Our
                                                                     Roles</a>
                                                             </li>
                                                         </ul>
                                                     </li>
 
                                                     <li>
-                                                        <a href="{{ url('/pages/contact') }}">Contact</a>
+                                                        <a href="{{ url('/contact') }}">Contact</a>
                                                     </li>
 
                                                 </ul>
@@ -365,10 +365,10 @@
                                         </div>
                                         <ul class="footer__nav ul_li mt-15">
 
-                                            <li><a href="{{ url('/pages/terms-of-use') }}">Terms of Use</a>
+                                            <li><a href="{{ url('/terms-of-use') }}">Terms of Use</a>
                                             </li>
 
-                                            <li><a href="{{ url('/pages/privacy-policy') }}">Privacy policy</a></li>
+                                            <li><a href="{{ url('/privacy-policy') }}">Privacy policy</a></li>
                                         </ul>
                                     </div>
                                 </div>

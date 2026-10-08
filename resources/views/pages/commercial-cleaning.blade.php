@@ -193,7 +193,7 @@
                                                                 daily
                                                                 operations.
                                                             </p>
-                                                            <a href="/pages/office-cleaning" class="card-link">View
+                                                            <a href="/office-cleaning" class="card-link">View
                                                                 Office Cleaning
                                                                 Services<i class="flaticon-right-arrow"></i>
                                                             </a>
@@ -220,7 +220,7 @@
                                                                 requirements and cleanliness standards of healthcare
                                                                 environments.
                                                             </p>
-                                                            <a href="/pages/healthcare-cleaning" class="card-link">View
+                                                            <a href="/healthcare-cleaning" class="card-link">View
                                                                 Healthcare Cleaning
                                                                 Services<i class="flaticon-right-arrow"></i>
                                                             </a>
@@ -246,7 +246,7 @@
                                                                 well-maintained
                                                                 institutional environments.
                                                             </p>
-                                                            <a href="/pages/institution-cleaning" class="card-link">View
+                                                            <a href="/institution-cleaning" class="card-link">View
                                                                 Institutional
                                                                 Cleaning
                                                                 Services<i class="flaticon-right-arrow"></i>
@@ -272,7 +272,7 @@
                                                                 Dedicated housekeeping support for maintaining welcoming,
                                                                 well-presented and comfortable guest-ready environments.
                                                             </p>
-                                                            <a href="/pages/hotel-housekeeping-services"
+                                                            <a href="/hotel-housekeeping-services"
                                                                 class="card-link">View Hotel Housekeeping
                                                                 Services<i class="flaticon-right-arrow"></i>
                                                             </a>
@@ -299,7 +299,7 @@
                                                         facility-related services.
                                                     </p>
 
-                                                    <a href="/pages/value-added-services" class="wide-card-link">
+                                                    <a href="/value-added-services" class="wide-card-link">
                                                         Explore Our Value-Added Services <span>→</span>
                                                     </a>
                                                 </div>

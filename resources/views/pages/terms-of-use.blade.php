@@ -188,7 +188,7 @@
                     <div class="terms-point">
                         <h2>11. Privacy</h2>
                         <p>Your use of this website may involve the collection and processing of personal data.</p>
-                        <p>Please refer to our <a href="{{ url('/pages/privacy-policy') }}" style="color: #007bff; font-weight: 600; text-decoration: underline;">Privacy Policy</a> for information about how we collect, use, disclose and protect personal data.</p>
+                        <p>Please refer to our <a href="{{ url('/privacy-policy') }}" style="color: #007bff; font-weight: 600; text-decoration: underline;">Privacy Policy</a> for information about how we collect, use, disclose and protect personal data.</p>
                     </div>
 
                     {{-- 12. Changes to These Terms --}}

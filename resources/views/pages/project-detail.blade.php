@@ -573,7 +573,7 @@
                                                 <div class="banner-btn-wrapper d-flex justify-content-center align-items-center">
                                                     <div class="banner-btn">
                                                         <a class="d-flex justify-content-center align-items-center"
-                                                            href="{{ url('/pages/contact') }}"><span>Get An
+                                                            href="{{ url('/contact') }}"><span>Get An
                                                                 Estimate</span></a>
                                                     </div>
                                                     <div class="banener-cta d-flex align-items-center">

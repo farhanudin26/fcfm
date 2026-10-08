@@ -712,12 +712,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/commercial-cleaning') }}>Commercial
+                                                    <h3><a href={{ url('/commercial-cleaning') }}>Commercial
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
                                                     <a class="project__action"
-                                                        href={{ url('/pages/commercial-cleaning') }}><i
+                                                        href={{ url('/commercial-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">
@@ -740,10 +740,10 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/office-cleaning') }}>Office Cleaning</a>
+                                                    <h3><a href={{ url('/office-cleaning') }}>Office Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action" href={{ url('/pages/office-cleaning') }}><i
+                                                    <a class="project__action" href={{ url('/office-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">02</span>
@@ -759,12 +759,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/healthcare-cleaning') }}>Healthcare
+                                                    <h3><a href={{ url('/healthcare-cleaning') }}>Healthcare
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
                                                     <a class="project__action"
-                                                        href={{ url('/pages/healthcare-cleaning') }}><i
+                                                        href={{ url('/healthcare-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">03</span>
@@ -780,12 +780,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/institution-cleaning') }}>Institutional
+                                                    <h3><a href={{ url('/institution-cleaning') }}>Institutional
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
                                                     <a class="project__action"
-                                                        href={{ url('/pages/institution-cleaning') }}><i
+                                                        href={{ url('/institution-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">04</span>
@@ -802,12 +802,12 @@
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
-                                                    <h3><a href={{ url('/pages/hotel-housekeeping-services') }}>Hotel
+                                                    <h3><a href={{ url('/hotel-housekeeping-services') }}>Hotel
                                                             Housekeeping
                                                             Services</a></h3>
                                                     <span></span>
                                                     <a class="project__action"
-                                                        href={{ url('/pages/hotel-housekeeping-services') }}><i
+                                                        href={{ url('/hotel-housekeeping-services') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">05</span>
@@ -859,7 +859,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-scrubbing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/floor-scrubbing') }}"><strong> Floor
+                                                                href="{{ url('/floor-scrubbing') }}"><strong> Floor
                                                                     Scrubbing</strong></a></h3>
                                                         <p>Beyond regular mopping, clean off embedded dirt from your
                                                             flooring surfaces</p>
@@ -869,7 +869,7 @@
                                                             <li>Reduce unpleasant odours</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/floor-scrubbing') }}"><i
+                                                            href="{{ url('/floor-scrubbing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -878,7 +878,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/landscape-management.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/landscape-management') }}"><strong>
+                                                                href="{{ url('/landscape-management') }}"><strong>
                                                                     Landscape
                                                                     Management</strong></a></h3>
                                                         <p>Healthy landscapes improve air quality!</p>
@@ -888,7 +888,7 @@
                                                             <li>Reduce breeding of insects, rodents & pests</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/landscape-management') }}"><i
+                                                            href="{{ url('/landscape-management') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -898,7 +898,7 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/electrical-works.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/electrical-works') }}"><strong>
+                                                                href="{{ url('/electrical-works') }}"><strong>
                                                                     Electrical
                                                                     Works</strong></a></h3>
                                                         <p>Ensuring safe & efficient electrical systems with professional
@@ -910,7 +910,7 @@
                                                             <li>Troubleshooting and repair of electrical issues</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/electrical-works') }}"><i
+                                                            href="{{ url('/electrical-works') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -919,7 +919,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/robot-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/robotic-cleaning') }}"><strong>
+                                                                href="{{ url('/robotic-cleaning') }}"><strong>
                                                                     Robotic
                                                                     Cleaning</strong></a></h3>
                                                         <p>Improve productivity with minimal manual intervention</p>
@@ -929,7 +929,7 @@
                                                             <li>Consistent cleaning performance</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/robotic-cleaning') }}"><i
+                                                            href="{{ url('/robotic-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -938,7 +938,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/anti-microbial-service.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/anti-microbial') }}"><strong>
+                                                                href="{{ url('/anti-microbial') }}"><strong>
                                                                     Anti-Microbial
                                                                     Service</strong></a></h3>
                                                         <p>Give germs less room to stay with a protective service that helps
@@ -950,7 +950,7 @@
                                                             <li>Promotes a healthier environment</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/anti-microbial') }}"><i
+                                                            href="{{ url('/anti-microbial') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -960,7 +960,7 @@
                                                             src="{{ asset('assets/img/uploads/2025/09/jetwash.png') }}">
                                                         <br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/high-pressure-jetwash') }}"><strong>
+                                                                href="{{ url('/high-pressure-jetwash') }}"><strong>
                                                                     High
                                                                     Pressure<br>
                                                                     Jet Washing</strong></a></h3>
@@ -972,7 +972,7 @@
                                                                 areas</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/high-pressure-jetwash') }}"><i
+                                                            href="{{ url('/high-pressure-jetwash') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -981,7 +981,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/carpet-shampoo.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/carpet-cleaning') }}"><strong> Carpet
+                                                                href="{{ url('/carpet-cleaning') }}"><strong> Carpet
                                                                     Cleaning</strong></a></h3>
                                                         <p>Refresh & revitalize dull carpet fibres with a deep cleaning
                                                             session!</p>
@@ -991,7 +991,7 @@
                                                             </li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/carpet-cleaning') }}"><i
+                                                            href="{{ url('/carpet-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1000,7 +1000,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/disinfecting-services.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/disinfecting-services') }}"><strong>
+                                                                href="{{ url('/disinfecting-services') }}"><strong>
                                                                     Disinfecting
                                                                     Services</strong></a></h3>
                                                         <p>Disinfecting Services
@@ -1014,7 +1014,7 @@
                                                             </li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/disinfecting-services') }}"><i
+                                                            href="{{ url('/disinfecting-services') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -1023,7 +1023,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/floor-polishing.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/floor-polishing') }}"><strong> Floor
+                                                                href="{{ url('/floor-polishing') }}"><strong> Floor
                                                                     Polishing</strong></a></h3>
                                                         <p>Create lasting impressions from ground up – enhance and protect
                                                             your flooring surfaces through floor polishing!</p>
@@ -1033,7 +1033,7 @@
                                                                 granite, concrete, terrazzo</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/floor-polishing') }}"><i
+                                                            href="{{ url('/floor-polishing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1042,7 +1042,7 @@
                                                         <img decoding="async"
                                                             src="{{ asset('assets/img/uploads/2025/09/pest-control-image.png') }}"><br>
                                                         <h3 class="service__title"><a
-                                                                href="{{ url('/pages/pest-control') }}"><strong> Pest
+                                                                href="{{ url('/pest-control') }}"><strong> Pest
                                                                     Control</strong></a></h3>
                                                         <p>Protect your environment and employees from infestations that
                                                             affect hygiene, safety and property conditions</p>
@@ -1053,7 +1053,7 @@
                                                             <li>Elimination of insects & rodents</li>
                                                         </ul>
                                                         <a class="service__link"
-                                                            href="{{ url('/pages/pest-control') }}"><i
+                                                            href="{{ url('/pest-control') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
                                                 </div>

@@ -237,12 +237,12 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/high-pressure-jetwash">High Pressure Jetwash</a></h3>
+                                                                <h3><a href="/high-pressure-jetwash">High Pressure Jetwash</a></h3>
                                                                 <p>Cleaning using high pressure jet washing for removal of
                                                                     stubborn dirt and buildup from suitable outdoor and hard
                                                                     surfaces.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/high-pressure-jetwash">View Details</a>
+                                                                    href="/high-pressure-jetwash">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -256,11 +256,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/floor-scrubbing">Floor Scrubbing</a></h3>
+                                                                <h3><a href="/floor-scrubbing">Floor Scrubbing</a></h3>
                                                                 <p>Machine floor scrubbing for removal of accumulated dirt
                                                                     and maintenance of cleaner, hard floor surfaces.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/floor-scrubbing">View Details</a>
+                                                                    href="/floor-scrubbing">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -274,11 +274,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/floor-polishing">Floor Polishing</a></h3>
+                                                                <h3><a href="/floor-polishing">Floor Polishing</a></h3>
                                                                 <p>Professional floor polishing to help restore shine and
                                                                     improve appearance of suitable flooring surfaces.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/floor-polishing">View Details</a>
+                                                                    href="/floor-polishing">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -325,11 +325,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/carpet-cleaning">Carpet Cleaning</a></h3>
+                                                                <h3><a href="/carpet-cleaning">Carpet Cleaning</a></h3>
                                                                 <p>Deep carpet cleaning for removal of embedded dirt and
                                                                     refreshing of carpets in commercial spaces. </p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/carpet-cleaning">View Details</a>
+                                                                    href="/carpet-cleaning">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -343,12 +343,12 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/landscape-management">Landscape Management</a></h3>
+                                                                <h3><a href="/landscape-management">Landscape Management</a></h3>
                                                                 <p>Routine landscape care and maintenance for upkeeping of
                                                                     outdoor areas, maintaining a neat, healthy and
                                                                     well-maintained landscape.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/landscape-management">View Details</a>
+                                                                    href="/landscape-management">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -362,11 +362,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/pest-control">Pest Control</a></h3>
+                                                                <h3><a href="/pest-control">Pest Control</a></h3>
                                                                 <p>Professional pest management solutions to help maintain
                                                                     cleaner, safer and more hygienic environments.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/pest-control">View Details</a>
+                                                                    href="/pest-control">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -414,11 +414,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/disinfecting-services">Disinfecting Services</a></h3>
+                                                                <h3><a href="/disinfecting-services">Disinfecting Services</a></h3>
                                                                 <p>Targeted disinfection of surfaces as well as spaces to
                                                                     support safe, clean and hygienic environments.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/disinfecting-services">View Details</a>
+                                                                    href="/disinfecting-services">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -432,12 +432,12 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/anti-microbial">Anti-Microbial Service</a></h3>
+                                                                <h3><a href="/anti-microbial">Anti-Microbial Service</a></h3>
                                                                 <p>Anti-microbial treatment for selected surfaces to enhance
                                                                     and support ongoing hygiene and environmental
                                                                     cleanliness.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/anti-microbial">View Details</a>
+                                                                    href="/anti-microbial">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -451,12 +451,12 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/robotic-cleaning">Robotic Cleaning</a></h3>
+                                                                <h3><a href="/robotic-cleaning">Robotic Cleaning</a></h3>
                                                                 <p>Automated cleaning technology that is designed to support
                                                                     efficient and consistent cleaning across suitable
                                                                     spaces.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/robotic-cleaning">View Details</a>
+                                                                    href="/robotic-cleaning">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -504,11 +504,11 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/pages/electrical-works">Electrical Works</a></h3>
+                                                                <h3><a href="/electrical-works">Electrical Works</a></h3>
                                                                 <p>Electrical support for maintenance, installation, as well
                                                                     as repair requirements within your facility.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
-                                                                    href="/pages/electrical-works">View Details</a>
+                                                                    href="/electrical-works">View Details</a>
                                                             </div>
                                                         </div>
                                                     </div>
