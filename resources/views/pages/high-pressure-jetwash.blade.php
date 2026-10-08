@@ -55,7 +55,7 @@
                                     <section class="hotel-housekeeping-section" style="padding-bottom: 10px;">
                                         <div class="hotel-container">
                                             <div class="hotel-header">
-                                                <span class="hotel-label">Jetwash Service</span><br>
+                                                <span class="hotel-label">Value-Added Services</span><br>
                                                 <h2 class="hotel-title">High Pressure Jet Washing Services</h2><br>
                                                 <h3 class="hotel-subtitle">Powerful cleaning for tough dirt and outdoor
                                                     surfaces.</h3><br>

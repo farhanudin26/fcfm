@@ -436,7 +436,7 @@
                                                                             </div>
                                                                             <div class="inner-text">
                                                                                 <h4>Office Address:</h4>
-                                                                                18 Sin Ming Lane, #06-27, Midview City,
+                                                                                18 Sin Ming Lane, #06-26/27, Midview City,
                                                                                 Singapore 573960
                                                                             </div>
                                                                         </div>

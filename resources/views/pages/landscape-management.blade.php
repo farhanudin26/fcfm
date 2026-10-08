@@ -55,7 +55,7 @@
                                     <section class="hotel-housekeeping-section hotel-housekeeping-section--compact">
                                         <div class="hotel-container">
                                             <div class="hotel-header">
-                                                <span class="hotel-label">Landscape Management</span><br>
+                                                <span class="hotel-label">Value-Added Services</span><br>
                                                 <h2 class="hotel-title">Landscape Management Services</h2><br>
                                                 <h3 class="hotel-subtitle">Keeping outdoor spaces neat, healthy and well
                                                     maintained.</h3><br>

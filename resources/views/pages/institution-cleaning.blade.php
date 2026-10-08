@@ -58,8 +58,7 @@
                                         <section class="intro-section">
                                             <div class="container">
                                                 <div class="intro-inner">
-                                                    <span class="eyebrow">Institutional Cleaning Services in
-                                                        Singapore</span><br><br>
+                                                    <span class="eyebrow">Institutional Cleaning Services</span><br><br>
                                                     <h1><strong>Cleaning Solutions for<br> Spaces Shared by Many</strong>
                                                     </h1><br>
                                                     <p>Institutional environments are often busy, highly utilised spaces

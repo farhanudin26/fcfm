@@ -716,8 +716,7 @@
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action"
-                                                        href={{ url('/commercial-cleaning') }}><i
+                                                    <a class="project__action" href={{ url('/commercial-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">
@@ -763,8 +762,7 @@
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action"
-                                                        href={{ url('/healthcare-cleaning') }}><i
+                                                    <a class="project__action" href={{ url('/healthcare-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">03</span>
@@ -784,8 +782,7 @@
                                                             Cleaning</a>
                                                     </h3>
                                                     <span></span>
-                                                    <a class="project__action"
-                                                        href={{ url('/institution-cleaning') }}><i
+                                                    <a class="project__action" href={{ url('/institution-cleaning') }}><i
                                                             class="flaticon-right-arrow"></i></a>
                                                 </div>
                                                 <span class="project__number">04</span>
@@ -868,8 +865,7 @@
                                                             <li>Removal of dirt, stains and contaminants</li>
                                                             <li>Reduce unpleasant odours</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/floor-scrubbing') }}"><i
+                                                        <a class="service__link" href="{{ url('/floor-scrubbing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -909,8 +905,7 @@
                                                             <li>Power socket & switch installations</li>
                                                             <li>Troubleshooting and repair of electrical issues</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/electrical-works') }}"><i
+                                                        <a class="service__link" href="{{ url('/electrical-works') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -928,8 +923,7 @@
                                                             <li>Programmed cleaning routes</li>
                                                             <li>Consistent cleaning performance</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/robotic-cleaning') }}"><i
+                                                        <a class="service__link" href="{{ url('/robotic-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -949,8 +943,7 @@
                                                             <li>Supports employees’ & visitors’ wellbeing</li>
                                                             <li>Promotes a healthier environment</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/anti-microbial') }}"><i
+                                                        <a class="service__link" href="{{ url('/anti-microbial') }}"><i
                                                                 class="flaticon-plus"></i></a>
                                                     </div>
 
@@ -990,8 +983,7 @@
                                                             <li>Removal of unpleasant smells caused by spills & buildups
                                                             </li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/carpet-cleaning') }}"><i
+                                                        <a class="service__link" href="{{ url('/carpet-cleaning') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1003,7 +995,7 @@
                                                                 href="{{ url('/disinfecting-services') }}"><strong>
                                                                     Disinfecting
                                                                     Services</strong></a></h3>
-                                                        <p>Disinfecting Services
+                                                        <p>
                                                             Disinfecting helps create healthier spaces for happier employees
                                                         </p>
                                                         <ul class="service__list list-unstyled">
@@ -1032,8 +1024,7 @@
                                                             <li>Suitable for hard flooring surfaces such as marble, vinyl,
                                                                 granite, concrete, terrazzo</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/floor-polishing') }}"><i
+                                                        <a class="service__link" href="{{ url('/floor-polishing') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
 
@@ -1052,8 +1043,7 @@
                                                             <li>Reduce contamination risks</li>
                                                             <li>Elimination of insects & rodents</li>
                                                         </ul>
-                                                        <a class="service__link"
-                                                            href="{{ url('/pest-control') }}"><i
+                                                        <a class="service__link" href="{{ url('/pest-control') }}"><i
                                                                 class="flaticon-plus"></i></a><br>
                                                     </div>
                                                 </div>
@@ -1392,6 +1382,27 @@
 
                                     <div class="tab-info pt-110 pb-110"
                                         data-background="{{ asset('assets/img/widgets/4-tab-info/tab-info-bg.png') }}">
+                                        <style>
+                                            /* Semua tab-pane menumpuk di satu sel grid,
+               sehingga tinggi = tinggi tab terpanjang (Core Values) */
+                                            .tab-info .tab-content {
+                                                display: grid;
+                                            }
+
+                                            .tab-info .tab-content>.tab-pane {
+                                                display: block !important;
+                                                /* override display:none bawaan Bootstrap */
+                                                grid-area: 1 / 1;
+                                                /* semua di sel yang sama */
+                                                visibility: hidden;
+                                                pointer-events: none;
+                                            }
+
+                                            .tab-info .tab-content>.tab-pane.active {
+                                                visibility: visible;
+                                                pointer-events: auto;
+                                            }
+                                        </style>
                                         <div class="container p-0">
                                             <div class="row g-0">
                                                 <div class="col-lg-6">
@@ -1565,7 +1576,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>F – FAIRNESS</h3>
+                                                                            <h3><span style="color: #ffa800;">F</span> –
+                                                                                FAIRNESS</h3>
                                                                             <p>Championing respect, inclusivity & inclusive
                                                                                 hiring practices</p>
                                                                         </div>
@@ -1580,7 +1592,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>A – ACCOUNTABILITY</h3>
+                                                                            <h3><span style="color: #ffa800;">A</span> –
+                                                                                ACCOUNTABILITY</h3>
                                                                             <p>Being accountable for our own actions</p>
                                                                         </div>
                                                                     </div>
@@ -1594,7 +1607,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>M – MASTERY</h3>
+                                                                            <h3><span style="color: #ffa800;">M</span> –
+                                                                                MASTERY</h3>
                                                                             <p>Masters of our trade. Upholding high
                                                                                 standards through skills, expertise &
                                                                                 attention to detail</p>
@@ -1610,7 +1624,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>I² - INTEGRITY & INITIATIVE</h3>
+                                                                            <h3><span style="color: #ffa800;">I²</span> -
+                                                                                INTEGRITY & INITIATIVE</h3>
                                                                             <p>Initiative in actions,Integrity by heart</p>
                                                                         </div>
                                                                     </div>
@@ -1624,7 +1639,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>L – LIFELONG LEARNING</h3>
+                                                                            <h3><span style="color: #ffa800;">L</span> –
+                                                                                LIFELONG LEARNING</h3>
                                                                             <p>Acting with honesty while proactively
                                                                                 improving how we serve through lifelong
                                                                                 learning</p>
@@ -1640,7 +1656,8 @@
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
-                                                                            <h3>Y – YOU</h3>
+                                                                            <h3><span style="color: #ffa800;">Y</span> –
+                                                                                YOU</h3>
                                                                             <p><strong style="color: #fffe6b;">Family is
                                                                                     all about you! </strong>Placing our
                                                                                 clients’ needs, expectations and outcomes at
@@ -2037,8 +2054,7 @@
                                 Centre.
                             </p>
                             <!-- Link langsung membuka halaman Pink Coming Soon di tab baru -->
-                            <a href="/coming-soon"
-                                target="_blank" class="btn-readmore">
+                            <a href="/coming-soon" target="_blank" class="btn-readmore">
                                 Visit The Kind Walkers Site
                             </a>
                         </div>

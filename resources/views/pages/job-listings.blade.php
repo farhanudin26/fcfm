@@ -745,7 +745,7 @@
                                                         <div class="inner-text headline">
                                                             <h4>Office Address:</h4>
                                                             18 Sin Ming Lane, <br>
-                                                            #06-27, Midview City, <br>
+                                                            #06-26/27, Midview City, <br>
                                                             Singapore 573960
                                                         </div>
                                                     </div>

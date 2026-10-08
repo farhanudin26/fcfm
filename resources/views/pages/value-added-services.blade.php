@@ -64,8 +64,8 @@
                                                 </h3><br>
 
                                                 <p class="hotel-description">
-                                                    Beyond routine commercial cleaning, FCFM provides a range of value-added
-                                                    cleaning and facility services in Singapore to support the maintenance,
+                                                    Beyond routine commercial cleaning, <strong>FCFM provides a range of value-added
+                                                    cleaning and facility services in Singapore</strong> to support the maintenance,
                                                     hygiene and upkeeping of different environments. From pest control and
                                                     floor care to disinfecting, robotic cleaning, landscape management and
                                                     electrical works, our additional services can be arranged according to

@@ -56,7 +56,7 @@
                                     <section class="hotel-housekeeping-section" style="padding-bottom: 10px;">
                                         <div class="hotel-container">
                                             <div class="hotel-header">
-                                                <span class="hotel-label">Floor Polishing</span><br>
+                                                <span class="hotel-label">Value-Added Services</span><br>
                                                 <h2 class="hotel-title">Floor Polishing Services</h2><br>
                                                 <h3 class="hotel-subtitle">Restoring the shine and appearance of your
                                                     floors.</h3><br>

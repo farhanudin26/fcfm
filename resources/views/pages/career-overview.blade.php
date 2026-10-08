@@ -125,7 +125,7 @@
                     <div class="container">
                         <div class="hero-inner">
                             <h1>Build Your Next Chapter With Us</h1>
-                            <p>Be Part of the People Behind Better Spaces</p>
+                            <p>Be Part of the People Behind Better Spaces</p><br>
                             <h4>At<strong> Fresh Cleaning Facilities Management (FCFM)</strong>, our work is powered by
                                 people. From the teams
                                 caring for our clients' spaces every day to the people coordinating operations behind the
@@ -145,7 +145,7 @@
                 <section class="grow-section">
                     <div class="container">
                         <div class="grow-copy">
-                            <h2><strong>More Than a Job, A Place to Grow</strong></ h2>
+                            <h2><strong>More Than a Job, A Place to Grow</strong></h2>
                                 <p>Great service starts with people who feel supported in doing their best work. We believe
                                     in
                                     creating opportunities for our people to learn, develop and take on greater
@@ -414,7 +414,7 @@
                                                             <div class="inner-text headline">
                                                                 <h4>Office Address:</h4>
                                                                 18 Sin Ming Lane, <br>
-                                                                #06-27, Midview City, <br>
+                                                                #06-26/27, Midview City, <br>
                                                                 Singapore 573960
                                                             </div>
                                                         </div>

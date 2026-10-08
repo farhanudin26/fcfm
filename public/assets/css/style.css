@@ -9277,6 +9277,7 @@ select {
     animation: outer-ripple 2000ms linear infinite;
 }
 
+
 /* animation */
 
 @keyframes outer-ripple {
@@ -10410,11 +10411,8 @@ select {
 
 .service__list li::before {
     position: absolute;
-    top: 50%;
+    top: 8px; /* Mengunci posisi di baris pertama */
     left: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -15840,7 +15838,7 @@ select {
     padding: 14px 25px;
     border-radius: 5px;
     background: #1d73be;
-    color: #ffffff;
+    color: #ffffff; /* Teks berwarna putih */
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -15849,13 +15847,24 @@ select {
 
 .healthcare-cta-button:hover {
     background: #155d9c;
-    color: #ffffff;
+    color: #ffd700; /* Teks berubah menjadi kuning saat di-hover */
     transform: translateY(-2px);
 }
 
 .healthcare-cta-button span {
     font-size: 19px;
     line-height: 1;
+}
+/* Warna default (Putih) */
+.healthcare-cta a.healthcare-cta-button,
+.healthcare-cta a.healthcare-cta-button span {
+    color: #ffffff !important;
+}
+
+/* Warna saat di-hover (Kuning) */
+.healthcare-cta a.healthcare-cta-button:hover,
+.healthcare-cta a.healthcare-cta-button:hover span {
+    color: #ffd700 !important; /* Gunakan #ffff00 jika ingin kuning lebih terang */
 }
 
 /* =========================================================
@@ -16490,7 +16499,7 @@ select {
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #007bff;
+    color: #1d73be;
     margin: 0 0 12px;
 }
 .fcfm-institutional .intro-section h1 {
@@ -16785,7 +16794,7 @@ select {
 .hotel-label {
     font-size: 14px;
     font-weight: 700;
-    color: #0088cc;
+    color: #1d73be;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -16800,7 +16809,7 @@ select {
 .hotel-subtitle {
     font-size: 22px;
     font-weight: 600;
-    color: #0088cc;
+    color: #1d73be;
     margin-bottom: 20px;
 }
 

@@ -205,8 +205,8 @@
                                                     </div>
 
                                                     <div class="service-card">
-                                                    <img src="{{ asset('assets/img/icon/icon-floor.png') }}"
-                                                        alt="Routine Floor Cleaning">
+                                                        <img src="{{ asset('assets/img/icon/icon-floor.png') }}"
+                                                            alt="Routine Floor Cleaning">
                                                         <h4>Floors & Frequently Used Surfaces</h4>
                                                     </div>
 
@@ -278,7 +278,8 @@
                                                     for your facility.
                                                 </p>
 
-                                                <a href="/booking" class="healthcare-cta-button">
+                                                <a href="https://wa.me/6583332999" target="_blank" rel="noopener"
+                                                    class="healthcare-cta-button">
                                                     Request a Customised Healthcare Cleaning Quote
                                                     <span>→</span>
                                                 </a>
@@ -526,7 +527,7 @@
                                                             </section>
 
                                                             <!-- Modal Get A Quote Form -->
-                                            <!-- ganti form -->
+                                                            <!-- ganti form -->
 
                                                         </div>
                                                     </div>

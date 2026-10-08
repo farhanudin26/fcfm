@@ -55,7 +55,7 @@
                                     <section class="hotel-housekeeping-section hotel-housekeeping-section--compact">
                                         <div class="hotel-container">
                                             <div class="hotel-header">
-                                                <span class="hotel-label">Carpet Care</span><br>
+                                                <span class="hotel-label">Value-Added Services</span><br>
                                                 <h2 class="hotel-title">Carpet Cleaning Services</h2><br>
                                                 <h3 class="hotel-subtitle">A deeper clean for fresher, better-maintained
                                                     carpets.</h3><br>

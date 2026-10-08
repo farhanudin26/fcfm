@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuoteRequestController;
-
+use App\Http\Controllers\ContactController;
 
 Route::view('/', 'pages.home')->name('home');
 
@@ -77,3 +77,5 @@ Route::view('/value-added-services', 'pages.value-added-services')->name('value-
 Route::post('/quote', [QuoteRequestController::class, 'store'])
     ->middleware('throttle:5,1')
     ->name('quote.store');
+
+Route::post('/contact', 'ContactController@send')->name('contact.send');

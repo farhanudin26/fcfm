@@ -3,7 +3,7 @@
 @section('title', 'Contact – Fresh Cleaning Facilities Management')
 @section('meta_description',
     'Get in touch with Fresh Cleaning Facilities Management. Contact us at 18 Sin Ming Lane,
-    #06-27, Midview City, Singapore 573960, call +65 8333 2999, or email hello@fcfm.sg for a free quote.')
+    #06-26/27, Midview City, Singapore 573960, call +65 8333 2999, or email hello@fcfm.sg for a free quote.')
 @section('meta_keywords',
     'contact fcfm, cleaning company contact singapore, get a quote cleaning services, fresh
     cleaning facilities management contact')
@@ -93,112 +93,188 @@
                                                                 <h2>Have Any <span>Question?</span></h2>
                                                             </div>
 
-                                                            <div class="wpcf7 no-js" id="wpcf7-f5-p429-o1" lang="en-US"
-                                                                dir="ltr" data-wpcf7-id="5">
-                                                                <div class="screen-reader-response">
-                                                                    <p role="status" aria-live="polite" aria-atomic="true">
-                                                                    </p>
-                                                                    <ul></ul>
-                                                                </div>
+                                                            <div class="wpcf7" id="contact-form" lang="en-US"
+                                                                dir="ltr">
 
-                                                                <form class="wpcf7-form init"
-                                                                    action="{{ url('/contact') }}" method="POST"
-                                                                    aria-label="Contact form" novalidate="novalidate"
-                                                                    data-status="init">
+                                                                {{-- NOTIFICATION: success / error / validation error --}}
+                                                                @if (session('success'))
+                                                                    <div class="alert alert-success alert-dismissible fade show contact-alert"
+                                                                        role="alert">
+                                                                        <strong>Success!</strong> {{ session('success') }}
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="alert" data-dismiss="alert"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                @endif
+
+                                                                @if (session('error'))
+                                                                    <div class="alert alert-danger alert-dismissible fade show contact-alert"
+                                                                        role="alert">
+                                                                        <strong>Failed!</strong> {{ session('error') }}
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="alert" data-dismiss="alert"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                @endif
+
+                                                                @if ($errors->any())
+                                                                    <div class="alert alert-danger alert-dismissible fade show contact-alert"
+                                                                        role="alert">
+                                                                        <strong>Please check your input:</strong>
+                                                                        <ul class="mb-0 mt-1">
+                                                                            @foreach ($errors->all() as $error)
+                                                                                <li>{{ $error }}</li>
+                                                                            @endforeach
+                                                                        </ul>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="alert" data-dismiss="alert"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                @endif
+
+                                                                <form id="contact-form-el" class="wpcf7-form"
+                                                                    action="{{ route('contact.send') }}" method="POST"
+                                                                    aria-label="Contact form">
                                                                     @csrf
-                                                                    <fieldset class="hidden-fields-container">
-                                                                        <input type="hidden" name="_wpcf7"
-                                                                            value="5" />
-                                                                        <input type="hidden" name="_wpcf7_version"
-                                                                            value="6.1.1" />
-                                                                        <input type="hidden" name="_wpcf7_locale"
-                                                                            value="en_US" />
-                                                                        <input type="hidden" name="_wpcf7_unit_tag"
-                                                                            value="wpcf7-f5-p429-o1" />
-                                                                        <input type="hidden" name="_wpcf7_container_post"
-                                                                            value="429" />
-                                                                        <input type="hidden"
-                                                                            name="_wpcf7_posted_data_hash"
-                                                                            value="" />
-                                                                    </fieldset>
+
+                                                                    {{-- Honeypot anti-spam --}}
+                                                                    <div style="position:absolute; left:-9999px;"
+                                                                        aria-hidden="true">
+                                                                        <input type="text" name="website"
+                                                                            tabindex="-1" autocomplete="off">
+                                                                    </div>
 
                                                                     <div class="clenix-contact-form">
                                                                         <div class="row">
-                                                                            <!-- 1. Name (Lebih Panjang / Full Width) -->
+
+                                                                            {{-- 1. Name --}}
                                                                             <div class="col-md-12">
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-name">
                                                                                     <input size="40" maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                        class="wpcf7-form-control wpcf7-text @error('your-name') is-invalid @enderror"
                                                                                         aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Name*" value=""
-                                                                                        type="text" name="your-name" />
+                                                                                        placeholder="Name*"
+                                                                                        value="{{ old('your-name') }}"
+                                                                                        type="text" name="your-name"
+                                                                                        required />
                                                                                 </span>
+                                                                                @error('your-name')
+                                                                                    <small
+                                                                                        class="text-danger d-block mb-2">{{ $message }}</small>
+                                                                                @enderror
                                                                             </div>
 
-                                                                            <!-- 2. Phone (Sebelah Kiri) -->
+                                                                            {{-- 2. Phone --}}
                                                                             <div class="col-md-6">
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-phone">
-                                                                                    <input size="40" maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-text"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Phone" value=""
+                                                                                    <input size="40" maxlength="50"
+                                                                                        class="wpcf7-form-control wpcf7-text @error('your-phone') is-invalid @enderror"
+                                                                                        placeholder="Phone"
+                                                                                        value="{{ old('your-phone') }}"
                                                                                         type="text"
                                                                                         name="your-phone" />
                                                                                 </span>
+                                                                                @error('your-phone')
+                                                                                    <small
+                                                                                        class="text-danger d-block mb-2">{{ $message }}</small>
+                                                                                @enderror
                                                                             </div>
 
-                                                                            <!-- 2. Email (Sebelah Kanan) -->
+                                                                            {{-- 3. Email --}}
                                                                             <div class="col-md-6">
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-email">
                                                                                     <input size="40" maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                                                        class="wpcf7-form-control wpcf7-email wpcf7-text @error('your-email') is-invalid @enderror"
                                                                                         aria-required="true"
-                                                                                        aria-invalid="false"
                                                                                         placeholder="Email*"
-                                                                                        value="" type="email"
-                                                                                        name="your-email" />
+                                                                                        value="{{ old('your-email') }}"
+                                                                                        type="email" name="your-email"
+                                                                                        required />
                                                                                 </span>
+                                                                                @error('your-email')
+                                                                                    <small
+                                                                                        class="text-danger d-block mb-2">{{ $message }}</small>
+                                                                                @enderror
                                                                             </div>
 
-                                                                            <!-- 3. Subject (Input Text Full Width) -->
+                                                                            {{-- 4. Subject --}}
                                                                             <div class="col-md-12">
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-subject">
                                                                                     <input size="40" maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-text"
-                                                                                        aria-invalid="false"
+                                                                                        class="wpcf7-form-control wpcf7-text @error('your-subject') is-invalid @enderror"
                                                                                         placeholder="Subject"
-                                                                                        value="" type="text"
+                                                                                        value="{{ old('your-subject') }}"
+                                                                                        type="text"
                                                                                         name="your-subject" />
                                                                                 </span>
+                                                                                @error('your-subject')
+                                                                                    <small
+                                                                                        class="text-danger d-block mb-2">{{ $message }}</small>
+                                                                                @enderror
                                                                             </div>
 
-                                                                            <!-- 4. Message (Textarea Full Width) -->
+                                                                            {{-- 5. Message --}}
                                                                             <div class="col-md-12">
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-message">
-                                                                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea"
-                                                                                        aria-invalid="false" placeholder="Message" name="your-message"></textarea>
+                                                                                    <textarea cols="40" rows="10" maxlength="2000"
+                                                                                        class="wpcf7-form-control wpcf7-textarea @error('your-message') is-invalid @enderror" placeholder="Message"
+                                                                                        name="your-message">{{ old('your-message') }}</textarea>
                                                                                 </span>
+                                                                                @error('your-message')
+                                                                                    <small
+                                                                                        class="text-danger d-block mb-2">{{ $message }}</small>
+                                                                                @enderror
                                                                             </div>
 
-                                                                            <!-- Tombol Submit -->
+                                                                            {{-- Submit Button --}}
                                                                             <div class="col-md-12">
                                                                                 <input
-                                                                                    class="wpcf7-form-control wpcf7-submit has-spinner"
-                                                                                    type="submit" value="Submit Now" />
+                                                                                    class="wpcf7-form-control wpcf7-submit"
+                                                                                    id="contact-submit" type="submit"
+                                                                                    value="Submit Now" />
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-                                                                    <div class="wpcf7-response-output" aria-hidden="true">
-                                                                    </div>
                                                                 </form>
                                                             </div>
+
+                                                            <script>
+                                                                document.addEventListener('DOMContentLoaded', function() {
+                                                                    var form = document.getElementById('contact-form-el');
+                                                                    var btn = document.getElementById('contact-submit');
+                                                                    var alertBox = document.querySelector('.contact-alert');
+
+                                                                    if (form && btn) {
+                                                                        form.addEventListener('submit', function() {
+                                                                            btn.disabled = true;
+                                                                            btn.value = 'Sending...';
+                                                                        });
+                                                                    }
+
+                                                                    if (alertBox) {
+                                                                        alertBox.scrollIntoView({
+                                                                            behavior: 'smooth',
+                                                                            block: 'center'
+                                                                        });
+                                                                    }
+
+                                                                    var success = document.querySelector('.alert-success.contact-alert');
+                                                                    if (success) {
+                                                                        setTimeout(function() {
+                                                                            success.style.transition = 'opacity .5s';
+                                                                            success.style.opacity = '0';
+                                                                            setTimeout(function() {
+                                                                                success.remove();
+                                                                            }, 500);
+                                                                        }, 6000);
+                                                                    }
+                                                                });
+                                                            </script>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -239,7 +315,7 @@
                                                                 <div class="inner-text headline">
                                                                     <h4>Office Address:</h4>
                                                                     18 Sin Ming Lane, <br>
-                                                                    #06-27, Midview City, <br>
+                                                                    #06-26/27, Midview City, <br>
                                                                     Singapore 573960
                                                                 </div>
                                                             </div>

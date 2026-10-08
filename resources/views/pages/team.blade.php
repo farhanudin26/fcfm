@@ -730,7 +730,7 @@
 					<ul class="sidebar-info-list">
 						<li>
 							<i class="fas fa-map-marker-alt"></i>
-							18 Sin Ming Lane, #06-27, Midview City, Singapore 573960
+							18 Sin Ming Lane, #06-26/27, Midview City, Singapore 573960
 						</li>
 						<li>
 							<i class="fas fa-phone-alt"></i>

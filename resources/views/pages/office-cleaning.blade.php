@@ -86,7 +86,8 @@
                                         <section class="coverage-section">
                                             <div class="container">
                                                 <div class="section-header">
-                                                    <h2><strong>What Does Our Office Cleaning <br>Services Cover?</strong></h2>
+                                                    <h2><strong>What Does Our Office Cleaning <br>Services Cover?</strong>
+                                                    </h2>
                                                     <p>Every office has different cleaning priorities depending on its size,
                                                         layout, occupancy and daily activities. Our cleaning scope can be
                                                         customised according to the requirements of your workplace.</p>
@@ -295,7 +296,8 @@
                                                             should reflect that. Tell us about your workplace, operating
                                                             hours and cleaning requirements, and our team can recommend a
                                                             suitable cleaning solution for your business.</p>
-                                                        <a href="#" class="cta-link">Get a Customised Office
+                                                        <a href="https://wa.me/6583332999" target="_blank" rel="noopener"
+                                                            class="cta-link">Get a Customised Office
                                                             Cleaning Quote <i class="flaticon-right-arrow"></i></a>
                                                     </div>
 
@@ -558,7 +560,7 @@
                                                             </section>
 
                                                             <!-- Modal Get A Quote Form -->
-                                            <!-- ganti form -->
+                                                            <!-- ganti form -->
 
                                                         </div>
                                                     </div>

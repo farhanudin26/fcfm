@@ -55,7 +55,7 @@
                                     <section class="hotel-housekeeping-section hotel-housekeeping-section--compact">
                                         <div class="hotel-container">
                                             <div class="hotel-header">
-                                                <span class="hotel-label">Electrical Support</span><br>
+                                                <span class="hotel-label">Value-Added Services</span><br>
                                                 <h2 class="hotel-title">Electrical Works Services</h2><br>
                                                 <h3 class="hotel-subtitle">Supporting the everyday electrical needs of your
                                                     facility.</h3><br>
