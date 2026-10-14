@@ -15,8 +15,29 @@
                                     background-color: #f9da00;
                                 }
 
+                                .footer__social {
+                                    display: flex;
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+                                    border-bottom: 1px solid #ffffff;
+                                }
+
                                 .footer__social li {
-                                    width: 33% !important;
+                                    width: 33.333% !important;
+                                    text-align: center;
+                                }
+
+                                .footer__social li a {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 8px;
+                                    padding: 15px 10px;
+                                    text-decoration: none;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: #000000;
                                 }
 
                                 .footer__bottom {
@@ -27,10 +48,6 @@
                                     border-right: 1px solid #ffffff;
                                 }
 
-                                .footer__social {
-                                    border-bottom: 1px solid #ffffff;
-                                }
-
                                 .footer__info li i {
                                     color: var(--color-black);
                                 }
@@ -38,7 +55,6 @@
                                 .footer__widget p,
                                 .footer__info li,
                                 .footer__widget h3,
-                                .footer__social li a,
                                 .footer__social li a i,
                                 .footer__copyright,
                                 .footer__nav li a,
@@ -48,6 +64,19 @@
 
                                 .footer__copyright a {
                                     color: var(--color-primary);
+                                }
+
+                                /* Responsive penyesuaian teks sosial media agar rapi di mobile */
+                                @media (max-width: 767px) {
+                                    .footer__social li a {
+                                        font-size: 13px !important;
+                                        padding: 12px 4px !important;
+                                        gap: 5px !important;
+                                    }
+
+                                    .footer__social li a i {
+                                        font-size: 14px !important;
+                                    }
                                 }
 
                                 /* ===== Footer columns alignment fix ===== */
@@ -189,13 +218,10 @@
                             <footer class="footer">
 
                                 <ul class="footer__social">
-
                                     <li><a href="https://www.tiktok.com/@fcfm_singapore"><i
                                                 class="fab fa-tiktok"></i>Tiktok</a></li>
-
                                     <li><a href="https://www.facebook.com/profile.php?id=61570628857365"><i
                                                 class="fab fa-facebook-f"></i>Facebook</a></li>
-
                                     <li><a href="https://www.instagram.com/fcfm_singapore"><i
                                                 class="fab fa-instagram"></i>Instagram</a></li>
                                 </ul>
@@ -204,9 +230,7 @@
 
                                     <div class="row pt-45 pb-65">
 
-                                        <!-- ============================
-                                             COLUMN 1: LOGO
-                                        ============================= -->
+                                        <!-- COLUMN 1: LOGO -->
                                         <div class="col-lg-3 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <img src="{{ asset('assets/img/uploads/2025/09/square-fcfm-logo.png') }}"
@@ -214,22 +238,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- ============================
-                                             COLUMN 2: GET IN TOUCH
-                                        ============================= -->
-                                        <style>
-                                            .footer__info li {
-                                                display: flex;
-                                                align-items: flex-start;
-                                                gap: 12px;
-                                                /* Menjaga jarak ikon dengan teks alamat */
-                                            }
-
-                                            .footer__info li span .nobreak {
-                                                white-space: nowrap;
-                                                /* Mencegah kata Midview City terpotong ke bawah */
-                                            }
-                                        </style>
+                                        <!-- COLUMN 2: GET IN TOUCH -->
                                         <div class="col-lg-3 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <h3><b>Get In Touch</b></h3>
@@ -261,10 +270,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- ============================
-                                             COLUMN 3: EXPLORE
-                                             (offset-lg-1 = geser ke kanan)
-                                        ============================= -->
+                                        <!-- COLUMN 3: EXPLORE -->
                                         <div class="col-lg-3 offset-lg-1 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <h3><b>Explore</b></h3>
@@ -304,8 +310,7 @@
                                                                     Cleaning</a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    href="{{ url('/hotel-housekeeping-services') }}">Hotel
+                                                                <a href="{{ url('/hotel-housekeeping-services') }}">Hotel
                                                                     Housekeeping Services</a>
                                                             </li>
                                                             <li>
@@ -345,10 +350,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- ============================
-                                             COLUMN 4: (reserved - awards / instagram)
-                                             (dikecilkan jadi col-lg-2 supaya total = 12 kolom)
-                                        ============================= -->
+                                        <!-- COLUMN 4 -->
                                         <div class="col-lg-2 col-md-6 footer__col mt-30">
                                             <div class="footer__widget">
                                                 <div class="footer__awards"></div>
@@ -364,10 +366,8 @@
                                                 Management</a>. All Rights Reserved Copyright
                                         </div>
                                         <ul class="footer__nav ul_li mt-15">
-
                                             <li><a href="{{ url('/terms-of-use') }}">Terms of Use</a>
                                             </li>
-
                                             <li><a href="{{ url('/privacy-policy') }}">Privacy policy</a></li>
                                         </ul>
                                     </div>

@@ -294,7 +294,50 @@
                             <div class="elementor-element elementor-element-45dc489 elementor-widget elementor-widget-clenfix-prono"
                                 data-id="45dc489" data-element_type="widget" data_widget_type="clenfix-prono.default">
                                 <div class="elementor-widget-container">
+                                    <style>
+                                        /* CSS Responsif untuk Bagian Banner/Promo di Mobile */
+                                        @media (max-width: 767px) {
+                                            #clenix-promo {
+                                                background-size: cover !important;
+                                                background-position: center center !important;
+                                                padding: 40px 15px !important;
+                                            }
 
+                                            .banner-btn-wrapper {
+                                                flex-direction: column !important;
+                                                align-items: stretch !important;
+                                                gap: 0 !important;
+                                                /* Reset gap bawaan flexbox */
+                                            }
+
+                                            .banner-btn {
+                                                margin: 0 !important;
+                                                /* Hapus margin bawaan tombol */
+                                            }
+
+                                            .banner-btn a {
+                                                width: 100% !important;
+                                                text-align: center;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta {
+                                                display: flex !important;
+                                                justify-content: center !important;
+                                                align-items: center !important;
+                                                margin: 15px 0 !important;
+                                                /* Memberikan jarak atas-bawah yang simetris */
+                                                padding: 0 !important;
+                                                text-align: center !important;
+                                                width: 100% !important;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta span {
+                                                display: block !important;
+                                                margin: 0 auto !important;
+                                                line-height: 1 !important;
+                                            }
+                                        }
+                                    </style>
                                     <section id="clenix-promo" class="clenix-promo-section position-relative"
                                         style="
         background-image: url('{{ asset('assets/img/uploads/2025/10/fcfm-about-speak-with-us-bg-scaled.jpg') }}');
@@ -676,6 +719,7 @@
                                                             <div class="clenix-contact-info">
                                                                 <div class="row">
 
+                                                                    <!-- Office Address -->
                                                                     <div class="col-md-6">
                                                                         <div class="contact-info-item d-flex">
                                                                             <div class="inner-icon">
@@ -685,18 +729,23 @@
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
                                                                                     style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
-
                                                                             </div>
                                                                             <div class="inner-text">
                                                                                 <h4>Office Address:</h4>
-                                                                                18 Sin Ming Lane, <br>#06-26/27, Midview
-                                                                                City,
-                                                                                Singapore 573960
+                                                                                <div
+                                                                                    style="font-size: 13.5px; line-height: 1.4;">
+                                                                                    18 Sin Ming Lane,<br>
+                                                                                    <span
+                                                                                        style="white-space: nowrap;">#06-26/27,
+                                                                                        Midview City,</span>
+                                                                                    Singapore 573960
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="col-md-6">
+                                                                    <!-- E-mail Us (Ditambahkan ms-auto / ps-md-4 agar lebih ke kanan) -->
+                                                                    <div class="col-md-6 ps-md-4">
                                                                         <div class="contact-info-item d-flex">
                                                                             <div class="inner-icon">
                                                                                 <img decoding="async" width="56"
@@ -713,6 +762,7 @@
                                                                         </div>
                                                                     </div>
 
+                                                                    <!-- Telephone -->
                                                                     <div class="col-md-6">
                                                                         <div class="contact-info-item d-flex">
                                                                             <div class="inner-icon">
@@ -730,7 +780,8 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="col-md-6">
+                                                                    <!-- Operating Hours (Ditambahkan ps-md-4 agar sejajar dengan E-mail Us) -->
+                                                                    <div class="col-md-6 ps-md-4">
                                                                         <div class="contact-info-item d-flex">
                                                                             <div class="inner-icon">
                                                                                 <img decoding="async" width="56"
@@ -739,7 +790,6 @@
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
                                                                                     style="filter: invert(34%) sepia(98%) saturate(2256%) hue-rotate(200deg) brightness(101%) contrast(103%);" />
-
                                                                             </div>
                                                                             <div class="inner-text">
                                                                                 <h4>Operating Hours</h4>
@@ -748,12 +798,13 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+
                                                                 </div>
                                                             </div>
                                                             <div class="contact-map">
                                                                 <div id="googleMaps" class="google-map-container">
                                                                     <iframe
-                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.696781975834!2d103.83122392452916!3d1.3585583986285894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19b20a524c13%3A0xd1f43a771db52395!2sFresh%20Cleaning%20Facilities%20Management%20Pte%20Ltd!5e0!3m2!1sid!2sid!4v1791436190948!5m2!1sid!2sid"
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.696781975834!2d103.83122392452916!3d1.3585583986285894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19b20a524c13%3A0xd1f43a771db52395!2sFresh%20Cleaning%20Facilities%20Management%20Pte%20Ltd!5e0!3m2!1sen!2sen!4v1791436190948!5m2!1sen!2sen"
                                                                         width="50" height="225" style="border:0;"
                                                                         allowfullscreen="" loading="lazy"
                                                                         referrerpolicy="strict-origin-when-cross-origin"></iframe>

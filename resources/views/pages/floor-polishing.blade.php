@@ -376,9 +376,54 @@
                     </section>
                 </div>
             </div>
-            <div class="elementor-element elementor-element-19ed9f3 elementor-widget elementor-widget-clenfix-prono"
-                data-id="19ed9f3" data-element_type="widget" data-widget_type="clenfix-prono.default">
-                <div class="elementor-widget-container">
+                            <div class="elementor-element elementor-element-19ed9f3 elementor-widget elementor-widget-clenfix-prono"
+                                data-id="19ed9f3" data-element_type="widget" data-widget_type="clenfix-prono.default">
+                                <div class="elementor-widget-container">
+
+                                    <style>
+                                        /* CSS Responsif untuk Bagian Banner/Promo di Mobile */
+                                        @media (max-width: 767px) {
+                                            #clenix-promo {
+                                                background-size: cover !important;
+                                                background-position: center center !important;
+                                                padding: 40px 15px !important;
+                                            }
+
+                                            .banner-btn-wrapper {
+                                                flex-direction: column !important;
+                                                align-items: stretch !important;
+                                                gap: 0 !important;
+                                                /* Reset gap bawaan flexbox */
+                                            }
+
+                                            .banner-btn {
+                                                margin: 0 !important;
+                                                /* Hapus margin bawaan tombol */
+                                            }
+
+                                            .banner-btn a {
+                                                width: 100% !important;
+                                                text-align: center;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta {
+                                                display: flex !important;
+                                                justify-content: center !important;
+                                                align-items: center !important;
+                                                margin: 15px 0 !important;
+                                                /* Memberikan jarak atas-bawah yang simetris */
+                                                padding: 0 !important;
+                                                text-align: center !important;
+                                                width: 100% !important;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta span {
+                                                display: block !important;
+                                                margin: 0 auto !important;
+                                                line-height: 1 !important;
+                                            }
+                                        }
+                                    </style>
 
                     <section
                         class="elementor-section elementor-top-section elementor-element elementor-element-a30f7ee elementor-section-full_width elementor-section-height-default elementor-section-height-default"

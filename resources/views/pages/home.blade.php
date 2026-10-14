@@ -203,6 +203,92 @@
                     </div>
                 </div>
             </section>
+            <style>
+                /* Styling Default (Desktop) */
+                .feature__img {
+                    width: 100%;
+                    margin-left: -75px;
+                    margin-top: -15px;
+                }
+
+                .cta__wrap.cta__two.ul_li {
+                    background: #3492d3;
+                    box-shadow: none;
+                }
+
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                /* Penyesuaian Responsif untuk Mobile & Tablet (Layar < 992px) */
+                @media (max-width: 991px) {
+
+                    /* Reset margin & padding pemisah agar tidak ada garis putih */
+                    .feature.pb-60 {
+                        padding-bottom: 0 !important;
+                    }
+
+                    .feature__img {
+                        margin-left: 0 !important;
+                        margin-top: 0 !important;
+                        width: 100% !important;
+                    }
+
+                    .feature__img img {
+                        width: 100% !important;
+                        height: auto !important;
+                        display: block !important;
+                    }
+
+                    .feature__content-wrap.mt-140 {
+                        margin-top: 15px !important;
+                        padding-top: 0 !important;
+                    }
+
+                    .cta__wrap.cta__two.ul_li {
+                        padding: 15px !important;
+                    }
+
+                    /* Hilangkan celah/garis putih dan satukan warna biru */
+                    .elementor-element.elementor-element-e518cfa {
+                        position: relative !important;
+                        left: auto !important;
+                        top: auto !important;
+                        transform: none !important;
+                        width: 100% !important;
+                        display: block !important;
+                        height: auto !important;
+                        margin-top: 0 !important;
+                        /* Menghilangkan celah garis putih */
+                        padding: 0 15px 30px 15px !important;
+                        /* Memberi ruang di bawah teks */
+                        background-color: #3492d3 !important;
+                        /* Menyamakan warna biru */
+                    }
+
+                    .elementor-element.elementor-element-e518cfa .e-con-inner {
+                        display: block !important;
+                        width: 100% !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                    }
+
+                    /* Menghilangkan margin bawaan widget gambar */
+                    .elementor-element-8862be3 {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+
+                    .elementor-element-8862be3 img {
+                        width: 100% !important;
+                        height: auto !important;
+                        max-width: 100% !important;
+                        display: block !important;
+                        margin: 0 auto !important;
+                    }
+                }
+            </style>
+
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-71e6c2f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                 data-id="71e6c2f" data-element_type="section">
@@ -216,7 +302,8 @@
                                     <div class="feature pb-60">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-4 col-md-6">
+                                                <!-- Kolom Informasi / Why Choose Us -->
+                                                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                                     <div class="feature__info-box">
                                                         <span>Why FCFM</span>
                                                         <h3 class="title">Cleaning solutions built <br> around your site
@@ -243,11 +330,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <style>
-                                                            html {
-                                                                scroll-behavior: smooth;
-                                                            }
-                                                        </style>
                                                         <div class="feature__btn mt-40">
                                                             <a class="thm-btn br-0" href="#why-choose-us">
                                                                 <span class="btn-wrap">
@@ -258,30 +340,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <!-- Kolom Gambar Utama (Pekerja) -->
                                                 <div class="col-lg-8">
                                                     <div class="cta__wrap cta__two ul_li">
                                                         <div class="cta__info flex-1">
-                                                            <h3>
-                                                                <style>
-                                                                    .feature__img {
-                                                                        width: 100%;
-                                                                        margin-left: -75px;
-                                                                        margin-top: -15px
-                                                                    }
-
-                                                                    .cta__wrap.cta__two.ul_li {
-                                                                        background: #3492d3;
-                                                                        box-shadow: none
-                                                                    }
-                                                                </style>
-                                                            </h3>
                                                         </div>
                                                     </div>
                                                     <div class="feature__content-wrap ul_li pt-20 mt-140">
                                                         <div class="feature__img">
                                                             <img decoding="async"
                                                                 src="{{ asset('assets/img/uploads/2025/11/image-1.jpg') }}"
-                                                                alt="">
+                                                                alt="Cleaning Operations">
                                                         </div>
                                                         <div class="feature__content">
                                                         </div>
@@ -296,6 +366,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Bagian Teks Gambar ("In Maintaining...") - Tersambung Tanpa Celah/Garis Putih -->
             <div class="elementor-element elementor-element-e518cfa e-flex e-con-boxed e-con e-parent" data-id="e518cfa"
                 data-element_type="container">
                 <div class="e-con-inner">
@@ -305,7 +377,7 @@
                             data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
                             <img fetchpriority="high" decoding="async" width="540" height="409"
                                 src="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }}"
-                                class="attachment-large size-large wp-image-2253" alt=""
+                                class="attachment-large size-large wp-image-2253" alt="Trusted Partner Text"
                                 srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
                                 sizes="(max-width: 540px) 100vw, 540px" />
                         </div>
@@ -790,12 +862,11 @@
 
 
                                             <div class="project__item">
-                                                <div class="project__img" style="height: 400px; overflow: hidden;">
+                                                <div class="project__img">
                                                     <img decoding="async" width="1600" height="959"
                                                         src="{{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }}"
                                                         class="attachment-full size-full" alt="hotel houskeping services"
-                                                        style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
-                                                        srcset="{{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 1600w, {{ asset('assets/img/uploads/2026/01/resized-commercial-cleaning-2-300x180.png') }} 300w, {{ asset('assets/img/uploads/2026/01/resized-commercial-cleaning-2-1024x614.png') }} 1024w, {{ asset('assets/img/uploads/2026/01/resized-commercial-cleaning-2-768x460.png') }} 768w, {{ asset('assets/img/uploads/2026/01/resized-commercial-cleaning-2-1536x921.png') }} 1536w"
+                                                        srcset="{{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 1600w, {{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 300w, {{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 1024w, {{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 768w, {{ asset('assets/img/uploads/2026/01/hotel-houskeping-services.png') }} 1536w"
                                                         sizes="(max-width: 1600px) 100vw, 1600px" />
                                                 </div>
                                                 <div class="project__info">
@@ -1265,10 +1336,12 @@
                                                                 data-wow-duration="1500ms"></span>
                                                             <h2 class="title wow fadeInUp" data-wow-delay=".3s"
                                                                 data-wow-duration="1500ms">
-                                                                Cleaning You Don’t Have to Think About </h2>
+                                                                Cleaning You Don’t Have to Think About
+                                                            </h2>
                                                             <p>Running a workplace comes with enough responsibilities.
                                                                 Cleaning shouldn’t be another one.</p>
                                                         </div>
+
                                                         <div class="tab-info__wrap">
                                                             <div class="tab-info__item tab-info__item-two d-flex wow fadeInUp"
                                                                 data-wow-delay=".3s" data-wow-duration="1500ms">
@@ -1326,13 +1399,13 @@
                                                                     <p>When circumstances change, we’re here to respond.</p>
                                                                 </div>
                                                             </div>
+
                                                             <style>
                                                                 .tab-info__footer {
                                                                     margin-top: 30px;
                                                                     padding: 14px 20px;
                                                                     background-color: #f9f9f9;
                                                                     border-left: 4px solid #1b1b1b;
-                                                                    /* Sesuaikan warna ini dengan warna utama website */
                                                                     border-radius: 4px;
                                                                 }
 
@@ -1348,15 +1421,48 @@
                                                                     color: #1b1b1b;
                                                                     font-weight: 700;
                                                                 }
+
+                                                                /* CSS Penyeimbang Tampilan Mobile Gambar */
+                                                                @media (max-width: 991px) {
+                                                                    .about__image {
+                                                                        position: relative;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        align-items: center;
+                                                                        justify-content: center;
+                                                                        margin-top: 40px;
+                                                                        gap: 20px;
+                                                                    }
+
+                                                                    .about__image img.img1,
+                                                                    .about__image img.img2 {
+                                                                        position: relative !important;
+                                                                        top: auto !important;
+                                                                        left: auto !important;
+                                                                        right: auto !important;
+                                                                        bottom: auto !important;
+                                                                        transform: none !important;
+                                                                        width: 85% !important;
+                                                                        max-width: 320px;
+                                                                        height: auto !important;
+                                                                        margin: 0 auto;
+                                                                        display: block;
+                                                                    }
+
+                                                                    .about__image img.img2 {
+                                                                        border-radius: 20px;
+                                                                    }
+                                                                }
                                                             </style>
+
                                                             <div class="tab-info__footer wow fadeInUp"
                                                                 data-wow-delay=".4s">
                                                                 <p>You focus on your operations; <br><span>we’ll take care
-                                                                        of
-                                                                        the cleaning.</span></p>
+                                                                        of the cleaning.</span></p>
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-lg-6">
                                                         <div class="about__image">
                                                             <img decoding="async" class="img1 wow fadeInRight"
@@ -1382,9 +1488,18 @@
 
                                     <div class="tab-info pt-110 pb-110"
                                         data-background="{{ asset('assets/img/widgets/4-tab-info/tab-info-bg.png') }}">
+
                                         <style>
-                                            /* Semua tab-pane menumpuk di satu sel grid,
-               sehingga tinggi = tinggi tab terpanjang (Core Values) */
+                                            .popup-video {
+                                                display: none !important;
+                                            }
+
+                                            /* =====================================================
+                                       1. UKURAN TAB TETAP
+                                       Semua tab-pane menumpuk di satu sel grid, sehingga
+                                       tinggi kotak = tinggi tab terpanjang (Core Values).
+                                       Hanya isi teks yang berganti.
+                                       ===================================================== */
                                             .tab-info .tab-content {
                                                 display: grid;
                                             }
@@ -1402,40 +1517,129 @@
                                                 visibility: visible;
                                                 pointer-events: auto;
                                             }
+
+                                            /* =====================================================
+                                       2. STYLE ITEM (ikon + teks)
+                                       ===================================================== */
+                                            .tab-info__item {
+                                                display: flex;
+                                                align-items: center;
+                                                /* teks sejajar vertikal di tengah ikon */
+                                                gap: 20px;
+                                                /* jarak ikon dan teks */
+                                                margin-bottom: 25px;
+                                                /* jarak antar baris */
+                                            }
+
+                                            .tab-info__item .icon {
+                                                position: relative;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-shrink: 0;
+                                                /* ikon tidak menyusut */
+                                            }
+
+                                            .tab-info__item .icon i img {
+                                                width: 70px;
+                                                height: 70px;
+                                                object-fit: contain;
+                                                position: relative;
+                                                z-index: 2;
+                                                display: block;
+                                            }
+
+                                            .tab-info__item .icon img[src*="a_shape.svg"] {
+                                                position: absolute;
+                                                z-index: 1;
+                                            }
+
+                                            .tab-info__item .content h3 {
+                                                margin: 0;
+                                                font-size: 32px;
+                                                line-height: 1.2;
+                                            }
+
+                                            /* =====================================================
+                                       3. PERKECIL TAB CORE VALUES (#h7653)
+                                       Tab Mission & Vision tidak terpengaruh.
+                                       ===================================================== */
+                                            #h7653 .sec-title {
+                                                margin-bottom: 25px !important;
+                                                /* sebelumnya mb-55 */
+                                            }
+
+                                            #h7653 .sec-title .title {
+                                                font-size: 36px;
+                                                line-height: 1.25;
+                                                margin-bottom: 0 !important;
+                                            }
+
+                                            #h7653 .tab-info__item {
+                                                gap: 15px;
+                                                margin-bottom: 14px;
+                                                /* sebelumnya 25px */
+                                            }
+
+                                            #h7653 .tab-info__item .icon i img {
+                                                width: 48px;
+                                                /* sebelumnya 70px */
+                                                height: 48px;
+                                            }
+
+                                            #h7653 .tab-info__item .content h3 {
+                                                font-size: 22px;
+                                                /* sebelumnya 32px */
+                                                line-height: 1.2;
+                                                margin-bottom: 2px;
+                                            }
+
+                                            #h7653 .tab-info__item .content p {
+                                                font-size: 15px;
+                                                line-height: 1.45;
+                                                margin: 0;
+                                            }
+
+                                            /* OPSIONAL: daftar 2 kolom di layar besar (hapus komentar untuk mengaktifkan)
+                                    @media (min-width: 1200px) {
+                                        #h7653 .tab-info__wrap {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr;
+                                            column-gap: 25px;
+                                        }
+                                    }
+                                    */
                                         </style>
+
                                         <div class="container p-0">
                                             <div class="row g-0">
                                                 <div class="col-lg-6">
                                                     <div class="tab-info__wrapper">
+
                                                         <ul class="tab-info__nav nav nav-tabs" id="myTab"
                                                             role="tablist">
-
                                                             <li class="nav-item" role="presentation">
                                                                 <button class="nav-link active" id="h7651-tab"
                                                                     data-bs-toggle="tab" data-bs-target="#h7651"
-                                                                    type="button">
-                                                                    <style>
-                                                                        .popup-video {
-                                                                            display: none !important
-                                                                        }
-                                                                    </style> Our Mission
-                                                                </button>
+                                                                    type="button">Our Mission</button>
                                                             </li>
 
                                                             <li class="nav-item" role="presentation">
                                                                 <button class="nav-link " id="h7652-tab"
                                                                     data-bs-toggle="tab" data-bs-target="#h7652"
-                                                                    type="button">⁠Our Vision</button>
+                                                                    type="button">Our Vision</button>
                                                             </li>
 
                                                             <li class="nav-item" role="presentation">
                                                                 <button class="nav-link " id="h7653-tab"
                                                                     data-bs-toggle="tab" data-bs-target="#h7653"
-                                                                    type="button">⁠Our Core Values</button>
+                                                                    type="button">Our Core Values</button>
                                                             </li>
                                                         </ul>
+
                                                         <div class="tab-content" id="myTabContent">
 
+                                                            <!-- ================= OUR MISSION ================= -->
                                                             <div class="tab-pane fade show active" id="h7651">
                                                                 <div class="sec-title sec-title__white mb-55">
                                                                     <span class="subtitle">Our Mission</span>
@@ -1445,54 +1649,12 @@
                                                                                 alt=""></span> Spaces Possible
                                                                     </h2>
                                                                     <p style="color: #fffe6b;">We bring together quality,
-                                                                        innovation and service to deliver facilities
-                                                                        management our clients can depend on.</p>
+                                                                        innovation and service to
+                                                                        deliver facilities management our clients can depend
+                                                                        on.</p>
                                                                 </div>
+
                                                                 <div class="tab-info__wrap">
-                                                                    <style>
-                                                                        /* Menyejajarkan ikon dan teks di tengah secara vertikal */
-                                                                        .tab-info__item {
-                                                                            display: flex;
-                                                                            align-items: center;
-                                                                            /* Membuat teks sejajar vertikal di tengah ikon */
-                                                                            gap: 20px;
-                                                                            /* Memberikan jarak sejajar horizontal antara ikon dan teks */
-                                                                            margin-bottom: 25px;
-                                                                            /* Jarak antar baris */
-                                                                        }
-
-                                                                        /* CSS Tambahan untuk Ikon Gambar */
-                                                                        .tab-info__item .icon {
-                                                                            position: relative;
-                                                                            display: inline-flex;
-                                                                            align-items: center;
-                                                                            justify-content: center;
-                                                                            flex-shrink: 0;
-                                                                            /* Mencegah ikon menyusut */
-                                                                        }
-
-                                                                        .tab-info__item .icon i img {
-                                                                            width: 70px;
-                                                                            height: 70px;
-                                                                            object-fit: contain;
-                                                                            position: relative;
-                                                                            z-index: 2;
-                                                                            display: block;
-                                                                        }
-
-                                                                        .tab-info__item .icon img[src*="a_shape.svg"] {
-                                                                            position: absolute;
-                                                                            z-index: 1;
-                                                                        }
-
-                                                                        /* Menghilangkan margin bawaan h3 agar pas berada di tengah */
-                                                                        .tab-info__item .content h3 {
-                                                                            margin: 0;
-                                                                            font-size: 32px;
-                                                                            line-height: 1.2;
-                                                                        }
-                                                                    </style>
-                                                                    <!-- Item 1: "To care for spaces" (Menggunakan ikon rumah/properti) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1506,11 +1668,12 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- Item 2: "To improve how they work" (Menggunakan ikon pembersihan/optimasi kerja) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i> <img src="{{ asset('assets/img/icon/improve-how-they-work.png') }}"
-                                                                                    alt="To improve how they work"></i>
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/improve-how-they-work.png') }}"
+                                                                                    alt="To improve how they work">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3 style="font-size: 32px;">To improve how
@@ -1518,11 +1681,12 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- Item 3: "To make every experience better" (Menggunakan ikon kepuasan/kualitas) -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
-                                                                            <i><img src="{{ asset('assets/img/icon/make-every-experience-better.png') }}"
-                                                                                    alt="To make every experience better"></i>
+                                                                            <i>
+                                                                                <img src="{{ asset('assets/img/icon/make-every-experience-better.png') }}"
+                                                                                    alt="To make every experience better">
+                                                                            </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3 style="font-size: 32px;">To make every
@@ -1532,11 +1696,13 @@
 
                                                                     <p style="color: #ffffff; font-size: 22px;">
                                                                         We don’t just manage facilities. <br>We care for the
-                                                                        spaces people depend on every day.
+                                                                        spaces people depend
+                                                                        on every day.
                                                                     </p>
                                                                 </div>
                                                             </div>
 
+                                                            <!-- ================= OUR VISION ================= -->
                                                             <div class="tab-pane fade " id="h7652">
                                                                 <div class="sec-title sec-title__white mb-55">
                                                                     <span class="subtitle">Our Vision</span>
@@ -1547,14 +1713,15 @@
                                                                     </h2>
                                                                     <p
                                                                         style="color: #fffe6b; font-size: 26px; line-height: 1.6;">
-                                                                        To
-                                                                        transform the facilities management industry by
-                                                                        delivering unparalleled service quality and
-                                                                        operational excellence, setting new benchmarks for
+                                                                        To transform the facilities management industry by
+                                                                        delivering unparalleled
+                                                                        service quality and operational excellence, setting
+                                                                        new benchmarks for
                                                                         global standards.</p>
                                                                 </div>
                                                             </div>
 
+                                                            <!-- ================= OUR CORE VALUES ================= -->
                                                             <div class="tab-pane fade " id="h7653">
                                                                 <div class="sec-title sec-title__white mb-55">
                                                                     <span class="subtitle">Our Core Values</span>
@@ -1562,12 +1729,12 @@
                                                                         Our <span>F.A.M.I².L.Y<img decoding="async"
                                                                                 src="http://themexriver.com/wp/clinox/wp-content/uploads/2022/05/st_shape.svg"
                                                                                 alt=""></span> values guide
-                                                                        everything we
-                                                                        do
+                                                                        everything we do
                                                                     </h2>
                                                                 </div>
+
                                                                 <div class="tab-info__wrap">
-                                                                    <!-- F - FAIRNESS: Keadilan, kesetaraan, privasi/keamanan hak -->
+                                                                    <!-- F - FAIRNESS -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1583,7 +1750,7 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- A - ACCOUNTABILITY: Tanggung jawab, jaminan, garansi -->
+                                                                    <!-- A - ACCOUNTABILITY -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1598,7 +1765,7 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- M - MASTERY: Keahlian tinggi, portofolio kerja profesional -->
+                                                                    <!-- M - MASTERY -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1610,12 +1777,12 @@
                                                                             <h3><span style="color: #ffa800;">M</span> –
                                                                                 MASTERY</h3>
                                                                             <p>Masters of our trade. Upholding high
-                                                                                standards through skills, expertise &
-                                                                                attention to detail</p>
+                                                                                standards through skills,
+                                                                                expertise & attention to detail</p>
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- I² - INTEGRITY & INITIATIVE: Tindakan pembersihan data/proses yang jujur & proaktif -->
+                                                                    <!-- I² - INTEGRITY & INITIATIVE -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1625,12 +1792,13 @@
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3><span style="color: #ffa800;">I²</span> -
-                                                                                INTEGRITY & INITIATIVE</h3>
-                                                                            <p>Initiative in actions,Integrity by heart</p>
+                                                                                INTEGRITY & INITIATIVE
+                                                                            </h3>
+                                                                            <p>Initiative in actions, Integrity by heart</p>
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- L - LIFELONG LEARNING: Pengingat/reminder untuk terus berkembang dan belajar -->
+                                                                    <!-- L - LIFELONG LEARNING -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
@@ -1642,38 +1810,39 @@
                                                                             <h3><span style="color: #ffa800;">L</span> –
                                                                                 LIFELONG LEARNING</h3>
                                                                             <p>Acting with honesty while proactively
-                                                                                improving how we serve through lifelong
-                                                                                learning</p>
+                                                                                improving how we serve
+                                                                                through lifelong learning</p>
                                                                         </div>
                                                                     </div>
 
-                                                                    <!-- Y - YOU: Kepuasan klien, kepedulian utama -->
+                                                                    <!-- Y - YOU -->
                                                                     <div class="tab-info__item d-flex">
                                                                         <div class="icon">
                                                                             <i>
                                                                                 <img src="{{ asset('assets/img/icon/you.png') }}"
-                                                                                    alt="Y – YOU ">
+                                                                                    alt="Y – YOU">
                                                                             </i>
                                                                         </div>
                                                                         <div class="content">
                                                                             <h3><span style="color: #ffa800;">Y</span> –
                                                                                 YOU</h3>
                                                                             <p><strong style="color: #fffe6b;">Family is
-                                                                                    all about you! </strong>Placing our
-                                                                                clients’ needs, expectations and outcomes at
-                                                                                the heart of our service</p>
+                                                                                    all about you! </strong>Placing
+                                                                                our clients’ needs, expectations and
+                                                                                outcomes at the heart of our
+                                                                                service</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6">
-
-                                                </div>
+                                                <div class="col-lg-6"></div>
                                             </div>
                                         </div>
+
                                         <div class="tab-info__bg"
                                             data-background="{{ asset('assets/img/uploads/2025/10/recruitment-photo-fcfm.png') }}">
                                             <a href="https://www.youtube.com/watch?v=cRXm1p-CNyk" class="popup-video"><i
@@ -2181,6 +2350,13 @@
                     }
                 });
             }
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                window.dispatchEvent(new Event('resize'));
+            }, 300);
         });
     </script>
     </div><!-- #page -->

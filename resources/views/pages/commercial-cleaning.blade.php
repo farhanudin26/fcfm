@@ -272,8 +272,8 @@
                                                                 Dedicated housekeeping support for maintaining welcoming,
                                                                 well-presented and comfortable guest-ready environments.
                                                             </p>
-                                                            <a href="/hotel-housekeeping-services"
-                                                                class="card-link">View Hotel Housekeeping
+                                                            <a href="/hotel-housekeeping-services" class="card-link">View
+                                                                Hotel Housekeeping
                                                                 Services<i class="flaticon-right-arrow"></i>
                                                             </a>
                                                         </div>
@@ -306,38 +306,85 @@
                                             </div>
 
 
-                                            <div class="why-choose-section">
+<div class="why-choose-section">
 
-                                                <h2 class="why-choose-title">Why Choose FCFM for Commercial Cleaning?</h2>
+    <h2 class="why-choose-title">Why Choose FCFM for Commercial Cleaning?</h2>
 
-                                                <div class="why-choose-body">
-                                                    <p>
-                                                        Choosing a commercial cleaning company in Singapore is not simply
-                                                        about finding someone to clean your premises. It is about partnering
-                                                        with a team that understands that every detail — and every
-                                                        interaction — matters.
-                                                    </p>
+    <div class="why-choose-body">
+        <p>
+            Choosing a commercial cleaning company in Singapore is not simply
+            about finding someone to clean your premises. It is about partnering
+            with a team that understands that every detail — and every
+            interaction — matters.
+        </p>
 
-                                                    <p>
-                                                        At FCFM, we believe quality cleaning goes beyond maintaining a clean
-                                                        environment. It takes the right manpower, consistent service
-                                                        standards, responsive communication and reliable operational support
-                                                        to deliver an experience that people can feel.
-                                                    </p>
+        <p>
+            At FCFM, we believe quality cleaning goes beyond maintaining a clean
+            environment. It takes the right manpower, consistent service
+            standards, responsive communication and reliable operational support
+            to deliver an experience that people can feel.
+        </p>
 
-                                                    <p>
-                                                        We put care into the work we do and the people we serve, because a
-                                                        well-maintained environment is not only about how a space looks, but
-                                                        how people experience it.
-                                                    </p>
-                                                </div>
+        <p>
+            We put care into the work we do and the people we serve, because a
+            well-maintained environment is not only about how a space looks, but
+            how people experience it.
+        </p>
+    </div>
 
-                                                <blockquote class="commercial-quote">
-                                                    “People may not remember how clean a place looked. They remember how
-                                                    your team made them feel.”
-                                                </blockquote>
+    <style>
+        .commercial-quote {
+            position: relative;
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #0088cc; /* Garis aksen kiri */
+            border-radius: 6px;
+            padding: 20px 20px 20px 55px; /* Padding kiri 55px memberi ruang khusus untuk ikon */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            box-sizing: border-box;
+            width: 100%;
+        }
 
-                                            </div>
+        /* Merapikan posisi Ikon Quote di pojok kiri atas */
+        .commercial-quote::before {
+            content: "\f10d" !important; /* Icon quote-left FontAwesome */
+            font-family: "Font Awesome 5 Free", "Font Awesome 6 Free", "FontAwesome" !important;
+            font-weight: 900 !important;
+            position: absolute !important;
+            top: 18px !important;
+            left: 18px !important;
+            font-size: 22px !important;
+            color: #0088cc !important;
+            opacity: 0.8;
+            margin: 0 !important;
+            padding: 0 !important;
+            transform: none !important;
+        }
+
+        /* Responsif khusus layar Mobile */
+        @media (max-width: 767px) {
+            .commercial-quote {
+                padding: 18px 15px 18px 48px; /* Ruang tetap pas di layar sempit */
+                font-size: 14.5px;
+            }
+            .commercial-quote::before {
+                top: 16px !important;
+                left: 14px !important;
+                font-size: 18px !important;
+            }
+        }
+    </style>
+
+    <blockquote class="commercial-quote">
+        “People may not remember how clean a place looked. They remember how your team made them feel.”
+    </blockquote>
+
+</div>
 
 
                                             <div class="commercial-cta">
@@ -519,6 +566,51 @@
                                 data-id="19ed9f3" data-element_type="widget" data-widget_type="clenfix-prono.default">
                                 <div class="elementor-widget-container">
 
+                                    <style>
+                                        /* CSS Responsif untuk Bagian Banner/Promo di Mobile */
+                                        @media (max-width: 767px) {
+                                            #clenix-promo {
+                                                background-size: cover !important;
+                                                background-position: center center !important;
+                                                padding: 40px 15px !important;
+                                            }
+
+                                            .banner-btn-wrapper {
+                                                flex-direction: column !important;
+                                                align-items: stretch !important;
+                                                gap: 0 !important;
+                                                /* Reset gap bawaan flexbox */
+                                            }
+
+                                            .banner-btn {
+                                                margin: 0 !important;
+                                                /* Hapus margin bawaan tombol */
+                                            }
+
+                                            .banner-btn a {
+                                                width: 100% !important;
+                                                text-align: center;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta {
+                                                display: flex !important;
+                                                justify-content: center !important;
+                                                align-items: center !important;
+                                                margin: 15px 0 !important;
+                                                /* Memberikan jarak atas-bawah yang simetris */
+                                                padding: 0 !important;
+                                                text-align: center !important;
+                                                width: 100% !important;
+                                            }
+
+                                            .banner-btn-wrapper .banener-cta span {
+                                                display: block !important;
+                                                margin: 0 auto !important;
+                                                line-height: 1 !important;
+                                            }
+                                        }
+                                    </style>
+
                                     <section
                                         class="elementor-section elementor-top-section elementor-element elementor-element-a30f7ee elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                                         data-id="a30f7ee" data-element_type="section"
@@ -535,11 +627,11 @@
                                                             <section id="clenix-promo"
                                                                 class="clenix-promo-section position-relative"
                                                                 style="
-                                                                                background-image: url('{{ asset('assets/img/uploads/2025/10/fcfm-about-speak-with-us-bg-scaled.jpg') }}');
-                                                                                background-position: center center;
-                                                                                background-repeat: no-repeat;
-                                                                                background-size: 80% auto;
-                                                                            ">
+                                        background-image: url('{{ asset('assets/img/uploads/2025/10/fcfm-about-speak-with-us-bg-scaled.jpg') }}');
+                                        background-position: center center;
+                                        background-repeat: no-repeat;
+                                        background-size: 80% auto;
+                                    ">
                                                                 <div class="banner-shape position-absolute"></div>
 
                                                                 <div class="container">

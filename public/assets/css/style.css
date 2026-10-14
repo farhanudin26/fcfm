@@ -5578,6 +5578,109 @@ h6 {
 .clenix-sponsor-section .slider-inner-item:last-child {
     transform: translateX(20px); /* Geser ke kanan sejauh 30px */
 }
+/* ===== MOBILE ONLY (≤ 767px) ===== */
+@media (max-width: 767px) {
+
+    /* Judul: boleh turun baris, tidak terpotong. Padding TIDAK diubah */
+    .title .line-one {
+        white-space: normal !important;
+        display: block;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    /* Section logo */
+    .clenix-sponsor-section {
+        padding: 30px 0 40px;
+    }
+
+    /* Matikan efek slide: ubah jadi grid 2 kolom */
+    .clenix-sponsor-slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clenix-sponsor-slider > .slider-inner-item {
+        width: 50%;
+    }
+
+    /* Slick */
+    .clenix-sponsor-slider .slick-list {
+        overflow: visible !important;
+        height: auto !important;
+    }
+    .clenix-sponsor-slider .slick-track {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100% !important;
+        transform: none !important;
+    }
+    .clenix-sponsor-slider .slick-slide {
+        width: 50% !important;
+        float: none !important;
+        height: auto !important;
+    }
+    .clenix-sponsor-slider .slick-cloned,
+    .clenix-sponsor-slider .slick-arrow,
+    .clenix-sponsor-slider .slick-dots {
+        display: none !important;
+    }
+
+    /* Owl Carousel */
+    .clenix-sponsor-slider .owl-stage {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100% !important;
+        transform: none !important;
+    }
+    .clenix-sponsor-slider .owl-item {
+        width: 50% !important;
+        float: none !important;
+    }
+    .clenix-sponsor-slider .owl-item.cloned,
+    .clenix-sponsor-slider .owl-nav,
+    .clenix-sponsor-slider .owl-dots {
+        display: none !important;
+    }
+
+    /* Swiper */
+    .clenix-sponsor-slider .swiper-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: none !important;
+    }
+    .clenix-sponsor-slider .swiper-slide {
+        width: 50% !important;
+        margin: 0 !important;
+    }
+    .clenix-sponsor-slider .swiper-slide-duplicate {
+        display: none !important;
+    }
+
+    /* Tiap logo: ukuran seragam, rapi di tengah */
+    .clenix-sponsor-section .slider-inner-item {
+        padding: 8px;
+        justify-content: center;
+        transform: none !important;   /* batalkan geser logo SNEF */
+    }
+    .clenix-sponsor-section .slider-inner-item:last-child {
+        transform: none !important;
+    }
+    .clenix-sponsor-section .clenix-sponsor-img {
+        width: 100% !important;       /* batalkan width:200px / 100px */
+        height: 90px;
+        margin: 0 auto;
+    }
+    .clenix-sponsor-section .clenix-sponsor-img img {
+        max-width: 140px;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+}
 /*---------------------------------------------------- */
 
 /*Project area*/
@@ -8724,7 +8827,12 @@ select {
 .project__img {
     position: relative;
 }
-
+.project__img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 3;   /* sama dengan gambar lain (1536x921) */
+    object-fit: cover;     /* gambar di-crop, tidak gepeng */
+}
 .project__img::before {
     position: absolute;
     top: 0;
@@ -9276,7 +9384,6 @@ select {
     -moz-animation: outer-ripple 2000ms linear infinite;
     animation: outer-ripple 2000ms linear infinite;
 }
-
 
 /* animation */
 
@@ -11282,6 +11389,128 @@ select {
     margin-top: -30px;
 }
 
+/* ============================================
+   MOBILE ONLY (layar <= 991px)
+   ============================================ */
+@media (max-width: 991px) {
+    /* 1. Gambar "Clean Space Happy Face" tampil penuh */
+    .add-info__contact {
+        height: auto !important;
+        min-height: 0 !important;
+        aspect-ratio: 1 / 1;
+        background-size: 100% 100% !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    /* 2. Tinggi slider dikunci mengikuti rasio gambar mobil.
+          63.4% = tinggi / lebar x 100 (232 / 366). Perkecil angkanya agar gambar lebih pendek. */
+    .beforeafter-wrap.twentytwenty-container {
+        height: 0 !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        padding-bottom: 63.4% !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* 3. Wrapper dan gambar mobil mengisi container, tampil utuh (tidak ter-zoom) */
+    .beforeafter-wrap .before-after-item {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .beforeafter-wrap .before-after-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none;
+        object-fit: contain;
+    }
+
+    /* 4. Panah <> tepat di tengah gambar mobil */
+    .beforeafter-wrap .twentytwenty-handle {
+        top: 50% !important;
+    }
+
+    /* 5. BEFORE di ujung kiri, AFTER di ujung kanan gambar mobil */
+    .beforeafter-wrap .twentytwenty-before-label:before,
+    .beforeafter-wrap .twentytwenty-after-label:before {
+        bottom: 10px;
+        font-size: 11px;
+        padding: 0 10px;
+        line-height: 26px;
+    }
+
+    .beforeafter-wrap
+        .twentytwenty-horizontal
+        .twentytwenty-before-label:before {
+        left: 10px;
+    }
+
+    .beforeafter-wrap
+        .twentytwenty-horizontal
+        .twentytwenty-after-label:before {
+        right: 10px;
+    }
+} /* ============================================
+   MOBILE ONLY: counter (9 / 324 / 16,100+)
+   ============================================ */
+@media (max-width: 991px) {
+    .add-info__counter.ul_li.pos-rel {
+        padding: 30px 10px !important;
+    }
+
+    /* Tiga kolom sejajar dalam satu baris */
+    .add-info__counter .counter__wrap {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 6px;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .add-info__counter .counter__wrap .counter__item {
+        flex: 1 1 0;
+        min-width: 0;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    /* Angka */
+    .add-info__counter .counter__wrap .counter__item h3 {
+        font-size: 30px !important;
+        line-height: 1.1;
+        margin: 0 0 6px 0 !important;
+        white-space: nowrap;
+    }
+
+    /* Label di bawah angka */
+    .add-info__counter .counter__wrap .counter__item p {
+        font-size: 13px !important;
+        line-height: 1.3;
+        margin: 0 !important;
+        text-transform: lowercase;
+    }
+}
+
+/* HP layar kecil (<= 380px) */
+@media (max-width: 380px) {
+    .add-info__counter .counter__wrap .counter__item h3 {
+        font-size: 25px !important;
+    }
+
+    .add-info__counter .counter__wrap .counter__item p {
+        font-size: 12px !important;
+    }
+}
 /*---------------------------------------------------- */
 
 /*footer area*/
