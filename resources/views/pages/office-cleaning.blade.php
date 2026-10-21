@@ -35,7 +35,7 @@
                                 <div class="elementor-widget-container">
 
                                     <section id="clenix-breadcrumb"
-                                        data-background="{{ asset('assets/img/uploads/2025/10/fcfm-valueadd-landscape.jpg') }}"
+                                        data-background="{{ asset('assets/img/header/office-cleaning.png') }}"
                                         class="clenix-breadcrumb-section position-relative top-position">
                                         <div class="container">
                                             <div class="breadcrumb-content headline ul-li position-relative">
@@ -241,7 +241,7 @@
                                         <section class="expect-section">
                                             <div class="container">
                                                 <div class="section-header">
-                                                    <h2><strong>With FCFM, You Can Expect</strong></h2>
+                                                    <h2><strong>With FCFM,You Can Expect</strong></h2>
                                                 </div>
                                                 <div class="services-grid">
                                                     <div class="service-card">

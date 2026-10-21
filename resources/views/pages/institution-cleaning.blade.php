@@ -129,180 +129,224 @@
                                             </div>
                                         </section>
 
-                                        {{-- ================================================
-       3. WHAT OUR INSTITUTIONAL CLEANING SERVICES CAN COVER — icon list
-  ================================================= --}}
-                                        <section class="cvs-section">
-                                            <div class="cvs-container">
+{{-- ================================================
+     3. WHAT OUR INSTITUTIONAL CLEANING SERVICES CAN COVER — slider (13 card)
+================================================= --}}
+<section class="cvs-section">
+    <div class="cvs-container">
 
-                                                <div class="cvs-header">
-                                                    <h2>What Our Institutional Cleaning Services Can Cover</h2>
-                                                    <p>With many people using the same spaces throughout the day,
-                                                        maintaining frequently used areas is an important part of
-                                                        institutional cleaning. Depending on your facility's requirements,
-                                                        our cleaning scope may include:</p>
-                                                </div>
+        <div class="cvs-header">
+            <h2>What Our Institutional Cleaning Services Can Cover</h2>
+            <p>With many people using the same spaces throughout the day,
+                maintaining frequently used areas is an important part of
+                institutional cleaning. Depending on your facility's requirements,
+                our cleaning scope may include:</p>
+        </div>
 
-                                                <div class="cvs-slider">
-                                                    <button class="cvs-arrow cvs-arrow-prev" aria-label="Sebelumnya">
-                                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="15 18 9 12 15 6"></polyline>
-                                                        </svg>
-                                                    </button>
+        <div class="cvs-slider">
+            <button class="cvs-arrow cvs-arrow-prev" aria-label="Sebelumnya">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
 
-                                                    <div class="cvs-viewport">
-                                                        <div class="cvs-track" id="cvsTrack">
+            <div class="cvs-viewport">
+                <div class="cvs-track" id="cvsTrack">
 
-                                                            <!-- Slide 1 -->
-                                                            <div class="cvs-slide">
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/classrooms-learning-spaces.png') }}"
-                                                                            alt="Classrooms and Learning Spaces"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Classrooms and Learning Spaces</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/offices-administrative-areas.png') }}"
-                                                                            alt="Offices and Administrative Areas"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Offices and Administrative Areas</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/entrances-reception-areas.png') }}"
-                                                                            alt="Entrances and Reception Areas"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Entrances and Reception Areas</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/classrooms-learning-spaces.png') }}"
+                                alt="Classrooms and Learning Spaces"></div>
+                        <div class="cvs-card-body"><h4>Classrooms and Learning Spaces</h4></div>
+                    </div>
 
-                                                            <!-- Slide 2 -->
-                                                            <div class="cvs-slide">
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/corridors-common-areas.png') }}"
-                                                                            alt="Corridors and Common Areas"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Corridors and Common Areas</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/activity-spaces.png') }}"
-                                                                            alt="Multi-Purpose and Activity Spaces"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Multi-Purpose and Activity Spaces</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/washrooms.png') }}"
-                                                                            alt="Washrooms"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Washrooms</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/offices-administrative-areas.png') }}"
+                                alt="Offices and Administrative Areas"></div>
+                        <div class="cvs-card-body"><h4>Offices and Administrative Areas</h4></div>
+                    </div>
 
-                                                            <!-- Slide 3 -->
-                                                            <div class="cvs-slide">
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/pantry-staff-areas.png') }}"
-                                                                            alt="Pantry and Staff Areas"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Pantry and Staff Areas</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/canteens-cafeterias.png') }}"
-                                                                            alt="Canteens and Cafeterias"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Canteens and Cafeterias</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/staircases-lift-areas.png') }}"
-                                                                            alt="Staircases and Lift Areas"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Staircases and Lift Areas</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/entrances-reception-areas.png') }}"
+                                alt="Entrances and Reception Areas"></div>
+                        <div class="cvs-card-body"><h4>Entrances and Reception Areas</h4></div>
+                    </div>
 
-                                                            <!-- Slide 4 -->
-                                                            <div class="cvs-slide">
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/high-touch-surfaces.png') }}"
-                                                                            alt="High-Touch Surfaces"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>High-Touch Surfaces</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/floor-cleaning-maintenance.png') }}"
-                                                                            alt="Floor Cleaning and Maintenance"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Floor Cleaning and Maintenance</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/waste-collection-disposal.png') }}"
-                                                                            alt="Waste Collection and Disposal"></div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>Waste Collection and Disposal</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/corridors-common-areas.png') }}"
+                                alt="Corridors and Common Areas"></div>
+                        <div class="cvs-card-body"><h4>Corridors and Common Areas</h4></div>
+                    </div>
 
-                                                            <!-- Slide 5 -->
-                                                            <div class="cvs-slide">
-                                                                <div class="cvs-card">
-                                                                    <div class="cvs-card-photo"><img
-                                                                            src="{{ asset('assets/img/institution/general-dusting-surface-cleaning.png') }}"
-                                                                            alt="General Dusting and Surface Cleaning">
-                                                                    </div>
-                                                                    <div class="cvs-card-body">
-                                                                        <h4>General Dusting and Surface Cleaning</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/activity-spaces.png') }}"
+                                alt="Multi-Purpose and Activity Spaces"></div>
+                        <div class="cvs-card-body"><h4>Multi-Purpose and Activity Spaces</h4></div>
+                    </div>
 
-                                                        </div>
-                                                    </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/washrooms.png') }}"
+                                alt="Washrooms"></div>
+                        <div class="cvs-card-body"><h4>Washrooms</h4></div>
+                    </div>
 
-                                                    <button class="cvs-arrow cvs-arrow-next" aria-label="Berikutnya">
-                                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                                        </svg>
-                                                    </button>
-                                                </div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/pantry-staff-areas.png') }}"
+                                alt="Pantry and Staff Areas"></div>
+                        <div class="cvs-card-body"><h4>Pantry and Staff Areas</h4></div>
+                    </div>
 
-                                                <div class="cvs-dots" id="cvsDots"></div>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/canteens-cafeterias.png') }}"
+                                alt="Canteens and Cafeterias"></div>
+                        <div class="cvs-card-body"><h4>Canteens and Cafeterias</h4></div>
+                    </div>
 
-                                                <p class="cvs-footnote">Cleaning frequency can be adjusted according to
-                                                    usage levels and areas requiring greater attention. As institutional
-                                                    facilities can experience significant changes in activity throughout the
-                                                    day, cleaning arrangements should therefore complement your operations
-                                                    rather than interfere with them. Hence, certain cleaning tasks may be
-                                                    scheduled during quieter periods where appropriate to minimise
-                                                    disruption to the people using the facility.</p>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/staircases-lift-areas.png') }}"
+                                alt="Staircases and Lift Areas"></div>
+                        <div class="cvs-card-body"><h4>Staircases and Lift Areas</h4></div>
+                    </div>
 
-                                            </div>
-                                        </section>
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/high-touch-surfaces.png') }}"
+                                alt="High-Touch Surfaces"></div>
+                        <div class="cvs-card-body"><h4>High-Touch Surfaces</h4></div>
+                    </div>
+
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/floor-cleaning-maintenance.png') }}"
+                                alt="Floor Cleaning and Maintenance"></div>
+                        <div class="cvs-card-body"><h4>Floor Cleaning and Maintenance</h4></div>
+                    </div>
+
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/waste-collection-disposal.png') }}"
+                                alt="Waste Collection and Disposal"></div>
+                        <div class="cvs-card-body"><h4>Waste Collection and Disposal</h4></div>
+                    </div>
+
+                    <div class="cvs-card">
+                        <div class="cvs-card-photo"><img
+                                src="{{ asset('assets/img/institution/general-dusting-surface-cleaning.png') }}"
+                                alt="General Dusting and Surface Cleaning"></div>
+                        <div class="cvs-card-body"><h4>General Dusting and Surface Cleaning</h4></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="cvs-arrow cvs-arrow-next" aria-label="Berikutnya">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="cvs-dots" id="cvsDots"></div>
+
+        <p class="cvs-footnote">Cleaning frequency can be adjusted according to
+            usage levels and areas requiring greater attention. As institutional
+            facilities can experience significant changes in activity throughout the
+            day, cleaning arrangements should therefore complement your operations
+            rather than interfere with them. Hence, certain cleaning tasks may be
+            scheduled during quieter periods where appropriate to minimise
+            disruption to the people using the facility.</p>
+
+    </div>
+</section>
+
+<script>
+    (function() {
+        const track = document.getElementById('cvsTrack');
+        const dotsBox = document.getElementById('cvsDots');
+        const prev = document.querySelector('.cvs-arrow-prev');
+        const next = document.querySelector('.cvs-arrow-next');
+        const cards = track.querySelectorAll('.cvs-card');
+        let index = 0;
+
+        // Harus sama dengan breakpoint di CSS
+        function perView() {
+            const w = window.innerWidth;
+            if (w <= 560) return 1;
+            if (w <= 900) return 2;
+            return 3;
+        }
+
+        function maxIndex() {
+            return Math.max(0, cards.length - perView());
+        }
+
+        function render() {
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            const step = cards[0].offsetWidth + gap;
+            track.style.transform = 'translateX(' + (-index * step) + 'px)';
+            prev.disabled = index === 0;
+            next.disabled = index >= maxIndex();
+            dotsBox.querySelectorAll('.cvs-dot').forEach(function(d, i) {
+                d.classList.toggle('is-active', i === index);
+            });
+        }
+
+        function buildDots() {
+            dotsBox.innerHTML = '';
+            for (let i = 0; i <= maxIndex(); i++) {
+                const d = document.createElement('button');
+                d.className = 'cvs-dot';
+                d.setAttribute('aria-label', 'Slide ' + (i + 1));
+                d.addEventListener('click', function() {
+                    index = i;
+                    render();
+                });
+                dotsBox.appendChild(d);
+            }
+        }
+
+        prev.addEventListener('click', function() {
+            index = Math.max(0, index - 1);
+            render();
+        });
+        next.addEventListener('click', function() {
+            index = Math.min(maxIndex(), index + 1);
+            render();
+        });
+
+        // Swipe untuk mobile
+        let startX = 0;
+        track.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+        track.addEventListener('touchend', function(e) {
+            const diff = e.changedTouches[0].clientX - startX;
+            if (Math.abs(diff) > 40) {
+                index = diff < 0 ? Math.min(maxIndex(), index + 1) : Math.max(0, index - 1);
+                render();
+            }
+        });
+
+        window.addEventListener('resize', function() {
+            index = Math.min(index, maxIndex());
+            buildDots();
+            render();
+        });
+
+        buildDots();
+        render();
+    })();
+</script>
                                     </div>
                                     <section class="commercial-additional-section">
                                         <div class="commercial-container">
@@ -622,7 +666,7 @@
                                                             </section>
 
                                                             <!-- Modal Get A Quote Form -->
-                                            <!-- ganti form -->
+                                                            <!-- ganti form -->
 
                                                         </div>
                                                     </div>
@@ -638,7 +682,7 @@
 
     </div><!-- #content -->
 
-    <script>
+    {{-- <script>
         (function() {
             var track = document.getElementById('cvsTrack');
             var slides = track.querySelectorAll('.cvs-slide');
@@ -647,6 +691,9 @@
             var nextBtn = document.querySelector('.cvs-arrow-next');
             var current = 0;
             var total = slides.length;
+
+            // Reset dots container
+            dotsWrap.innerHTML = '';
 
             slides.forEach(function(_, i) {
                 var dot = document.createElement('button');
@@ -663,8 +710,8 @@
                 dots.forEach(function(d, i) {
                     d.classList.toggle('is-active', i === current);
                 });
-                prevBtn.disabled = current === 0;
-                nextBtn.disabled = current === total - 1;
+                if (prevBtn) prevBtn.disabled = current === 0;
+                if (nextBtn) nextBtn.disabled = current === total - 1;
             }
 
             function goTo(index) {
@@ -672,14 +719,18 @@
                 update();
             }
 
-            prevBtn.addEventListener('click', function() {
-                goTo(current - 1);
-            });
-            nextBtn.addEventListener('click', function() {
-                goTo(current + 1);
-            });
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    goTo(current - 1);
+                });
+            }
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    goTo(current + 1);
+                });
+            }
 
-            // swipe support
+            // Swipe support
             var startX = 0;
             track.addEventListener('touchstart', function(e) {
                 startX = e.touches[0].clientX;
@@ -694,5 +745,5 @@
 
             update();
         })();
-    </script>
+    </script> --}}
 @endsection

@@ -90,7 +90,7 @@
                                                         <div class="clenix-contact-form-wrap">
                                                             <div class="clenix-section-title headline pera-content">
                                                                 <span class="sub-title"></span>
-                                                                <h2>Have Any <span>Question?</span></h2>
+                                                                <h2>Have Any <span>Questions?</span></h2>
                                                             </div>
 
                                                             <div class="wpcf7" id="contact-form" lang="en-US"

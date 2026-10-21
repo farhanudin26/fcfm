@@ -249,6 +249,28 @@
                         padding: 15px !important;
                     }
 
+                    /* Foto memenuhi lebar penuh, tanpa ruang kosong di kanan */
+                    .feature__content-wrap.ul_li {
+                        display: block !important;
+                        width: 100% !important;
+                    }
+
+                    .feature__img {
+                        flex: 0 0 100% !important;
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        overflow: hidden !important;
+                        /* potong bagian yang melebihi layar */
+                    }
+
+                    .feature__img img {
+                        width: 110% !important;
+                        /* naikkan/turunkan untuk atur besar gambar */
+                        max-width: none !important;
+                        height: auto !important;
+                        display: block !important;
+                    }
+
                     /* Hilangkan celah/garis putih dan satukan warna biru */
                     .elementor-element.elementor-element-e518cfa {
                         position: relative !important;
@@ -366,13 +388,44 @@
                     </div>
                 </div>
             </section>
+            <style>
+                /* Default (desktop): teks disembunyikan, gambar tetap tampil */
+                .fcfm-maintain-text {
+                    display: none;
+                }
 
+                @media (max-width: 991px) {
+
+                    /* Sembunyikan gambar, tampilkan teks */
+                    .elementor-element-8862be3 {
+                        display: none !important;
+                    }
+
+                    .fcfm-maintain-text {
+                        display: block;
+                        margin: 0;
+                        padding: 20px 20px 10px;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 900;
+                        -webkit-text-stroke: 1.5px #ffffff;
+                        /* menebalkan huruf walau font hanya sampai 800 */
+                        font-size: clamp(26px, 8.5vw, 42px);
+                        line-height: 1.35;
+                        letter-spacing: 0.02em;
+                    }
+                }
+            </style>
             <!-- Bagian Teks Gambar ("In Maintaining...") - Tersambung Tanpa Celah/Garis Putih -->
             <div class="elementor-element elementor-element-e518cfa e-flex e-con-boxed e-con e-parent" data-id="e518cfa"
                 data-element_type="container">
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-8d50dbd e-con-full e-flex e-con e-child"
                         data-id="8d50dbd" data-element_type="container">
+
+                        <!-- Versi DESKTOP: tetap gambar -->
                         <div class="elementor-element elementor-element-8862be3 elementor-widget elementor-widget-image"
                             data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
                             <img fetchpriority="high" decoding="async" width="540" height="409"
@@ -381,6 +434,12 @@
                                 srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
                                 sizes="(max-width: 540px) 100vw, 540px" />
                         </div>
+
+                        <!-- Versi MOBILE: teks -->
+                        <h2 class="fcfm-maintain-text">
+                            In<br>Maintaining<br>Spotless<br>And Inviting<br>Workspaces
+                        </h2>
+
                     </div>
                     <div class="elementor-element elementor-element-e07c531 e-con-full e-flex e-con e-child"
                         data-id="e07c531" data-element_type="container">
@@ -1495,11 +1554,11 @@
                                             }
 
                                             /* =====================================================
-                                       1. UKURAN TAB TETAP
-                                       Semua tab-pane menumpuk di satu sel grid, sehingga
-                                       tinggi kotak = tinggi tab terpanjang (Core Values).
-                                       Hanya isi teks yang berganti.
-                                       ===================================================== */
+                                                   1. UKURAN TAB TETAP
+                                                   Semua tab-pane menumpuk di satu sel grid, sehingga
+                                                   tinggi kotak = tinggi tab terpanjang (Core Values).
+                                                   Hanya isi teks yang berganti.
+                                                   ===================================================== */
                                             .tab-info .tab-content {
                                                 display: grid;
                                             }
@@ -1519,8 +1578,8 @@
                                             }
 
                                             /* =====================================================
-                                       2. STYLE ITEM (ikon + teks)
-                                       ===================================================== */
+                                                   2. STYLE ITEM (ikon + teks)
+                                                   ===================================================== */
                                             .tab-info__item {
                                                 display: flex;
                                                 align-items: center;
@@ -1561,9 +1620,9 @@
                                             }
 
                                             /* =====================================================
-                                       3. PERKECIL TAB CORE VALUES (#h7653)
-                                       Tab Mission & Vision tidak terpengaruh.
-                                       ===================================================== */
+                                                   3. PERKECIL TAB CORE VALUES (#h7653)
+                                                   Tab Mission & Vision tidak terpengaruh.
+                                                   ===================================================== */
                                             #h7653 .sec-title {
                                                 margin-bottom: 25px !important;
                                                 /* sebelumnya mb-55 */
@@ -1600,15 +1659,36 @@
                                                 margin: 0;
                                             }
 
-                                            /* OPSIONAL: daftar 2 kolom di layar besar (hapus komentar untuk mengaktifkan)
-                                    @media (min-width: 1200px) {
-                                        #h7653 .tab-info__wrap {
-                                            display: grid;
-                                            grid-template-columns: 1fr 1fr;
-                                            column-gap: 25px;
-                                        }
-                                    }
-                                    */
+                                            /* =====================================================
+                                                            4. SEMBUNYIKAN GAMBAR DI MOBILE
+                                                            Gambar latar (recruitment-photo-fcfm.png) hanya
+                                                            tampil di desktop (>= 992px).
+                                                            ===================================================== */
+                                            @media (max-width: 991.98px) {
+                                                .tab-info .tab-info__bg {
+                                                    display: none !important;
+                                                }
+                                            }
+
+                                            /* =====================================================
+           5. MOBILE: TINGGI KOTAK MENYESUAIKAN TEKS TAB AKTIF
+           Hanya berlaku <= 991.98px. Desktop tidak berubah.
+           ===================================================== */
+                                            @media (max-width: 991.98px) {
+                                                .tab-info .tab-content {
+                                                    display: block;
+                                                }
+
+                                                .tab-info .tab-content>.tab-pane:not(.active) {
+                                                    display: none !important;
+                                                }
+
+                                                .tab-info .tab-content>.tab-pane.active {
+                                                    display: block !important;
+                                                    visibility: visible;
+                                                    pointer-events: auto;
+                                                }
+                                            }
                                         </style>
 
                                         <div class="container p-0">
@@ -2060,6 +2140,9 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     align-items: stretch;
+                    column-gap: 40px;
+                    /* jarak antara gambar dan kotak biru */
+
                 }
 
                 /* --- Kolom Kiri --- */

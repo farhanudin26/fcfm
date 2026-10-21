@@ -32,10 +32,27 @@
                             <div class="elementor-element elementor-element-e688751 elementor-widget elementor-widget-clenfix-breadcrumb"
                                 data-id="e688751" data-element_type="widget" data-widget_type="clenfix-breadcrumb.default">
                                 <div class="elementor-widget-container">
+                                    <style>
+                                        /* Default / Desktop: Gambar terfokus dari bawah ke atas */
+                                        .clenix-breadcrumb-section.header-bg-bottom {
+                                            background-position: center bottom !important;
+                                            background-size: cover !important;
+                                        }
+
+                                        /* Khusus Tampilan Mobile (Lebar Layar <= 768px):
+                                    Fokus gambar digeser ke Kiri agar mesin terlihat utuh */
+                                        @media (max-width: 768px) {
+                                            .clenix-breadcrumb-section.header-bg-bottom {
+                                                background-position: left bottom !important;
+                                                /* Terfokus di area kiri bawah (letak mesin) */
+                                                background-size: cover !important;
+                                            }
+                                        }
+                                    </style>
 
                                     <section id="clenix-breadcrumb"
                                         data-background="{{ asset('assets/img/header/value-added-services.png') }}"
-                                        class="clenix-breadcrumb-section position-relative top-position">
+                                        class="clenix-breadcrumb-section position-relative top-position header-bg-bottom">
                                         <div class="container">
                                             <div class="breadcrumb-content headline ul-li position-relative">
 
@@ -49,7 +66,7 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="hotel-housekeeping-section">
+                                    <section class="hotel-housekeeping-section ">
                                         <div class="hotel-container">
 
                                             <div class="hotel-header">
@@ -64,8 +81,10 @@
                                                 </h3><br>
 
                                                 <p class="hotel-description">
-                                                    Beyond routine commercial cleaning, <strong>FCFM provides a range of value-added
-                                                    cleaning and facility services in Singapore</strong> to support the maintenance,
+                                                    Beyond routine commercial cleaning, <strong>FCFM provides a range of
+                                                        value-added
+                                                        cleaning and facility services in Singapore</strong> to support the
+                                                    maintenance,
                                                     hygiene and upkeeping of different environments. From pest control and
                                                     floor care to disinfecting, robotic cleaning, landscape management and
                                                     electrical works, our additional services can be arranged according to
@@ -83,147 +102,315 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-8ca844d elementor-widget elementor-widget-clenfix_service_2"
+                            {{-- =====================================================================
+     SERVICE SECTION
+     - Desktop : 4 widget lama (3+3+3+1 item), tidak berubah
+     - Mobile  : 1 slider berisi 10 item, gambar disesuaikan
+     ===================================================================== --}}
+
+                            <style>
+                                /* ================= DESKTOP (tidak berubah) ================= */
+                                #slick-slide00 .clinex-service-item-2,
+                                #slick-slide01 .clinex-service-item-2,
+                                #slick-slide02 .clinex-service-item-2,
+                                #slick-slide10 .clinex-service-item-2,
+                                #slick-slide11 .clinex-service-item-2,
+                                #slick-slide12 .clinex-service-item-2,
+                                #slick-slide20 .clinex-service-item-2,
+                                #slick-slide21 .clinex-service-item-2,
+                                #slick-slide22 .clinex-service-item-2,
+                                #slick-slide30 .clinex-service-item-2 {
+                                    background-repeat: no-repeat;
+                                    background-position: center bottom;
+                                    background-size: contain;
+                                    min-height: 260px;
+                                }
+
+                                #slick-slide00 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/jetwash-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide01 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/floor-scrubbing-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide02 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/floor-polishing-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide10 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/carpet-cleaning-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide11 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/landscape-management-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide12 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/pest-control-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide20 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/disinfecting-services-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide21 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/anti-microbial-service-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide22 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/robotic-cleaning-value-added.png') }}') !important;
+                                }
+
+                                #slick-slide30 .clinex-service-item-2 {
+                                    background-image: url('{{ asset('assets/img/uploads/2025/12/electrical-works-value-added.png') }}') !important;
+                                }
+
+                                /* Hilangkan background saat hover */
+                                #slick-slide00 .clinex-service-item-2:hover,
+                                #slick-slide01 .clinex-service-item-2:hover,
+                                #slick-slide02 .clinex-service-item-2:hover,
+                                #slick-slide10 .clinex-service-item-2:hover,
+                                #slick-slide11 .clinex-service-item-2:hover,
+                                #slick-slide12 .clinex-service-item-2:hover,
+                                #slick-slide20 .clinex-service-item-2:hover,
+                                #slick-slide21 .clinex-service-item-2:hover,
+                                #slick-slide22 .clinex-service-item-2:hover,
+                                #slick-slide30 .clinex-service-item-2:hover {
+                                    background-image: none !important;
+                                }
+
+                                .clenix-service-section-2 {
+                                    background-color: white;
+                                    padding: 0px;
+                                }
+
+                                .clenix-service-content-2 .slick-dots,
+                                .clenix-testimonial-slider-2 .slick-dots,
+                                .clenix-project-content .slick-dots {
+                                    display: none;
+                                }
+
+                                /* ---- Muncul/sembunyi saat hover ---- */
+                                .clinex-service-item-2 .inner-text h3,
+                                .clinex-service-item-2 .inner-text h3 a,
+                                .clinex-service-item-2 .inner-text p {
+                                    color: transparent;
+                                    transition: color 0.3s ease;
+                                }
+
+                                .clinex-service-item-2 .inner-text .read-more {
+                                    color: transparent;
+                                    background-color: transparent;
+                                    transition: all 0.3s ease;
+                                }
+
+                                .clinex-service-item-2 .inner-icon {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: opacity 0.3s ease, visibility 0.3s ease;
+                                }
+
+                                .clinex-service-item-2:hover .inner-icon {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                .clinex-service-item-2:hover .inner-text h3 a,
+                                .clinex-service-item-2:hover .inner-text p {
+                                    color: #ffffff !important;
+                                }
+
+                                .clinex-service-item-2:hover .inner-text .read-more {
+                                    background-color: #f9da00 !important;
+                                    color: #000000 !important;
+                                    border-radius: 30px !important;
+                                    font-weight: bold;
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                }
+
+                                /* Desktop: slider mobile disembunyikan */
+                                .service-mobile-only {
+                                    display: none;
+                                }
+
+                                /* ================= MOBILE (max 768px) ================= */
+                                @media (max-width: 768px) {
+
+                                    /* 4 widget lama disembunyikan, 1 slider tunggal ditampilkan */
+                                    .service-desktop-only {
+                                        display: none !important;
+                                    }
+
+                                    .service-mobile-only {
+                                        display: block;
+                                    }
+
+                                    /* Gambar mengisi card penuh, tanpa ruang kosong di atas */
+                                    .service-mobile-slider .clinex-service-item-2 {
+                                        background-image: var(--bg) !important;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        /* ganti 'contain' jika tidak mau ada crop */
+                                        background-position: center bottom;
+                                        aspect-ratio: 1 / 1.1;
+                                        /* sesuaikan dengan rasio gambar asli */
+                                        min-height: 0 !important;
+                                        height: auto;
+                                    }
+
+                                    /* Saat hover: card boleh membesar mengikuti isi teks, jadi tidak terpotong */
+                                    .service-mobile-slider .clinex-service-item-2:hover {
+                                        background-image: none !important;
+                                        aspect-ratio: auto;
+                                        height: auto;
+                                        min-height: 340px !important;
+                                        overflow: visible;
+                                        padding-top: 30px !important;
+                                        padding-bottom: 30px !important;
+                                    }
+
+                                    .service-mobile-slider .clinex-service-item-2:hover .inner-icon {
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .service-mobile-slider .clinex-service-item-2:hover .inner-text h3 {
+                                        font-size: 22px;
+                                        line-height: 1.2;
+                                        margin-bottom: 8px;
+                                    }
+
+                                    .service-mobile-slider .clinex-service-item-2:hover .inner-text {
+                                        height: auto !important;
+                                        max-height: none !important;
+                                        overflow: visible !important;
+                                        position: relative !important;
+                                    }
+
+                                    .service-mobile-slider .clinex-service-item-2:hover .inner-text p {
+                                        font-size: 14px;
+                                        line-height: 1.5;
+                                        margin-bottom: 14px;
+                                        /* Matikan pemotongan teks (line-clamp / ellipsis) bawaan tema */
+                                        display: block !important;
+                                        -webkit-line-clamp: unset !important;
+                                        line-clamp: unset !important;
+                                        -webkit-box-orient: initial !important;
+                                        height: auto !important;
+                                        max-height: none !important;
+                                        overflow: visible !important;
+                                        text-overflow: clip !important;
+                                        white-space: normal !important;
+                                    }
+
+                                    .service-mobile-slider .clinex-service-item-2:hover .inner-text .read-more {
+                                        position: relative !important;
+                                        margin-top: 10px;
+                                    }
+
+                                    /* Pastikan semua slide sama tinggi saat salah satu membesar */
+                                    .service-mobile-slider .slick-track {
+                                        display: flex !important;
+                                    }
+
+                                    .service-mobile-slider .slick-slide {
+                                        height: auto;
+                                    }
+
+                                    /* Dots navigasi */
+                                    .clenix-service-content-2 .slick-dots {
+                                        display: flex !important;
+                                        justify-content: center;
+                                        list-style: none;
+                                        padding: 0;
+                                        margin-top: 20px;
+                                    }
+
+                                    .clenix-service-content-2 .slick-dots li {
+                                        margin: 0 4px;
+                                    }
+
+                                    .clenix-service-content-2 .slick-dots li button {
+                                        font-size: 0;
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: #ccc;
+                                        border: none;
+                                        outline: none;
+                                        transition: background-color 0.3s ease;
+                                    }
+
+                                    .clenix-service-content-2 .slick-dots li.slick-active button {
+                                        background-color: #3b82f6;
+                                        width: 24px;
+                                        border-radius: 5px;
+                                    }
+
+                                    /* Tombol panah di luar card */
+                                    .clenix-service-content-2 {
+                                        position: relative;
+                                        padding: 0 45px;
+                                    }
+
+                                    .clenix-service-content-2 .slick-prev,
+                                    .clenix-service-content-2 .slick-next {
+                                        position: absolute;
+                                        top: 160px;
+                                        /* posisi tetap, tidak ikut berubah saat card membesar */
+                                        transform: translateY(-50%);
+                                        z-index: 10;
+                                        width: 38px;
+                                        height: 38px;
+                                        background-color: #ffffff;
+                                        border: 1px solid #e5e7eb;
+                                        border-radius: 50%;
+                                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                                        font-size: 0;
+                                        display: flex !important;
+                                        align-items: center;
+                                        justify-content: center;
+                                        cursor: pointer;
+                                    }
+
+                                    .clenix-service-content-2 .slick-prev::before {
+                                        content: '‹';
+                                        font-size: 26px;
+                                        font-weight: bold;
+                                        color: #333;
+                                        line-height: 1;
+                                    }
+
+                                    .clenix-service-content-2 .slick-next::before {
+                                        content: '›';
+                                        font-size: 26px;
+                                        font-weight: bold;
+                                        color: #333;
+                                        line-height: 1;
+                                    }
+
+                                    .clenix-service-content-2 .slick-prev {
+                                        left: -2px;
+                                    }
+
+                                    .clenix-service-content-2 .slick-next {
+                                        right: -2px;
+                                    }
+                                }
+                            </style>
+
+
+                            {{-- ===================== WIDGET 1 (Desktop) ===================== --}}
+                            <div class="elementor-element elementor-element-8ca844d elementor-widget elementor-widget-clenfix_service_2 service-desktop-only"
                                 data-id="8ca844d" data-element_type="widget" data-widget_type="clenfix_service_2.default">
                                 <div class="elementor-widget-container">
-
                                     <section id="clenix-service-2" class="clenix-service-section-2">
                                         <div class="container">
                                             <div
                                                 class="clenix-section-title-2 text-center headline pera-content pr-text-in">
-                                                <h3 class="sub-title d-inline-block">
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                                <style>
-                                                                    /* base setting */
-                                                                    #slick-slide00 .clinex-service-item-2,
-                                                                    #slick-slide01 .clinex-service-item-2,
-                                                                    #slick-slide02 .clinex-service-item-2,
-                                                                    #slick-slide10 .clinex-service-item-2,
-                                                                    #slick-slide11 .clinex-service-item-2,
-                                                                    #slick-slide12 .clinex-service-item-2,
-                                                                    #slick-slide20 .clinex-service-item-2,
-                                                                    #slick-slide21 .clinex-service-item-2,
-                                                                    #slick-slide22 .clinex-service-item-2,
-                                                                    #slick-slide30 .clinex-service-item-2 {
-                                                                        background-repeat: no-repeat;
-                                                                        background-position: center bottom;
-                                                                        background-size: contain;
-                                                                        min-height: 260px;
-                                                                    }
-
-                                                                    /* section atas */
-                                                                    #slick-slide00 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/jetwash-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide01 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/floor-scrubbing-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide02 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/floor-polishing-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    /* section bawah */
-                                                                    #slick-slide10 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/carpet-cleaning-value-added.png') }}') !important;
-                                                                    }
-
-                                                                    #slick-slide11 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/landscape-management-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide12 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/pest-control-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    /* section berikutnya */
-                                                                    #slick-slide20 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/disinfecting-services-value-added.png') }}') !important;
-
-
-                                                                    }
-
-                                                                    #slick-slide21 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/anti-microbial-service-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide22 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/robotic-cleaning-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide30 .clinex-service-item-2 {
-                                                                        background-image: url('{{ asset('assets/img/uploads/2025/12/electrical-works-value-added.png') }}') !important;
-
-                                                                    }
-
-                                                                    #slick-slide00 .clinex-service-item-2:hover,
-                                                                    #slick-slide01 .clinex-service-item-2:hover,
-                                                                    #slick-slide02 .clinex-service-item-2:hover,
-                                                                    #slick-slide10 .clinex-service-item-2:hover,
-                                                                    #slick-slide11 .clinex-service-item-2:hover,
-                                                                    #slick-slide12 .clinex-service-item-2:hover,
-                                                                    #slick-slide20 .clinex-service-item-2:hover,
-                                                                    #slick-slide21 .clinex-service-item-2:hover,
-                                                                    #slick-slide22 .clinex-service-item-2:hover,
-                                                                    #slick-slide30 .clinex-service-item-2:hover {
-                                                                        background-image: none !important;
-                                                                    }
-
-                                                                    .clinex-service-item-2 .inner-icon {
-                                                                        opacity: 0;
-                                                                        visibility: hidden;
-                                                                        transition: opacity 0.3s ease, visibility 0.3s ease;
-                                                                    }
-
-                                                                    .clinex-service-item-2:hover .inner-icon {
-                                                                        opacity: 1;
-                                                                        visibility: visible;
-                                                                    }
-                                                                </style>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h3>
-                                                <h2>
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                                <style>
-                                                                    .clenix-service-section-2 {
-                                                                        background-color: white;
-                                                                        padding: 0px;
-                                                                    }
-
-                                                                    .clenix-service-content-2 .slick-dots,
-                                                                    .clenix-testimonial-slider-2 .slick-dots,
-                                                                    .clenix-project-content .slick-dots {
-                                                                        display: none
-                                                                    }
-
-                                                                    .clinex-service-item-2 .inner-text h3,
-                                                                    .clinex-service-item-2 .inner-text p {
-                                                                        color: transparent;
-                                                                    }
-
-                                                                    .clinex-service-item-2 .inner-text .read-more {
-                                                                        color: transparent;
-                                                                        background-color: transparent;
-                                                                    }
-                                                                </style>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h2>
+                                                <h3 class="sub-title d-inline-block"></h3>
+                                                <h2></h2>
                                             </div>
                                             <div class="clenix-service-content-2">
                                                 <div class="clenix-service-slider-2">
@@ -237,7 +424,8 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/high-pressure-jetwash">High Pressure Jetwash</a></h3>
+                                                                <h3><a href="/high-pressure-jetwash">High Pressure
+                                                                        Jetwash</a></h3>
                                                                 <p>Cleaning using high pressure jet washing for removal of
                                                                     stubborn dirt and buildup from suitable outdoor and hard
                                                                     surfaces.</p>
@@ -282,36 +470,25 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-c08ec71 elementor-widget elementor-widget-clenfix_service_2"
+
+
+                            {{-- ===================== WIDGET 2 (Desktop) ===================== --}}
+                            <div class="elementor-element elementor-element-c08ec71 elementor-widget elementor-widget-clenfix_service_2 service-desktop-only"
                                 data-id="c08ec71" data-element_type="widget" data-widget_type="clenfix_service_2.default">
                                 <div class="elementor-widget-container">
-
                                     <section id="clenix-service-2" class="clenix-service-section-2">
                                         <div class="container">
                                             <div
                                                 class="clenix-section-title-2 text-center headline pera-content pr-text-in">
-                                                <h3 class="sub-title d-inline-block">
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h3>
-                                                <h2>
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h2>
+                                                <h3 class="sub-title d-inline-block"></h3>
+                                                <h2></h2>
                                             </div>
                                             <div class="clenix-service-content-2">
                                                 <div class="clenix-service-slider-2">
@@ -327,7 +504,7 @@
                                                             <div class="inner-text headline pera-content">
                                                                 <h3><a href="/carpet-cleaning">Carpet Cleaning</a></h3>
                                                                 <p>Deep carpet cleaning for removal of embedded dirt and
-                                                                    refreshing of carpets in commercial spaces. </p>
+                                                                    refreshing of carpets in commercial spaces.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
                                                                     href="/carpet-cleaning">View Details</a>
                                                             </div>
@@ -343,7 +520,8 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/landscape-management">Landscape Management</a></h3>
+                                                                <h3><a href="/landscape-management">Landscape
+                                                                        Management</a></h3>
                                                                 <p>Routine landscape care and maintenance for upkeeping of
                                                                     outdoor areas, maintaining a neat, healthy and
                                                                     well-maintained landscape.</p>
@@ -370,37 +548,26 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-4d696a2 elementor-widget elementor-widget-clenfix_service_2"
+
+
+                            {{-- ===================== WIDGET 3 (Desktop) ===================== --}}
+                            <div class="elementor-element elementor-element-4d696a2 elementor-widget elementor-widget-clenfix_service_2 service-desktop-only"
                                 data-id="4d696a2" data-element_type="widget"
                                 data-widget_type="clenfix_service_2.default">
                                 <div class="elementor-widget-container">
-
                                     <section id="clenix-service-2" class="clenix-service-section-2">
                                         <div class="container">
                                             <div
                                                 class="clenix-section-title-2 text-center headline pera-content pr-text-in">
-                                                <h3 class="sub-title d-inline-block">
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h3>
-                                                <h2>
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h2>
+                                                <h3 class="sub-title d-inline-block"></h3>
+                                                <h2></h2>
                                             </div>
                                             <div class="clenix-service-content-2">
                                                 <div class="clenix-service-slider-2">
@@ -414,7 +581,8 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/disinfecting-services">Disinfecting Services</a></h3>
+                                                                <h3><a href="/disinfecting-services">Disinfecting
+                                                                        Services</a></h3>
                                                                 <p>Targeted disinfection of surfaces as well as spaces to
                                                                     support safe, clean and hygienic environments.</p>
                                                                 <a class="read-more d-flex justify-content-center align-items-center"
@@ -432,7 +600,8 @@
                                                                     class="attachment-full size-full" alt="" />
                                                             </div>
                                                             <div class="inner-text headline pera-content">
-                                                                <h3><a href="/anti-microbial">Anti-Microbial Service</a></h3>
+                                                                <h3><a href="/anti-microbial">Anti-Microbial Service</a>
+                                                                </h3>
                                                                 <p>Anti-microbial treatment for selected surfaces to enhance
                                                                     and support ongoing hygiene and environmental
                                                                     cleanliness.</p>
@@ -460,37 +629,26 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-c11bd48 elementor-widget elementor-widget-clenfix_service_2"
+
+
+                            {{-- ===================== WIDGET 4 (Desktop) ===================== --}}
+                            <div class="elementor-element elementor-element-c11bd48 elementor-widget elementor-widget-clenfix_service_2 service-desktop-only"
                                 data-id="c11bd48" data-element_type="widget"
                                 data-widget_type="clenfix_service_2.default">
                                 <div class="elementor-widget-container">
-
                                     <section id="clenix-service-2" class="clenix-service-section-2">
                                         <div class="container">
                                             <div
                                                 class="clenix-section-title-2 text-center headline pera-content pr-text-in">
-                                                <h3 class="sub-title d-inline-block">
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h3>
-                                                <h2>
-                                                    <span class="pr-text-in_item1">
-                                                        <span class="pr-text-in_item2">
-                                                            <span class="pr-text-in_item3">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </h2>
+                                                <h3 class="sub-title d-inline-block"></h3>
+                                                <h2></h2>
                                             </div>
                                             <div class="clenix-service-content-2">
                                                 <div class="clenix-service-slider-2">
@@ -512,12 +670,133 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                             </div>
+
+
+                            {{-- ===================== SLIDER MOBILE (1 slider, 10 item) ===================== --}}
+                            @php
+                                $mobileServices = [
+                                    [
+                                        'high-pressure-jetwash',
+                                        'High Pressure Jetwash',
+                                        'jetwash-value-added.png',
+                                        'Cleaning using high pressure jet washing for removal of stubborn dirt and buildup from suitable outdoor and hard surfaces.',
+                                    ],
+                                    [
+                                        'floor-scrubbing',
+                                        'Floor Scrubbing',
+                                        'floor-scrubbing-value-added.png',
+                                        'Machine floor scrubbing for removal of accumulated dirt and maintenance of cleaner, hard floor surfaces.',
+                                    ],
+                                    [
+                                        'floor-polishing',
+                                        'Floor Polishing',
+                                        'floor-polishing-value-added.png',
+                                        'Professional floor polishing to help restore shine and improve appearance of suitable flooring surfaces.',
+                                    ],
+                                    [
+                                        'carpet-cleaning',
+                                        'Carpet Cleaning',
+                                        'carpet-cleaning-value-added.png',
+                                        'Deep carpet cleaning for removal of embedded dirt and refreshing of carpets in commercial spaces.',
+                                    ],
+                                    [
+                                        'landscape-management',
+                                        'Landscape Management',
+                                        'landscape-management-value-added.png',
+                                        'Routine landscape care and maintenance for upkeeping of outdoor areas, maintaining a neat, healthy and well-maintained landscape.',
+                                    ],
+                                    [
+                                        'pest-control',
+                                        'Pest Control',
+                                        'pest-control-value-added.png',
+                                        'Professional pest management solutions to help maintain cleaner, safer and more hygienic environments.',
+                                    ],
+                                    [
+                                        'disinfecting-services',
+                                        'Disinfecting Services',
+                                        'disinfecting-services-value-added.png',
+                                        'Targeted disinfection of surfaces as well as spaces to support safe, clean and hygienic environments.',
+                                    ],
+                                    [
+                                        'anti-microbial',
+                                        'Anti-Microbial Service',
+                                        'anti-microbial-service-value-added.png',
+                                        'Anti-microbial treatment for selected surfaces to enhance and support ongoing hygiene and environmental cleanliness.',
+                                    ],
+                                    [
+                                        'robotic-cleaning',
+                                        'Robotic Cleaning',
+                                        'robotic-cleaning-value-added.png',
+                                        'Automated cleaning technology that is designed to support efficient and consistent cleaning across suitable spaces.',
+                                    ],
+                                    [
+                                        'electrical-works',
+                                        'Electrical Works',
+                                        'electrical-works-value-added.png',
+                                        'Electrical support for maintenance, installation, as well as repair requirements within your facility.',
+                                    ],
+                                ];
+                            @endphp
+
+                            <section class="clenix-service-section-2 service-mobile-only">
+                                <div class="container">
+                                    <div class="clenix-service-content-2">
+                                        <div class="service-mobile-slider">
+                                            @foreach ($mobileServices as $i => $s)
+                                                <div class="slider-inner-item">
+                                                    <div class="clinex-service-item-2 text-center"
+                                                        style="--bg: url('{{ asset('assets/img/uploads/2025/12/' . $s[2]) }}')">
+                                                        <div
+                                                            class="inner-icon d-flex justify-content-center align-items-center">
+                                                            <img decoding="async" height="40"
+                                                                src="{{ asset('assets/img/uploads/2022/05/ic' . (19 + ($i % 3)) . '.png') }}"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="inner-text headline pera-content">
+                                                            <h3><a href="/{{ $s[0] }}">{{ $s[1] }}</a>
+                                                            </h3>
+                                                            <p>{{ $s[3] }}</p>
+                                                            <a class="read-more d-flex justify-content-center align-items-center"
+                                                                href="/{{ $s[0] }}">View Details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            {{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
+                            <script>
+                                // Dijalankan setelah window load supaya ID slick milik slider desktop
+                                // (#slick-slide00, #slick-slide10, dst.) tidak bergeser.
+                                jQuery(window).on('load', function() {
+                                    var $ = jQuery;
+                                    var $s = $('.service-mobile-slider');
+                                    if (!$s.length || !$.fn.slick) return;
+
+                                    $s.slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        arrows: true,
+                                        dots: true,
+                                        infinite: true
+                                    });
+
+                                    $(window).on('resize', function() {
+                                        $s.slick('setPosition');
+                                    });
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>

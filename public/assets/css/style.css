@@ -5580,7 +5580,6 @@ h6 {
 }
 /* ===== MOBILE ONLY (≤ 767px) ===== */
 @media (max-width: 767px) {
-
     /* Judul: boleh turun baris, tidak terpotong. Padding TIDAK diubah */
     .title .line-one {
         white-space: normal !important;
@@ -5663,13 +5662,13 @@ h6 {
     .clenix-sponsor-section .slider-inner-item {
         padding: 8px;
         justify-content: center;
-        transform: none !important;   /* batalkan geser logo SNEF */
+        transform: none !important; /* batalkan geser logo SNEF */
     }
     .clenix-sponsor-section .slider-inner-item:last-child {
         transform: none !important;
     }
     .clenix-sponsor-section .clenix-sponsor-img {
-        width: 100% !important;       /* batalkan width:200px / 100px */
+        width: 100% !important; /* batalkan width:200px / 100px */
         height: 90px;
         margin: 0 auto;
     }
@@ -7158,7 +7157,55 @@ ul {
     -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
     z-index: 99;
 }
+/* ===== Logo header: mobile fix ===== */
+@media (max-width: 991px) {
+    /* Bar putih utama: tinggi tetap & rata tengah vertikal */
+    .header__main-wrap {
+        padding: 8px 0;
+    }
 
+    .header__main {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header__main-left {
+        flex: 1 1 auto;
+        min-width: 0; /* penting agar logo bisa mengecil */
+        align-items: center;
+    }
+
+    /* Hilangkan margin kiri besar dari class ml-50 */
+    .header__logo.ml-50 {
+        margin-left: 12px !important;
+    }
+
+    /* Batasi ukuran logo */
+    .header__logo .logo-wrap a {
+        display: block;
+    }
+
+    .header__logo img {
+        display: block;
+        height: auto;
+        max-height: 40px; /* sesuaikan: 32–44px */
+        max-width: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+/* Layar sangat kecil */
+@media (max-width: 480px) {
+    .header__logo img {
+        max-height: 32px;
+    }
+
+    .header__logo.ml-50 {
+        margin-left: 8px !important;
+    }
+}
 .header__cta .icon {
     width: 28px;
     margin-right: 17px;
@@ -8830,8 +8877,8 @@ select {
 .project__img img {
     display: block;
     width: 100%;
-    aspect-ratio: 5 / 3;   /* sama dengan gambar lain (1536x921) */
-    object-fit: cover;     /* gambar di-crop, tidak gepeng */
+    aspect-ratio: 5 / 3; /* sama dengan gambar lain (1536x921) */
+    object-fit: cover; /* gambar di-crop, tidak gepeng */
 }
 .project__img::before {
     position: absolute;
@@ -17596,9 +17643,9 @@ select {
     }
 }
 /* ===========================================================
-       COVERAGE SLIDER - CSS baru, independen dari CSS lain
-       Prefix: .cvs-  (coverage-slider) supaya tidak bentrok
-       =========================================================== */
+   COVERAGE SLIDER - prefix .cvs- (13 card, 1 card = 1 langkah geser)
+   Desktop: 3 card | Tablet (<=900px): 2 card | HP (<=560px): 1 card
+   =========================================================== */
 
 .cvs-section {
     font-family:
@@ -17635,31 +17682,32 @@ select {
 
 /* ---------- Slider shell ---------- */
 .cvs-slider {
+    --cvs-per-view: 3;
+    --cvs-gap: 22px;
     position: relative;
     padding: 0 56px;
 }
 
 .cvs-viewport {
     overflow: hidden;
-    border-radius: 14px;
+    padding: 8px 0 12px; /* ruang untuk hover naik & shadow */
 }
 
 .cvs-track {
     display: flex;
+    gap: var(--cvs-gap);
     transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
-}
-
-.cvs-slide {
-    flex: 0 0 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    padding: 4px;
-    box-sizing: border-box;
+    will-change: transform;
 }
 
 /* ---------- Card ---------- */
 .cvs-card {
+    flex: 0 0
+        calc(
+            (100% - (var(--cvs-per-view) - 1) * var(--cvs-gap)) /
+                var(--cvs-per-view)
+        );
+    min-width: 0;
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
@@ -17746,6 +17794,7 @@ select {
 .cvs-arrow-prev {
     left: 0;
 }
+
 .cvs-arrow-next {
     right: 0;
 }
@@ -17760,8 +17809,9 @@ select {
 .cvs-dots {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-top: 28px;
+    margin-top: 20px;
 }
 
 .cvs-dot {
@@ -17793,25 +17843,41 @@ select {
 }
 
 /* ---------- Responsive ---------- */
+
+/* Tablet: 2 card */
 @media (max-width: 900px) {
-    .cvs-slide {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .cvs-slider {
+        --cvs-per-view: 2;
+        --cvs-gap: 14px;
         padding: 0 46px;
     }
 }
 
-@media (max-width: 560px) {
-    .cvs-slide {
-        grid-template-columns: 1fr;
-    }
+/* Mobile & tablet kecil: panah disembunyikan, pakai swipe */
+@media (max-width: 768px) {
     .cvs-slider {
-        padding: 0 0px;
+        padding: 0;
     }
+
     .cvs-arrow {
         display: none;
     }
+
+    .cvs-card-body {
+        padding: 12px 10px 14px;
+    }
+
+    .cvs-card-body h4 {
+        font-size: 13.5px;
+    }
+}
+
+/* HP: 1 card per layar */
+@media (max-width: 560px) {
+    .cvs-slider {
+        --cvs-per-view: 1;
+    }
+
     .cvs-header h2 {
         font-size: 24px;
     }
