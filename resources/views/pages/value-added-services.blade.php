@@ -103,10 +103,10 @@
                                 </div>
                             </div>
                             {{-- =====================================================================
-     SERVICE SECTION
-     - Desktop : 4 widget lama (3+3+3+1 item), tidak berubah
-     - Mobile  : 1 slider berisi 10 item, gambar disesuaikan
-     ===================================================================== --}}
+                            SERVICE SECTION
+                                - Desktop : 4 widget lama (3+3+3+1 item), tidak berubah
+                                - Mobile  : 1 slider berisi 10 item, gambar disesuaikan
+                            ===================================================================== --}}
 
                             <style>
                                 /* ================= DESKTOP (tidak berubah) ================= */
@@ -776,27 +776,52 @@
 
 
                             {{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
-                            <script>
-                                // Dijalankan setelah window load supaya ID slick milik slider desktop
-                                // (#slick-slide00, #slick-slide10, dst.) tidak bergeser.
-                                jQuery(window).on('load', function() {
-                                    var $ = jQuery;
-                                    var $s = $('.service-mobile-slider');
-                                    if (!$s.length || !$.fn.slick) return;
+{{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
+<script>
+    // Dijalankan setelah window load supaya ID slick milik slider desktop
+    // (#slick-slide00, #slick-slide10, dst.) tidak bergeser.
+    jQuery(window).on('load', function() {
+        var $ = jQuery;
+        var $s = $('.service-mobile-slider');
+        if (!$s.length || !$.fn.slick) return;
 
-                                    $s.slick({
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        arrows: true,
-                                        dots: true,
-                                        infinite: true
-                                    });
+        $s.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            infinite: true,
 
-                                    $(window).on('resize', function() {
-                                        $s.slick('setPosition');
-                                    });
-                                });
-                            </script>
+            // Auto-geser ke kanan
+            autoplay: true,
+            autoplaySpeed: 3000,   // jeda antar slide (ms) -> ubah sesuai selera
+            speed: 600,            // durasi animasi geser (ms)
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            pauseOnDotsHover: true
+        });
+
+        // Saat card disentuh (teks detail terbuka), pause autoplay
+        // supaya tidak tiba-tiba bergeser ketika user sedang membaca.
+        var resumeTimer;
+        $s.on('touchstart mouseenter', '.clinex-service-item-2', function() {
+            clearTimeout(resumeTimer);
+            $s.slick('slickPause');
+        });
+
+        // Lanjutkan autoplay 5 detik setelah sentuhan/hover selesai
+        $s.on('touchend mouseleave', '.clinex-service-item-2', function() {
+            clearTimeout(resumeTimer);
+            resumeTimer = setTimeout(function() {
+                $s.slick('slickPlay');
+            }, 4000);
+        });
+
+        $(window).on('resize', function() {
+            $s.slick('setPosition');
+        });
+    });
+</script>
                         </div>
                     </div>
                 </div>

@@ -90,7 +90,6 @@
                                     <section id="clenix-service-2" class="clenix-service-section-2">
                                         <div class="container">
 
-                                            {{-- DIBERI STYLE: margin-top kecil / 0 dan mb-3 agar jarak judul ke atas & bawah teratur --}}
                                             <div class="text-center mb-3" style="margin-top: 0;">
                                                 <h2 class="hotel-title" style="font-size: 28px; margin-top: 0;">Where It Can
                                                     Be Used</h2>
@@ -99,11 +98,11 @@
                                             <style>
                                                 .clenix-service-section-2 {
                                                     background-color: #fff;
-                                                    /* UBAH PADDING ATAS JADI 0px agar sangat dekat dengan teks di atasnya */
                                                     padding: 0px 0 60px 0;
                                                     text-align: center;
                                                 }
 
+                                                /* ================= DESKTOP ================= */
                                                 .landscape-cards-grid {
                                                     display: inline-flex;
                                                     flex-direction: column;
@@ -145,34 +144,17 @@
                                                     margin: 0;
                                                     line-height: 1.6;
                                                     white-space: nowrap;
+                                                    /* desktop: satu baris */
                                                 }
 
-                                                .landscape-bottom-wrapper {
-                                                    max-width: 800px;
-                                                    margin: 0 auto;
-                                                    text-align: center;
-                                                }
-
-                                                .landscape-bottom-wrapper h2 {
-                                                    font-size: 28px;
-                                                    font-weight: 700;
-                                                    color: #111;
-                                                    margin-bottom: 15px;
-                                                }
-
-                                                .landscape-bottom-wrapper p {
-                                                    font-size: 15px;
-                                                    color: #555;
-                                                    line-height: 1.7;
-                                                    margin: 0 auto;
-                                                }
-
+                                                .landscape-bottom-wrapper,
                                                 .polishing-bottom-wrapper {
                                                     max-width: 800px;
                                                     margin: 0 auto;
                                                     text-align: center;
                                                 }
 
+                                                .landscape-bottom-wrapper h2,
                                                 .polishing-bottom-wrapper h2 {
                                                     font-size: 28px;
                                                     font-weight: 700;
@@ -180,15 +162,50 @@
                                                     margin-bottom: 15px;
                                                 }
 
+                                                .landscape-bottom-wrapper p,
                                                 .polishing-bottom-wrapper p {
                                                     font-size: 15px;
                                                     color: #555;
                                                     line-height: 1.7;
                                                     margin: 0 auto;
                                                 }
+
+                                                /* ================= MOBILE ================= */
+                                                @media (max-width: 768px) {
+
+                                                    .clenix-service-section-2 .container {
+                                                        padding-left: 16px;
+                                                        padding-right: 16px;
+                                                    }
+
+                                                    /* Grid memenuhi lebar layar, tidak lagi fit-content */
+                                                    .landscape-cards-grid {
+                                                        display: flex;
+                                                        width: 100%;
+                                                        max-width: 100%;
+                                                        gap: 16px;
+                                                    }
+
+                                                    .landscape-card-item {
+                                                        padding: 18px;
+                                                    }
+
+                                                    .landscape-card-item h3 {
+                                                        font-size: 18px;
+                                                        line-height: 1.3;
+                                                    }
+
+                                                    /* Teks boleh turun ke baris berikutnya, tidak terpotong */
+                                                    .landscape-card-item p {
+                                                        white-space: normal;
+                                                        overflow-wrap: break-word;
+                                                        word-break: normal;
+                                                        font-size: 14px;
+                                                    }
+                                                }
                                             </style>
 
-                                            {{-- 4 Single Cards (4 Rows) --}}
+                                            {{-- 3 Cards --}}
                                             <div class="landscape-cards-grid">
 
                                                 {{-- Card 1 --}}
@@ -376,54 +393,54 @@
                     </section>
                 </div>
             </div>
-                            <div class="elementor-element elementor-element-19ed9f3 elementor-widget elementor-widget-clenfix-prono"
-                                data-id="19ed9f3" data-element_type="widget" data-widget_type="clenfix-prono.default">
-                                <div class="elementor-widget-container">
+            <div class="elementor-element elementor-element-19ed9f3 elementor-widget elementor-widget-clenfix-prono"
+                data-id="19ed9f3" data-element_type="widget" data-widget_type="clenfix-prono.default">
+                <div class="elementor-widget-container">
 
-                                    <style>
-                                        /* CSS Responsif untuk Bagian Banner/Promo di Mobile */
-                                        @media (max-width: 767px) {
-                                            #clenix-promo {
-                                                background-size: cover !important;
-                                                background-position: center center !important;
-                                                padding: 40px 15px !important;
-                                            }
+                    <style>
+                        /* CSS Responsif untuk Bagian Banner/Promo di Mobile */
+                        @media (max-width: 767px) {
+                            #clenix-promo {
+                                background-size: cover !important;
+                                background-position: center center !important;
+                                padding: 40px 15px !important;
+                            }
 
-                                            .banner-btn-wrapper {
-                                                flex-direction: column !important;
-                                                align-items: stretch !important;
-                                                gap: 0 !important;
-                                                /* Reset gap bawaan flexbox */
-                                            }
+                            .banner-btn-wrapper {
+                                flex-direction: column !important;
+                                align-items: stretch !important;
+                                gap: 0 !important;
+                                /* Reset gap bawaan flexbox */
+                            }
 
-                                            .banner-btn {
-                                                margin: 0 !important;
-                                                /* Hapus margin bawaan tombol */
-                                            }
+                            .banner-btn {
+                                margin: 0 !important;
+                                /* Hapus margin bawaan tombol */
+                            }
 
-                                            .banner-btn a {
-                                                width: 100% !important;
-                                                text-align: center;
-                                            }
+                            .banner-btn a {
+                                width: 100% !important;
+                                text-align: center;
+                            }
 
-                                            .banner-btn-wrapper .banener-cta {
-                                                display: flex !important;
-                                                justify-content: center !important;
-                                                align-items: center !important;
-                                                margin: 15px 0 !important;
-                                                /* Memberikan jarak atas-bawah yang simetris */
-                                                padding: 0 !important;
-                                                text-align: center !important;
-                                                width: 100% !important;
-                                            }
+                            .banner-btn-wrapper .banener-cta {
+                                display: flex !important;
+                                justify-content: center !important;
+                                align-items: center !important;
+                                margin: 15px 0 !important;
+                                /* Memberikan jarak atas-bawah yang simetris */
+                                padding: 0 !important;
+                                text-align: center !important;
+                                width: 100% !important;
+                            }
 
-                                            .banner-btn-wrapper .banener-cta span {
-                                                display: block !important;
-                                                margin: 0 auto !important;
-                                                line-height: 1 !important;
-                                            }
-                                        }
-                                    </style>
+                            .banner-btn-wrapper .banener-cta span {
+                                display: block !important;
+                                margin: 0 auto !important;
+                                line-height: 1 !important;
+                            }
+                        }
+                    </style>
 
                     <section
                         class="elementor-section elementor-top-section elementor-element elementor-element-a30f7ee elementor-section-full_width elementor-section-height-default elementor-section-height-default"

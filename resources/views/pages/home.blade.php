@@ -309,8 +309,43 @@
                         margin: 0 auto !important;
                     }
                 }
-            </style>
 
+                /* Default (Desktop): teks baru disembunyikan */
+                .mobile-title {
+                    display: none;
+                }
+
+                /* Mobile & Tablet saja */
+                @media (max-width: 991px) {
+                    .mobile-title {
+                        display: flex !important;
+                        align-items: baseline;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                        padding: 18px 10px 12px;
+                        background-color: #3492d3;
+                        /* sama dengan background biru */
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        line-height: 1.1;
+                    }
+
+                    .mobile-title .mt-your {
+                        color: #ffffff;
+                        font-size: clamp(16px, 4.5vw, 24px);
+                    }
+
+                    .mobile-title .mt-trusted {
+                        color: #ffd400;
+                        /* kuning */
+                        font-size: clamp(24px, 6.5vw, 32px);
+                        letter-spacing: 0.5px;
+                    }
+                }
+            </style>
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-71e6c2f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                 data-id="71e6c2f" data-element_type="section">
@@ -371,9 +406,18 @@
                                                     </div>
                                                     <div class="feature__content-wrap ul_li pt-20 mt-140">
                                                         <div class="feature__img">
-                                                            <img decoding="async"
-                                                                src="{{ asset('assets/img/uploads/2025/11/image-1.jpg') }}"
-                                                                alt="Cleaning Operations">
+                                                            <div class="mobile-title">
+                                                                <span class="mt-your">YOUR</span>
+                                                                <span class="mt-trusted">TRUSTED PARTNER</span>
+                                                            </div>
+                                                            <!-- Menggunakan tag <picture> agar gambar otomatis berganti saat di mobile -->
+                                                            <picture>
+                                                                <source media="(max-width: 991px)"
+                                                                    srcset="{{ asset('assets/img/uploads/2025/11/image-1-mobile.jpg') }}">
+                                                                <img decoding="async"
+                                                                    src="{{ asset('assets/img/uploads/2025/11/image-1.jpg') }}"
+                                                                    alt="Cleaning Operations">
+                                                            </picture>
                                                         </div>
                                                         <div class="feature__content">
                                                         </div>
@@ -389,34 +433,41 @@
                 </div>
             </section>
             <style>
-                /* Default (desktop): teks disembunyikan, gambar tetap tampil */
-                .fcfm-maintain-text {
-                    display: none;
-                }
+                /* Default (Desktop): teks mobile disembunyikan */
+.mobile-maintaining {
+    display: none;
+}
 
-                @media (max-width: 991px) {
+/* Mobile & Tablet */
+@media (max-width: 991px) {
 
-                    /* Sembunyikan gambar, tampilkan teks */
-                    .elementor-element-8862be3 {
-                        display: none !important;
-                    }
+    /* Sembunyikan gambar teks, tampilkan teks asli */
+    .desktop-text-img {
+        display: none !important;
+    }
 
-                    .fcfm-maintain-text {
-                        display: block;
-                        margin: 0;
-                        padding: 20px 20px 10px;
-                        text-align: right;
-                        text-transform: uppercase;
-                        color: #ffffff;
-                        font-family: "Montserrat", sans-serif;
-                        font-weight: 900;
-                        -webkit-text-stroke: 1.5px #ffffff;
-                        /* menebalkan huruf walau font hanya sampai 800 */
-                        font-size: clamp(26px, 8.5vw, 42px);
-                        line-height: 1.35;
-                        letter-spacing: 0.02em;
-                    }
-                }
+    .mobile-maintaining {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 10px 5px 0;
+    }
+
+    .mobile-maintaining h2 {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        line-height: 1.25;
+        font-size: clamp(22px, 7vw, 36px);
+    }
+
+    /* Tiap baris dipaksa tampil di barisnya sendiri */
+    .mobile-maintaining h2 span {
+        display: block;
+    }
+}
             </style>
             <!-- Bagian Teks Gambar ("In Maintaining...") - Tersambung Tanpa Celah/Garis Putih -->
             <div class="elementor-element elementor-element-e518cfa e-flex e-con-boxed e-con e-parent" data-id="e518cfa"
@@ -426,19 +477,24 @@
                         data-id="8d50dbd" data-element_type="container">
 
                         <!-- Versi DESKTOP: tetap gambar -->
-                        <div class="elementor-element elementor-element-8862be3 elementor-widget elementor-widget-image"
-                            data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
-                            <img fetchpriority="high" decoding="async" width="540" height="409"
-                                src="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }}"
-                                class="attachment-large size-large wp-image-2253" alt="Trusted Partner Text"
-                                srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
-                                sizes="(max-width: 540px) 100vw, 540px" />
-                        </div>
+<!-- Versi DESKTOP: gambar -->
+<div class="elementor-element elementor-element-8862be3 elementor-widget elementor-widget-image desktop-text-img"
+    data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
+    <img fetchpriority="high" decoding="async" width="540" height="409"
+        src="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }}"
+        class="attachment-large size-large wp-image-2253" alt="Trusted Partner Text"
+        srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
+        sizes="(max-width: 540px) 100vw, 540px" />
+</div>
 
-                        <!-- Versi MOBILE: teks -->
-                        <h2 class="fcfm-maintain-text">
-                            In<br>Maintaining<br>Spotless<br>And Inviting<br>Workspaces
-                        </h2>
+<!-- Versi MOBILE & TABLET: teks -->
+<div class="mobile-maintaining">
+    <h2>
+        <span>In Maintaining</span>
+        <span>Spotless and</span>
+        <span>Inviting Workspaces</span>
+    </h2>
+</div>
 
                     </div>
                     <div class="elementor-element elementor-element-e07c531 e-con-full e-flex e-con e-child"
@@ -581,6 +637,12 @@
                                                         <div class="add-info__contact"
                                                             data-background="{{ asset('assets/img/uploads/2025/10/clean-space-happy-face-slider-fotor-bg-remover-20251027135321.png') }}">
 
+                                                            {{-- TEKS MOBILE (bisa diedit). Hanya tampil di mobile/tablet --}}
+                                                            <div class="cs-mobile-text">
+                                                                <h2 class="cs-mobile-text__line">Clean<br>Space</h2>
+                                                                <h2 class="cs-mobile-text__line">Happy<br>Face</h2>
+                                                            </div>
+
                                                             <div class="add-info__item">
                                                                 <style>
                                                                     .add-info__item {
@@ -637,8 +699,6 @@
                                                                         justify-content: space-around;
                                                                         width: 100%;
                                                                         min-height: 100px;
-                                                                        /* sesuaikan dengan tinggi aktual counter kamu */
-
                                                                     }
 
                                                                     /* Merapikan perataan item */
@@ -646,28 +706,107 @@
                                                                         text-align: center;
                                                                         flex: 1;
                                                                         margin-top: 0 !important;
-                                                                        /* Menghilangkan margin berlebih */
                                                                     }
 
-                                                                    /* Memperbesar ukuran teks angka */
+                                                                    /* Ukuran teks angka */
                                                                     .counter__item h3 {
                                                                         font-size: 58px !important;
-                                                                        /* Diperbesar dari 42px */
                                                                         font-weight: 700;
                                                                         line-height: 1.1;
                                                                         margin: 0 0 8px 0;
                                                                         font-variant-numeric: tabular-nums;
-                                                                        /* lebar digit seragam */
                                                                         min-width: 1ch;
                                                                     }
 
-                                                                    /* Memperbesar ukuran teks label */
+                                                                    /* Ukuran teks label */
                                                                     .counter__item p {
                                                                         font-size: 18px !important;
-                                                                        /* Diperbesar dari 16px */
                                                                         font-weight: 500;
                                                                         margin: 0;
                                                                         text-transform: lowercase;
+                                                                    }
+
+                                                                    /* ============================================
+                                                                           TEKS "CLEAN SPACE / HAPPY FACE"
+                                                                           ============================================ */
+
+                                                                    /* Desktop: teks disembunyikan, gambar asli tetap dipakai */
+                                                                    .cs-mobile-text {
+                                                                        display: none;
+                                                                    }
+
+                                                                    /* Mobile & tablet (sama dengan breakpoint col-lg Bootstrap) */
+                                                                    @media (max-width: 991.98px) {
+
+                                                                        /* Hilangkan gambar, ganti background biru */
+                                                                        .add-info__contact {
+                                                                            background-image: none !important;
+                                                                            background-color: #3391d5 !important;
+                                                                            min-height: 340px;
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                            padding: 40px 20px;
+                                                                        }
+
+                                                                        .cs-mobile-text {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                            gap: 28px;
+                                                                            width: 100%;
+                                                                            text-align: center;
+                                                                        }
+
+                                                                        .cs-mobile-text__line {
+                                                                            margin: 0;
+                                                                            color: #ffffff;
+                                                                            font-weight: 900;
+                                                                            /* garis tepi tipis supaya tetap tebal walau font tidak punya bobot 900 */
+                                                                            -webkit-text-stroke: 1.5px #ffffff;
+                                                                            text-transform: uppercase;
+                                                                            letter-spacing: 0.04em;
+                                                                            line-height: 1.12;
+                                                                            /* otomatis menyesuaikan lebar layar: min 34px, maks 64px */
+                                                                            font-size: clamp(34px, 11vw, 64px);
+                                                                        }
+                                                                    }
+
+                                                                    /* HP (termasuk iPhone 14 Pro, lebar 393px): counter tidak boleh terpotong */
+                                                                    @media (max-width: 575.98px) {
+                                                                        .add-info__counter {
+                                                                            overflow: visible !important;
+                                                                            -webkit-text-size-adjust: 100%;
+                                                                            text-size-adjust: 100%;
+                                                                        }
+
+                                                                        .counter__wrap {
+                                                                            justify-content: space-between;
+                                                                            align-items: flex-start;
+                                                                            gap: 6px;
+                                                                            padding: 20px 14px;
+                                                                            box-sizing: border-box;
+                                                                        }
+
+                                                                        /* lebar kolom mengikuti isi, tidak dipaksa sama rata */
+                                                                        .counter__item {
+                                                                            flex: 1 1 auto !important;
+                                                                            min-width: 0;
+                                                                        }
+
+                                                                        .counter__item h3 {
+                                                                            font-size: clamp(24px, 7.5vw, 32px) !important;
+                                                                            white-space: nowrap;
+                                                                            letter-spacing: -0.01em;
+                                                                            margin-bottom: 6px;
+                                                                        }
+
+                                                                        .counter__item p {
+                                                                            font-size: clamp(11px, 3.3vw, 13px) !important;
+                                                                            line-height: 1.25;
+                                                                            padding: 0;
+                                                                        }
                                                                     }
                                                                 </style>
 
@@ -1554,11 +1693,11 @@
                                             }
 
                                             /* =====================================================
-                                                   1. UKURAN TAB TETAP
-                                                   Semua tab-pane menumpuk di satu sel grid, sehingga
-                                                   tinggi kotak = tinggi tab terpanjang (Core Values).
-                                                   Hanya isi teks yang berganti.
-                                                   ===================================================== */
+                                                               1. UKURAN TAB TETAP
+                                                               Semua tab-pane menumpuk di satu sel grid, sehingga
+                                                               tinggi kotak = tinggi tab terpanjang (Core Values).
+                                                               Hanya isi teks yang berganti.
+                                                               ===================================================== */
                                             .tab-info .tab-content {
                                                 display: grid;
                                             }
@@ -1578,8 +1717,8 @@
                                             }
 
                                             /* =====================================================
-                                                   2. STYLE ITEM (ikon + teks)
-                                                   ===================================================== */
+                                                               2. STYLE ITEM (ikon + teks)
+                                                               ===================================================== */
                                             .tab-info__item {
                                                 display: flex;
                                                 align-items: center;
@@ -1620,9 +1759,9 @@
                                             }
 
                                             /* =====================================================
-                                                   3. PERKECIL TAB CORE VALUES (#h7653)
-                                                   Tab Mission & Vision tidak terpengaruh.
-                                                   ===================================================== */
+                                                               3. PERKECIL TAB CORE VALUES (#h7653)
+                                                               Tab Mission & Vision tidak terpengaruh.
+                                                               ===================================================== */
                                             #h7653 .sec-title {
                                                 margin-bottom: 25px !important;
                                                 /* sebelumnya mb-55 */
@@ -1660,10 +1799,10 @@
                                             }
 
                                             /* =====================================================
-                                                            4. SEMBUNYIKAN GAMBAR DI MOBILE
-                                                            Gambar latar (recruitment-photo-fcfm.png) hanya
-                                                            tampil di desktop (>= 992px).
-                                                            ===================================================== */
+                                                                        4. SEMBUNYIKAN GAMBAR DI MOBILE
+                                                                        Gambar latar (recruitment-photo-fcfm.png) hanya
+                                                                        tampil di desktop (>= 992px).
+                                                                        ===================================================== */
                                             @media (max-width: 991.98px) {
                                                 .tab-info .tab-info__bg {
                                                     display: none !important;
@@ -1671,9 +1810,9 @@
                                             }
 
                                             /* =====================================================
-           5. MOBILE: TINGGI KOTAK MENYESUAIKAN TEKS TAB AKTIF
-           Hanya berlaku <= 991.98px. Desktop tidak berubah.
-           ===================================================== */
+                       5. MOBILE: TINGGI KOTAK MENYESUAIKAN TEKS TAB AKTIF
+                       Hanya berlaku <= 991.98px. Desktop tidak berubah.
+                       ===================================================== */
                                             @media (max-width: 991.98px) {
                                                 .tab-info .tab-content {
                                                     display: block;

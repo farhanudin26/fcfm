@@ -17854,13 +17854,37 @@ select {
 }
 
 /* Mobile & tablet kecil: panah disembunyikan, pakai swipe */
+/* Mobile & tablet kecil: panah di luar gambar, swipe tetap aktif */
 @media (max-width: 768px) {
     .cvs-slider {
-        padding: 0;
+        padding: 0 44px; /* ruang untuk panah, gambar jadi sedikit lebih kecil */
     }
 
     .cvs-arrow {
-        display: none;
+        display: flex;
+        width: 34px;
+        height: 34px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .cvs-arrow svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .cvs-arrow-prev {
+        left: 2px;
+    }
+
+    .cvs-arrow-next {
+        right: 2px;
+    }
+
+    /* hilangkan efek hover biru yang bisa "menempel" di layar sentuh */
+    .cvs-arrow:hover {
+        background: #ffffff;
+        border-color: #e2e8f0;
+        color: #1a2332;
     }
 
     .cvs-card-body {
@@ -17882,3 +17906,4 @@ select {
         font-size: 24px;
     }
 }
+
