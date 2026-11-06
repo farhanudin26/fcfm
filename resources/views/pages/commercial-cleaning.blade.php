@@ -32,34 +32,47 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </section><br><br><br>
-                                    <div class="elementor-element elementor-element-d1d1429 elementor-widget elementor-widget-text-editor"
-                                        data-id="d1d1429" data-element_type="widget" data-widget_type="text-editor.default"
-                                        style="text-align: center; max-width: 1100px; margin: 0 auto;">
-                                        <span class="healthcare-label">COMMERCIAL CLEANING SERVICES</span><br>
-                                        <br>
-                                        <h2><Strong> A Cleaner Workplace Starts with the Right Cleaning Partner</Strong>
-                                        </h2><br>
+                                    </section>
 
-                                        <p>We believe that a clean and well-maintained environment plays an important role
-                                            in
-                                            creating a safe, comfortable and professional space for your employees,
-                                            customers and
-                                            visitors.</p>
+                                    <section class="healthcare-cleaning-section">
+                                        <div class="healthcare-container">
 
-                                        <p>At <strong>Fresh Cleaning Facilities Management (FCFM)</strong>, we provide
-                                            <strong>commercial cleaning services in Singapore</strong> tailored to the
-                                            operational
-                                            needs of businesses, commercial properties and organisations.
-                                        </p>
+                                            <!-- Intro -->
+                                            <div class="healthcare-header">
+                                                <span class="healthcare-label">COMMERCIAL CLEANING SERVICES</span><br><br>
 
-                                        <p>From routine daily cleaning to specialised cleaning requirements, our team works
-                                            closely
-                                            with clients to develop practical cleaning solutions based on their premises,
-                                            operating
-                                            hours, foot traffic and required service standards.</p>
+                                                <h2 class="healthcare-title">
+                                                    A Cleaner Workplace Starts with the Right Cleaning Partner
+                                                </h2><br>
 
-                                    </div>
+                                                <p class="healthcare-description">
+                                                    We believe that a clean and well-maintained environment plays an
+                                                    important role
+                                                    in
+                                                    creating a safe, comfortable and professional space for your employees,
+                                                    customers and
+                                                    visitors.
+                                                </p>
+
+                                                <p class="healthcare-description">
+                                                    At <strong>Fresh Cleaning Facilities Management (FCFM)</strong>, we
+                                                    provide <strong>commercial
+                                                        cleaning services in Singapore</strong> tailored to the operational
+                                                    needs of
+                                                    businesses, commercial properties and organisations.
+
+
+                                                </p>
+
+                                                <p class="healthcare-description">
+                                                    From routine daily cleaning to specialised cleaning requirements, our
+                                                    team works closely with clients to develop practical cleaning solutions
+                                                    based on their premises, operating hours, foot traffic and required
+                                                    service standards.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
                                     <section class="commercial-section">
                                         <div class="container">
 
@@ -306,85 +319,91 @@
                                             </div>
 
 
-<div class="why-choose-section">
+                                            <div class="why-choose-section">
 
-    <h2 class="why-choose-title">Why Choose FCFM for Commercial Cleaning?</h2>
+                                                <h2 class="why-choose-title">Why Choose FCFM for Commercial Cleaning?</h2>
 
-    <div class="why-choose-body">
-        <p>
-            Choosing a commercial cleaning company in Singapore is not simply
-            about finding someone to clean your premises. It is about partnering
-            with a team that understands that every detail — and every
-            interaction — matters.
-        </p>
+                                                <div class="why-choose-body">
+                                                    <p>
+                                                        Choosing a commercial cleaning company in Singapore is not simply
+                                                        about finding someone to clean your premises. It is about partnering
+                                                        with a team that understands that every detail — and every
+                                                        interaction — matters.
+                                                    </p>
 
-        <p>
-            At FCFM, we believe quality cleaning goes beyond maintaining a clean
-            environment. It takes the right manpower, consistent service
-            standards, responsive communication and reliable operational support
-            to deliver an experience that people can feel.
-        </p>
+                                                    <p>
+                                                        At FCFM, we believe quality cleaning goes beyond maintaining a clean
+                                                        environment. It takes the right manpower, consistent service
+                                                        standards, responsive communication and reliable operational support
+                                                        to deliver an experience that people can feel.
+                                                    </p>
 
-        <p>
-            We put care into the work we do and the people we serve, because a
-            well-maintained environment is not only about how a space looks, but
-            how people experience it.
-        </p>
-    </div>
+                                                    <p>
+                                                        We put care into the work we do and the people we serve, because a
+                                                        well-maintained environment is not only about how a space looks, but
+                                                        how people experience it.
+                                                    </p>
+                                                </div>
 
-    <style>
-        .commercial-quote {
-            position: relative;
-            background-color: #f8f9fa;
-            border: 1px solid #e0e0e0;
-            border-left: 4px solid #0088cc; /* Garis aksen kiri */
-            border-radius: 6px;
-            padding: 20px 20px 20px 55px; /* Padding kiri 55px memberi ruang khusus untuk ikon */
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-style: italic;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333333;
-            box-sizing: border-box;
-            width: 100%;
-        }
+                                                <style>
+                                                    .commercial-quote {
+                                                        position: relative;
+                                                        background-color: #f8f9fa;
+                                                        border: 1px solid #e0e0e0;
+                                                        border-left: 4px solid #0088cc;
+                                                        /* Garis aksen kiri */
+                                                        border-radius: 6px;
+                                                        padding: 20px 20px 20px 55px;
+                                                        /* Padding kiri 55px memberi ruang khusus untuk ikon */
+                                                        margin-top: 30px;
+                                                        margin-bottom: 20px;
+                                                        font-style: italic;
+                                                        font-size: 16px;
+                                                        line-height: 1.6;
+                                                        color: #333333;
+                                                        box-sizing: border-box;
+                                                        width: 100%;
+                                                    }
 
-        /* Merapikan posisi Ikon Quote di pojok kiri atas */
-        .commercial-quote::before {
-            content: "\f10d" !important; /* Icon quote-left FontAwesome */
-            font-family: "Font Awesome 5 Free", "Font Awesome 6 Free", "FontAwesome" !important;
-            font-weight: 900 !important;
-            position: absolute !important;
-            top: 18px !important;
-            left: 18px !important;
-            font-size: 22px !important;
-            color: #0088cc !important;
-            opacity: 0.8;
-            margin: 0 !important;
-            padding: 0 !important;
-            transform: none !important;
-        }
+                                                    /* Merapikan posisi Ikon Quote di pojok kiri atas */
+                                                    .commercial-quote::before {
+                                                        content: "\f10d" !important;
+                                                        /* Icon quote-left FontAwesome */
+                                                        font-family: "Font Awesome 5 Free", "Font Awesome 6 Free", "FontAwesome" !important;
+                                                        font-weight: 900 !important;
+                                                        position: absolute !important;
+                                                        top: 18px !important;
+                                                        left: 18px !important;
+                                                        font-size: 22px !important;
+                                                        color: #0088cc !important;
+                                                        opacity: 0.8;
+                                                        margin: 0 !important;
+                                                        padding: 0 !important;
+                                                        transform: none !important;
+                                                    }
 
-        /* Responsif khusus layar Mobile */
-        @media (max-width: 767px) {
-            .commercial-quote {
-                padding: 18px 15px 18px 48px; /* Ruang tetap pas di layar sempit */
-                font-size: 14.5px;
-            }
-            .commercial-quote::before {
-                top: 16px !important;
-                left: 14px !important;
-                font-size: 18px !important;
-            }
-        }
-    </style>
+                                                    /* Responsif khusus layar Mobile */
+                                                    @media (max-width: 767px) {
+                                                        .commercial-quote {
+                                                            padding: 18px 15px 18px 48px;
+                                                            /* Ruang tetap pas di layar sempit */
+                                                            font-size: 14.5px;
+                                                        }
 
-    <blockquote class="commercial-quote">
-        “People may not remember how clean a place looked. They remember how your team made them feel.”
-    </blockquote>
+                                                        .commercial-quote::before {
+                                                            top: 16px !important;
+                                                            left: 14px !important;
+                                                            font-size: 18px !important;
+                                                        }
+                                                    }
+                                                </style>
 
-</div>
+                                                <blockquote class="commercial-quote">
+                                                    “People may not remember how clean a place looked. They remember how
+                                                    your team made them feel.”
+                                                </blockquote>
+
+                                            </div>
 
 
                                             <div class="commercial-cta">

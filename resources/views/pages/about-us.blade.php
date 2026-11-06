@@ -79,6 +79,45 @@
                                                                         .clenix-about-img-wrapper .about-exp {
                                                                             display: none !important
                                                                         }
+
+                                                                        @media (max-width: 991px) {
+
+                                                                            /* Kurangi padding section About */
+                                                                            .clenix-about-section {
+                                                                                padding-bottom: 20px !important;
+                                                                            }
+
+                                                                            /* Kurangi padding section Why Choose */
+                                                                            .clenix-why-choose-section {
+                                                                                padding-top: 20px !important;
+                                                                                padding-bottom: 40px !important;
+                                                                            }
+
+                                                                            /* Hilangkan jarak ekstra di bawah teks About */
+                                                                            .clenix-about-text-wrap {
+                                                                                margin-bottom: 0 !important;
+                                                                            }
+
+                                                                            .clenix-about-content-2 .about-signature-cta-wrap {
+                                                                                margin-top: 0 !important;
+                                                                                min-height: 0 !important;
+                                                                            }
+
+                                                                            /* Kolom tanpa isi tidak perlu tinggi */
+                                                                            .clenix-about-img-wrapper .about-exp {
+                                                                                display: none !important;
+                                                                            }
+                                                                        }
+
+                                                                        @media (max-width: 575px) {
+                                                                            .clenix-about-section {
+                                                                                padding-bottom: 0 !important;
+                                                                            }
+
+                                                                            .clenix-why-choose-section {
+                                                                                padding-top: 0 !important;
+                                                                            }
+                                                                        }
                                                                     </style>
                                                                 </h3>
                                                                 <span></span>
@@ -127,19 +166,6 @@
                                                                     with utmost confidence.
                                                                 </p>
                                                             </div>
-                                                            <div class="about-signature-cta-wrap d-flex">
-                                                                <div class="about-signature-img-2 d-flex">
-                                                                    <div class="inner-img">
-                                                                    </div>
-                                                                    <div
-                                                                        class="inner-text headline pera-content position-relative">
-                                                                        <h4></h4>
-                                                                        <p></p>
-                                                                        <span class="sign-img">
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -148,17 +174,6 @@
                                     </section>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-567cacc elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                data-id="567cacc" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-no">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-33ebd75"
-                        data-id="33ebd75" data-element_type="column">
-                        <div class="elementor-widget-wrap">
                         </div>
                     </div>
                 </div>

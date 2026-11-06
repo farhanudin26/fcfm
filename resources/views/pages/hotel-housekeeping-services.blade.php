@@ -54,10 +54,11 @@
                                         <div class="hotel-container">
 
                                             <div class="hotel-header">
-                                                <span class="hotel-label">HOTEL HOUSEKEEPING SERVICES</span><br>
+                                                <span class="hotel-label">HOTEL HOUSEKEEPING SERVICES</span><br><br>
 
-                                                <h2 class="hotel-title">
-                                                    Hotel Housekeeping Services <br> in Singapore
+                                                <h2 class="healthcare-title healthcare-title-2line">
+                                                    <span class="ht-line">Hotel Housekeeping Services</span>
+                                                    <span class="ht-line">in Singapore</span>
                                                 </h2><br>
 
                                                 <h3 class="hotel-subtitle">

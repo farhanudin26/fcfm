@@ -56,8 +56,9 @@
                                             <div class="healthcare-header">
                                                 <span class="healthcare-label">HEALTHCARE CLEANING SERVICES</span><br><br>
 
-                                                <h2 class="healthcare-title">
-                                                    Healthcare Cleaning Services <br> in Singapore
+                                                <h2 class="healthcare-title healthcare-title-2line">
+                                                    <span class="ht-line">Healthcare Cleaning Services</span>
+                                                    <span class="ht-line">in Singapore</span>
                                                 </h2><br>
 
                                                 <h3 class="healthcare-subtitle">

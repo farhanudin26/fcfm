@@ -40,7 +40,7 @@
                                         }
 
                                         /* Khusus Tampilan Mobile (Lebar Layar <= 768px):
-                                    Fokus gambar digeser ke Kiri agar mesin terlihat utuh */
+                                        Fokus gambar digeser ke Kiri agar mesin terlihat utuh */
                                         @media (max-width: 768px) {
                                             .clenix-breadcrumb-section.header-bg-bottom {
                                                 background-position: left bottom !important;
@@ -322,24 +322,59 @@
                                     .clenix-service-content-2 .slick-dots {
                                         display: flex !important;
                                         justify-content: center;
+                                        align-items: center;
+                                        gap: 8px;
                                         list-style: none;
-                                        padding: 0;
-                                        margin-top: 20px;
+                                        padding: 0 !important;
+                                        margin: 20px 0 20px !important;
+                                        position: relative !important;
+                                        bottom: auto !important;
+                                        width: 100%;
+                                        height: 12px;
+                                        overflow: visible;
+                                        z-index: 5;
                                     }
 
                                     .clenix-service-content-2 .slick-dots li {
-                                        margin: 0 4px;
+                                        display: block !important;
+                                        margin: 0 !important;
+                                        padding: 0 !important;
+                                        width: 8px !important;
+                                        height: 8px !important;
+                                        background: none !important;
+                                        border: none !important;
+                                        border-radius: 50% !important;
                                     }
 
                                     .clenix-service-content-2 .slick-dots li button {
-                                        font-size: 0;
-                                        width: 10px;
-                                        height: 10px;
-                                        border-radius: 50%;
-                                        background-color: #ccc;
-                                        border: none;
-                                        outline: none;
-                                        transition: background-color 0.3s ease;
+                                        display: block !important;
+                                        font-size: 0 !important;
+                                        width: 8px !important;
+                                        height: 8px !important;
+                                        min-width: 8px !important;
+                                        min-height: 8px !important;
+                                        padding: 0 !important;
+                                        margin: 0 !important;
+                                        border: none !important;
+                                        outline: none !important;
+                                        border-radius: 50% !important;
+                                        background-color: #d1d5db !important;
+                                        /* abu-abu */
+                                        opacity: 1 !important;
+                                        transition: background-color 0.3s ease, transform 0.3s ease;
+                                    }
+
+                                    .clenix-service-content-2 .slick-dots li button::before,
+                                    .clenix-service-content-2 .slick-dots li button::after {
+                                        display: none !important;
+                                        content: none !important;
+                                    }
+
+                                    /* Dot aktif: biru */
+                                    .clenix-service-content-2 .slick-dots li.slick-active button {
+                                        background-color: #1e90ff !important;
+                                        /* biru */
+                                        transform: scale(1.25);
                                     }
 
                                     .clenix-service-content-2 .slick-dots li.slick-active button {
@@ -776,52 +811,52 @@
 
 
                             {{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
-{{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
-<script>
-    // Dijalankan setelah window load supaya ID slick milik slider desktop
-    // (#slick-slide00, #slick-slide10, dst.) tidak bergeser.
-    jQuery(window).on('load', function() {
-        var $ = jQuery;
-        var $s = $('.service-mobile-slider');
-        if (!$s.length || !$.fn.slick) return;
+                            {{-- ===================== SCRIPT (taruh setelah jQuery & slick dimuat) ===================== --}}
+                            <script>
+                                // Dijalankan setelah window load supaya ID slick milik slider desktop
+                                // (#slick-slide00, #slick-slide10, dst.) tidak bergeser.
+                                jQuery(window).on('load', function() {
+                                    var $ = jQuery;
+                                    var $s = $('.service-mobile-slider');
+                                    if (!$s.length || !$.fn.slick) return;
 
-        $s.slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: true,
-            infinite: true,
+                                    $s.slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        arrows: true,
+                                        dots: true,
+                                        infinite: true,
 
-            // Auto-geser ke kanan
-            autoplay: true,
-            autoplaySpeed: 3000,   // jeda antar slide (ms) -> ubah sesuai selera
-            speed: 600,            // durasi animasi geser (ms)
-            pauseOnHover: true,
-            pauseOnFocus: true,
-            pauseOnDotsHover: true
-        });
+                                        // Auto-geser ke kanan
+                                        autoplay: true,
+                                        autoplaySpeed: 3000, // jeda antar slide (ms) -> ubah sesuai selera
+                                        speed: 600, // durasi animasi geser (ms)
+                                        pauseOnHover: true,
+                                        pauseOnFocus: true,
+                                        pauseOnDotsHover: true
+                                    });
 
-        // Saat card disentuh (teks detail terbuka), pause autoplay
-        // supaya tidak tiba-tiba bergeser ketika user sedang membaca.
-        var resumeTimer;
-        $s.on('touchstart mouseenter', '.clinex-service-item-2', function() {
-            clearTimeout(resumeTimer);
-            $s.slick('slickPause');
-        });
+                                    // Saat card disentuh (teks detail terbuka), pause autoplay
+                                    // supaya tidak tiba-tiba bergeser ketika user sedang membaca.
+                                    var resumeTimer;
+                                    $s.on('touchstart mouseenter', '.clinex-service-item-2', function() {
+                                        clearTimeout(resumeTimer);
+                                        $s.slick('slickPause');
+                                    });
 
-        // Lanjutkan autoplay 5 detik setelah sentuhan/hover selesai
-        $s.on('touchend mouseleave', '.clinex-service-item-2', function() {
-            clearTimeout(resumeTimer);
-            resumeTimer = setTimeout(function() {
-                $s.slick('slickPlay');
-            }, 4000);
-        });
+                                    // Lanjutkan autoplay 5 detik setelah sentuhan/hover selesai
+                                    $s.on('touchend mouseleave', '.clinex-service-item-2', function() {
+                                        clearTimeout(resumeTimer);
+                                        resumeTimer = setTimeout(function() {
+                                            $s.slick('slickPlay');
+                                        }, 4000);
+                                    });
 
-        $(window).on('resize', function() {
-            $s.slick('setPosition');
-        });
-    });
-</script>
+                                    $(window).on('resize', function() {
+                                        $s.slick('setPosition');
+                                    });
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>

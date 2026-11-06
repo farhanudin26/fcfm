@@ -370,9 +370,6 @@
         media='all' />
     <link rel='stylesheet' id='elementor-post-1226-css' href='{{ asset('assets/css/elementor/post-1226.css') }}'
         media='all' />
-    <link rel='stylesheet' id='clinox-googlefonts-css'
-        href='https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700&#038;subset=latin%2Clatin-ext'
-        media='all' />
     <link rel='stylesheet' id='bootstrap-css'
         href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'
         integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'
@@ -404,8 +401,9 @@
         href='{{ asset('assets/css/fa-fontawesome.css') }}' media='all' />
     <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='{{ asset('assets/css/fa-solid.css') }}'
         media='all' />
-    <link rel='stylesheet' id='csf-google-web-fonts-css'
-        href='//fonts.googleapis.com/css?family=Montserrat:400,600,500&#038;display=swap' media='all' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap">
     <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='{{ asset('assets/css/gf-roboto.css') }}'
         media='all' />
     <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='{{ asset('assets/css/gf-robotoslab.css') }}'
@@ -483,31 +481,15 @@
             }
         }
     </style>
-    <style type="text/css">
-        body {
-            font-family: "Montserrat";
-            font-weight: normal;
-        }
+<style type="text/css">
+    .site-branding img {
+        max-width: 250px;
+    }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat";
-            font-weight: normal;
-            letter-spacing: 1px;
-        }
-
-        .site-branding img {
-            max-width: 250px;
-        }
-
-        .clenix-breadcrumb-section {
-            background-image: url(http://themexriver.com/wp/clinox/wp-content/uploads/2022/05/br-bg1.jpg);
-        }
-    </style>
+    .clenix-breadcrumb-section {
+        background-image: url(http://themexriver.com/wp/clinox/wp-content/uploads/2022/05/br-bg1.jpg);
+    }
+</style>
     <link rel="icon" href="{{ asset('assets/img/uploads/2025/09/fcfm-square-logo-4-150x150.png') }}"
         sizes="32x32" />
     <link rel="icon" href="{{ asset('assets/img/uploads/2025/09/fcfm-square-logo-4-300x300.png') }}"

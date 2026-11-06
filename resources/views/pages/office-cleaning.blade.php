@@ -81,12 +81,16 @@
                                         </section>
 
                                         {{-- ================================================
-       2. WHAT OUR OFFICE CLEANING SERVICES COVER — icon cards
-  ================================================= --}}
+                                                            2. WHAT OUR OFFICE CLEANING SERVICES COVER — icon cards
+                                                ================================================= --}}
                                         <section class="coverage-section">
                                             <div class="container">
                                                 <div class="section-header">
-                                                    <h2><strong>What Does Our Office Cleaning <br>Services Cover?</strong>
+                                                    <h2 class="coverage-title-2line">
+                                                        <strong>
+                                                            <span class="ct-line">What Does Our Office Cleaning</span>
+                                                            <span class="ct-line">Services Cover?</span>
+                                                        </strong>
                                                     </h2>
                                                     <p>Every office has different cleaning priorities depending on its size,
                                                         layout, occupancy and daily activities. Our cleaning scope can be
@@ -148,8 +152,8 @@
                                         </section>
 
                                         {{-- ================================================
-       3. CONSUMABLES SUPPLIES — cards
-  ================================================= --}}
+                                                                3. CONSUMABLES SUPPLIES — cards
+                                                            ================================================= --}}
                                         <section class="consumables-section">
                                             <div class="container">
                                                 <div class="consumables-flex">
@@ -193,8 +197,8 @@
                                         </section>
 
                                         {{-- ================================================
-       4. SUPPORTING EVERY PART OF YOUR WORKPLACE — highlight box
-  ================================================= --}}
+                                    4. SUPPORTING EVERY PART OF YOUR WORKPLACE — highlight box
+                                ================================================= --}}
                                         <section class="support-section">
                                             <div class="container">
                                                 <div class="support-box">
@@ -220,7 +224,8 @@
                                                     <div class="wide-card-content">
                                                         <h3 class="wide-card-title"><strong>More Than Routine Office
                                                                 Cleaning</strong></h3>
-                                                        <p class="wide-card-description">Some areas of the workplace require
+                                                        <p class="wide-card-description">Some areas of the workplace
+                                                            require
                                                             periodic attention beyond
                                                             everyday cleaning. FCFM provides additional cleaning and
                                                             facilities support services that can complement your regular
@@ -241,7 +246,12 @@
                                         <section class="expect-section">
                                             <div class="container">
                                                 <div class="section-header">
-                                                    <h2><strong>With FCFM,You Can Expect</strong></h2>
+                                                    <h2 class="expect-title-2line">
+                                                        <strong>
+                                                            <span class="et-line">With FCFM,</span>
+                                                            <span class="et-line">You Can Expect</span>
+                                                        </strong>
+                                                    </h2>
                                                 </div>
                                                 <div class="services-grid">
                                                     <div class="service-card">

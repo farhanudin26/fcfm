@@ -204,8 +204,8 @@
                 }
 
                 /* =======================================
-                               STYLING POP-UP MODAL
-                            ======================================= */
+                                               STYLING POP-UP MODAL
+                                            ======================================= */
                 .role-modal-overlay {
                     position: fixed;
                     top: 0;
@@ -374,11 +374,11 @@
                                 </div>
                             </div>
 
-                            <!-- KARTU 3: Operations Manager -->
+                            <!-- KARTU 3: Operations Executive -->
                             <div class="col-lg-6">
-                                <div class="role-card-item" onclick="openRoleModal('modal-operations-manager')">
+                                <div class="role-card-item" onclick="openRoleModal('modal-operations-executive')">
                                     <div>
-                                        <h3 class="role-card-title">Operations Manager</h3>
+                                        <h3 class="role-card-title">Operations Executive</h3>
 
                                         <div class="role-meta-group">
                                             <span class="role-meta-label">General Work Location:</span>
@@ -391,9 +391,12 @@
                                         </div><br>
                                         <div class="role-meta-group">
                                             <span class="role-meta-label">Suitable For:</span>
-                                            <p class="role-meta-value">Individuals with experience in operations, cleaning,
-                                                facilities management or manpower coordination, and who are comfortable
-                                                managing people, clients and multiple priorities.</p>
+                                            <p class="role-meta-value">Individuals who enjoy working with people, solving
+                                                problems and being involved both in the office and on the ground.<br><br>
+
+                                                You’ll also gain exposure to different client environments and learn how
+                                                manpower, service standards and client expectations come together in daily
+                                                operations.</p>
                                         </div>
                                     </div>
 
@@ -442,8 +445,8 @@
 
 
             <!-- =========================================================
-                             KONTEN POP-UP MODAL (TERSEMBUNYI, TAMPIL SAAT DIKLIK)
-                        ========================================================= -->
+                                             KONTEN POP-UP MODAL (TERSEMBUNYI, TAMPIL SAAT DIKLIK)
+                                        ========================================================= -->
 
             <!-- Modal 1: Team Lead -->
             <div id="modal-team-lead" class="role-modal-overlay" onclick="closeOnOverlay(event, 'modal-team-lead')">
@@ -486,26 +489,38 @@
                 </div>
             </div>
 
-            <!-- Modal 3: Operations Manager -->
-            <div id="modal-operations-manager" class="role-modal-overlay"
-                onclick="closeOnOverlay(event, 'modal-operations-manager')">
+            <!-- Modal 3: Operations Executive -->
+            <div id="modal-operations-executive" class="role-modal-overlay"
+                onclick="closeOnOverlay(event, 'modal-operations-executive')">
                 <div class="role-modal-container">
-                    <button class="role-modal-close" onclick="closeRoleModal('modal-operations-manager')">&times;</button>
-                    <h3 class="role-modal-title">Operations Manager</h3>
-                    <p class="role-modal-subtitle">What your day may look like…</p>
+                    <button class="role-modal-close"
+                        onclick="closeRoleModal('modal-operations-executive')">&times;</button>
+                    <h3 class="role-modal-title">Operations Executive</h3>
+
+                    <!-- Menggunakan role-modal-subtitle agar langsung ter-styling dengan rapi -->
+                    <p class="role-modal-subtitle"
+                        style="font-style: normal; font-weight: normal; font-size: 15px; line-height: 1.6; margin-bottom: 20px; color: #444;">
+                        As an Operations Executive, no two days are exactly the same. You’ll be involved in the day-to-day
+                        coordination of our cleaning operations, working closely with employees, supervisors, clients and
+                        the internal team to make sure everything runs smoothly.
+                    </p>
+
+                    <p class="role-modal-subtitle">Your day may include:</p>
                     <ul class="role-modal-list">
-                        <li>Planning and coordinating manpower deployment across assigned sites</li>
-                        <li>Checking staffing levels, attendance and operational coverage</li>
-                        <li>Visiting sites to review cleaning standards and overall performance</li>
-                        <li>Guiding and supporting Team Leads and Supervisors</li>
-                        <li>Following up on manpower shortages, urgent replacements and operational issues</li>
-                        <li>Communicating with clients on service requirements, feedback and site matters</li>
-                        <li>Coordinating with HR on recruitment, attendance, employee matters and manpower needs</li>
-                        <li>Monitoring cleaning equipment, supplies and site requirements</li>
-                        <li>Handling escalated issues and working with the relevant teams to find practical solutions</li>
-                        <li>Supporting the onboarding and deployment of new employees</li>
-                        <li>Reviewing site performance and identifying areas for improvement</li>
-                        <li>Ensuring company procedures, safety requirements and client expectations are followed</li>
+                        <li>Checking manpower attendance and ensuring that assigned sites are properly covered</li>
+                        <li>Coordinating replacements when employees are absent or when urgent manpower support is required
+                        </li>
+                        <li>Communicating with Cleaning Specialists, Team Leads and Supervisors regarding daily site matters
+                        </li>
+                        <li>Visiting client sites to check cleaning standards and operational requirements</li>
+                        <li>Following up on feedback, complaints or service issues raised by clients</li>
+                        <li>Assisting with manpower deployment and changes in work arrangements</li>
+                        <li>Supporting the onboarding and deployment of new employees to their assigned sites</li>
+                        <li>Coordinating cleaning supplies, equipment or other site requirements</li>
+                        <li>Working closely with HR on employee attendance, manpower and staff-related matters</li>
+                        <li>Updating clients or internal teams on ongoing operational matters</li>
+                        <li>Preparing simple reports, records and operational updates</li>
+                        <li>Helping to resolve unexpected issues that may arise throughout the day</li>
                     </ul>
                 </div>
             </div>
@@ -554,8 +569,8 @@
             </script>
             <style>
                 /* =======================================
-                STYLING SECTION INTERESTED IN JOINING US
-                ======================================= */
+                    STYLING SECTION INTERESTED IN JOINING US
+                    ======================================= */
                 .fcfm-cta-section {
                     padding: 60px 0 80px 0;
                     background-color: #f9fbfd;
@@ -564,17 +579,9 @@
 
                 .fcfm-cta-container {
                     max-width: 900px;
-                    /* Diperluas agar teks muat 1 baris */
                     margin: 0 auto;
-                }
-
-                .fcfm-cta-description {
-                    font-size: 16px;
-                    line-height: 1.6;
-                    color: #555555;
-                    margin-bottom: 30px;
-                    white-space: nowrap;
-                    /* Memaksa teks tetap 1 baris */
+                    padding: 0 20px;
+                    /* Ditambahkan padding horizontal agar tidak menempel di tepi layar mobile */
                 }
 
                 .fcfm-cta-title {
@@ -584,6 +591,14 @@
                     margin-bottom: 15px;
                 }
 
+                .fcfm-cta-description {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    color: #555555;
+                    margin-bottom: 30px;
+                    /* white-space: nowrap; -> DIHAPUS agar teks bisa turun baris secara otomatis di mobile */
+                }
+
                 /* Container Tombol Side-by-Side */
                 .fcfm-cta-buttons {
                     display: flex;
@@ -591,7 +606,6 @@
                     align-items: center;
                     gap: 20px;
                     flex-wrap: wrap;
-                    /* Menjaga agar tampilan rapi di mobile */
                 }
 
                 /* Base Styling Tombol */
@@ -643,6 +657,20 @@
 
                 /* Responsif Mobile */
                 @media (max-width: 576px) {
+                    .fcfm-cta-section {
+                        padding: 40px 0 60px 0;
+                    }
+
+                    .fcfm-cta-title {
+                        font-size: 26px;
+                        /* Mengecilkan sedikit ukuran judul agar proporsional di HP */
+                    }
+
+                    .fcfm-cta-description {
+                        font-size: 14px;
+                        /* Menyesuaikan ukuran font deskripsi di mobile */
+                    }
+
                     .fcfm-cta-buttons {
                         flex-direction: column;
                         gap: 12px;
@@ -653,6 +681,7 @@
                     }
                 }
             </style>
+
             <!-- Section Interested in joining us -->
             <section class="fcfm-cta-section">
                 <div class="container">
@@ -670,7 +699,7 @@
                                 <i class="far fa-envelope"></i> Email our HR team at hr@fcfm.sg
                             </a>
 
-                            <!-- WhatsApp Button Link (Ganti nomor WhatsApp sesuai kebutuhan) -->
+                            <!-- WhatsApp Button Link -->
                             <a href="https://wa.me/6588552999" target="_blank" rel="noopener noreferrer"
                                 class="fcfm-btn fcfm-btn-whatsapp">
                                 <i class="fab fa-whatsapp"></i> WhatsApp our HR team

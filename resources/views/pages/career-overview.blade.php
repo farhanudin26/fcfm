@@ -146,15 +146,15 @@
                     <div class="container">
                         <div class="grow-copy">
                             <h2><strong>More Than a Job, A Place to Grow</strong></h2>
-                                <p>Great service starts with people who feel supported in doing their best work. We believe
-                                    in
-                                    creating opportunities for our people to learn, develop and take on greater
-                                    responsibilities
-                                    as they grow with us.</p>
-                                <p>Whether you're taking your first step into the industry, bringing years of experience, or
-                                    looking for a new direction, there can be a place for you to build your journey with
-                                    FCFM.
-                                </p>
+                            <p>Great service starts with people who feel supported in doing their best work. We believe
+                                in
+                                creating opportunities for our people to learn, develop and take on greater
+                                responsibilities
+                                as they grow with us.</p>
+                            <p>Whether you're taking your first step into the industry, bringing years of experience, or
+                                looking for a new direction, there can be a place for you to build your journey with
+                                FCFM.
+                            </p>
                         </div>
 
                         <div class="services-grid">
@@ -188,8 +188,8 @@
                 </section>
                 <style>
                     /* =======================================
-                   STYLING SECTION INTERESTED IN JOINING US
-                ======================================= */
+        STYLING SECTION INTERESTED IN JOINING US
+        ======================================= */
                     .fcfm-cta-section {
                         padding: 60px 0 80px 0;
                         background-color: #f9fbfd;
@@ -198,17 +198,9 @@
 
                     .fcfm-cta-container {
                         max-width: 900px;
-                        /* Diperluas agar teks muat 1 baris */
                         margin: 0 auto;
-                    }
-
-                    .fcfm-cta-description {
-                        font-size: 16px;
-                        line-height: 1.6;
-                        color: #555555;
-                        margin-bottom: 30px;
-                        white-space: nowrap;
-                        /* Memaksa teks tetap 1 baris */
+                        padding: 0 20px;
+                        /* Ditambahkan padding horizontal agar tidak menempel di tepi layar mobile */
                     }
 
                     .fcfm-cta-title {
@@ -218,6 +210,14 @@
                         margin-bottom: 15px;
                     }
 
+                    .fcfm-cta-description {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        color: #555555;
+                        margin-bottom: 30px;
+                        /* white-space: nowrap; -> DIHAPUS agar teks bisa turun baris secara otomatis di mobile */
+                    }
+
                     /* Container Tombol Side-by-Side */
                     .fcfm-cta-buttons {
                         display: flex;
@@ -225,7 +225,6 @@
                         align-items: center;
                         gap: 20px;
                         flex-wrap: wrap;
-                        /* Menjaga agar tampilan rapi di mobile */
                     }
 
                     /* Base Styling Tombol */
@@ -277,6 +276,20 @@
 
                     /* Responsif Mobile */
                     @media (max-width: 576px) {
+                        .fcfm-cta-section {
+                            padding: 40px 0 60px 0;
+                        }
+
+                        .fcfm-cta-title {
+                            font-size: 26px;
+                            /* Mengecilkan sedikit ukuran judul agar proporsional di HP */
+                        }
+
+                        .fcfm-cta-description {
+                            font-size: 14px;
+                            /* Menyesuaikan ukuran font deskripsi di mobile */
+                        }
+
                         .fcfm-cta-buttons {
                             flex-direction: column;
                             gap: 12px;
@@ -287,6 +300,7 @@
                         }
                     }
                 </style>
+
                 <!-- Section Interested in joining us -->
                 <section class="fcfm-cta-section">
                     <div class="container">
@@ -304,7 +318,7 @@
                                     <i class="far fa-envelope"></i> Email our HR team at hr@fcfm.sg
                                 </a>
 
-                                <!-- WhatsApp Button Link (Ganti nomor WhatsApp sesuai kebutuhan) -->
+                                <!-- WhatsApp Button Link -->
                                 <a href="https://wa.me/6588552999" target="_blank" rel="noopener noreferrer"
                                     class="fcfm-btn fcfm-btn-whatsapp">
                                     <i class="fab fa-whatsapp"></i> WhatsApp our HR team
