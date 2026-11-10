@@ -434,40 +434,40 @@
             </section>
             <style>
                 /* Default (Desktop): teks mobile disembunyikan */
-.mobile-maintaining {
-    display: none;
-}
+                .mobile-maintaining {
+                    display: none;
+                }
 
-/* Mobile & Tablet */
-@media (max-width: 991px) {
+                /* Mobile & Tablet */
+                @media (max-width: 991px) {
 
-    /* Sembunyikan gambar teks, tampilkan teks asli */
-    .desktop-text-img {
-        display: none !important;
-    }
+                    /* Sembunyikan gambar teks, tampilkan teks asli */
+                    .desktop-text-img {
+                        display: none !important;
+                    }
 
-    .mobile-maintaining {
-        display: block;
-        width: 100%;
-        text-align: right;
-        padding: 10px 5px 0;
-    }
+                    .mobile-maintaining {
+                        display: block;
+                        width: 100%;
+                        text-align: right;
+                        padding: 10px 5px 0;
+                    }
 
-    .mobile-maintaining h2 {
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #ffffff;
-        line-height: 1.25;
-        font-size: clamp(22px, 7vw, 36px);
-    }
+                    .mobile-maintaining h2 {
+                        margin: 0;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        line-height: 1.25;
+                        font-size: clamp(22px, 7vw, 36px);
+                    }
 
-    /* Tiap baris dipaksa tampil di barisnya sendiri */
-    .mobile-maintaining h2 span {
-        display: block;
-    }
-}
+                    /* Tiap baris dipaksa tampil di barisnya sendiri */
+                    .mobile-maintaining h2 span {
+                        display: block;
+                    }
+                }
             </style>
             <!-- Bagian Teks Gambar ("In Maintaining...") - Tersambung Tanpa Celah/Garis Putih -->
             <div class="elementor-element elementor-element-e518cfa e-flex e-con-boxed e-con e-parent" data-id="e518cfa"
@@ -477,24 +477,24 @@
                         data-id="8d50dbd" data-element_type="container">
 
                         <!-- Versi DESKTOP: tetap gambar -->
-<!-- Versi DESKTOP: gambar -->
-<div class="elementor-element elementor-element-8862be3 elementor-widget elementor-widget-image desktop-text-img"
-    data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
-    <img fetchpriority="high" decoding="async" width="540" height="409"
-        src="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }}"
-        class="attachment-large size-large wp-image-2253" alt="Trusted Partner Text"
-        srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
-        sizes="(max-width: 540px) 100vw, 540px" />
-</div>
+                        <!-- Versi DESKTOP: gambar -->
+                        <div class="elementor-element elementor-element-8862be3 elementor-widget elementor-widget-image desktop-text-img"
+                            data-id="8862be3" data-element_type="widget" data-widget_type="image.default">
+                            <img fetchpriority="high" decoding="async" width="540" height="409"
+                                src="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }}"
+                                class="attachment-large size-large wp-image-2253" alt="Trusted Partner Text"
+                                srcset="{{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1.png') }} 540w, {{ asset('assets/img/uploads/2025/11/homepage-first-section-text-1-300x227.png') }} 300w"
+                                sizes="(max-width: 540px) 100vw, 540px" />
+                        </div>
 
-<!-- Versi MOBILE & TABLET: teks -->
-<div class="mobile-maintaining">
-    <h2>
-        <span>In Maintaining</span>
-        <span>Spotless and</span>
-        <span>Inviting Workspaces</span>
-    </h2>
-</div>
+                        <!-- Versi MOBILE & TABLET: teks -->
+                        <div class="mobile-maintaining">
+                            <h2>
+                                <span>In Maintaining</span>
+                                <span>Spotless and</span>
+                                <span>Inviting Workspaces</span>
+                            </h2>
+                        </div>
 
                     </div>
                     <div class="elementor-element elementor-element-e07c531 e-con-full e-flex e-con e-child"
@@ -727,8 +727,8 @@
                                                                     }
 
                                                                     /* ============================================
-                                                                           TEKS "CLEAN SPACE / HAPPY FACE"
-                                                                           ============================================ */
+                                                                                       TEKS "CLEAN SPACE / HAPPY FACE"
+                                                                                       ============================================ */
 
                                                                     /* Desktop: teks disembunyikan, gambar asli tetap dipakai */
                                                                     .cs-mobile-text {
@@ -879,6 +879,66 @@
                                                                 .title .line-one {
                                                                     white-space: nowrap;
                                                                 }
+
+                                                                @media (max-width: 767px) {
+
+                                                                    .elementor-element-1ad1a71 .clenix-sponsor-slider {
+                                                                        display: grid !important;
+                                                                        grid-template-columns: repeat(2, 1fr) !important;
+                                                                        gap: 20px 10px !important;
+                                                                        align-items: center !important;
+                                                                        justify-items: center !important;
+                                                                        transform: none !important;
+                                                                        width: 100% !important;
+                                                                        margin: 0 auto !important;
+                                                                    }
+
+                                                                    /* kalau slider sempat membungkus item dengan wrapper */
+                                                                    .elementor-element-1ad1a71 .slick-list,
+                                                                    .elementor-element-1ad1a71 .slick-track,
+                                                                    .elementor-element-1ad1a71 .owl-stage-outer,
+                                                                    .elementor-element-1ad1a71 .owl-stage {
+                                                                        display: contents !important;
+                                                                        transform: none !important;
+                                                                        width: auto !important;
+                                                                    }
+
+                                                                    .elementor-element-1ad1a71 .slick-cloned,
+                                                                    .elementor-element-1ad1a71 .owl-item.cloned {
+                                                                        display: none !important;
+                                                                    }
+
+                                                                    .elementor-element-1ad1a71 .owl-item,
+                                                                    .elementor-element-1ad1a71 .slick-slide,
+                                                                    .elementor-element-1ad1a71 .slider-inner-item {
+                                                                        width: 100% !important;
+                                                                        float: none !important;
+                                                                        margin: 0 !important;
+                                                                        display: flex !important;
+                                                                        justify-content: center !important;
+                                                                        align-items: center !important;
+                                                                    }
+
+                                                                    /* SNEF di tengah, baris sendiri */
+                                                                    .elementor-element-1ad1a71 .slider-inner-item.snef-item {
+                                                                        grid-column: 1 / -1;
+                                                                        width: 50% !important;
+                                                                        margin: 0 auto !important;
+                                                                    }
+
+                                                                    .elementor-element-1ad1a71 .clenix-sponsor-img {
+                                                                        width: 100% !important;
+                                                                        max-width: 140px !important;
+                                                                        margin: 0 auto !important;
+                                                                    }
+
+                                                                    .elementor-element-1ad1a71 .clenix-sponsor-img img {
+                                                                        display: block !important;
+                                                                        width: 100% !important;
+                                                                        height: auto !important;
+                                                                        object-fit: contain;
+                                                                    }
+                                                                }
                                                             </style>
                                                             <span class="line-one">Certified Cleaning Business Licence
                                                                 (Class 2) by NEA<br>
@@ -898,6 +958,68 @@
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                                (function() {
+                                    var BREAKPOINT = 767;
+                                    var wasMobile = window.innerWidth <= BREAKPOINT;
+
+                                    function cleanSponsor() {
+                                        if (window.innerWidth > BREAKPOINT) return;
+
+                                        var $slider = window.jQuery ?
+                                            jQuery('.elementor-element-1ad1a71 .clenix-sponsor-slider') :
+                                            null;
+
+                                        // matikan slider kalau masih aktif
+                                        if ($slider && $slider.length) {
+                                            if ($slider.hasClass('slick-initialized')) {
+                                                $slider.slick('unslick');
+                                            }
+                                            if ($slider.hasClass('owl-loaded')) {
+                                                $slider.trigger('destroy.owl.carousel');
+                                            }
+                                        }
+
+                                        document.querySelectorAll('.elementor-element-1ad1a71 .clenix-sponsor-slider').forEach(function(
+                                        slider) {
+                                            var seen = {};
+
+                                            // hapus duplikat berdasarkan src gambar
+                                            slider.querySelectorAll('.slider-inner-item').forEach(function(item) {
+                                                var img = item.querySelector('img');
+                                                if (!img) return;
+                                                var key = img.getAttribute('src');
+                                                var unit = item.closest('.owl-item, .slick-slide') || item;
+                                                if (seen[key]) {
+                                                    unit.remove();
+                                                } else {
+                                                    seen[key] = true;
+                                                }
+                                            });
+
+                                            // SNEF selalu paling akhir
+                                            var snef = slider.querySelector('.snef-item');
+                                            if (snef) {
+                                                var u = snef.closest('.owl-item, .slick-slide') || snef;
+                                                u.parentNode.appendChild(u);
+                                            }
+                                        });
+                                    }
+
+                                    window.addEventListener('load', function() {
+                                        setTimeout(cleanSponsor, 300);
+                                        setTimeout(cleanSponsor, 1200);
+                                    });
+
+                                    // reload saat berpindah antara mobile dan desktop
+                                    window.addEventListener('resize', function() {
+                                        var isMobile = window.innerWidth <= BREAKPOINT;
+                                        if (isMobile !== wasMobile) {
+                                            location.reload();
+                                        }
+                                    });
+                                })();
+                            </script>
                             <div class="elementor-element elementor-element-1ad1a71 elementor-widget elementor-widget-clenfix-client"
                                 data-id="1ad1a71" data-element_type="widget" data-widget_type="clenfix-client.default">
                                 <div class="elementor-widget-container">
@@ -1693,11 +1815,11 @@
                                             }
 
                                             /* =====================================================
-                                                               1. UKURAN TAB TETAP
-                                                               Semua tab-pane menumpuk di satu sel grid, sehingga
-                                                               tinggi kotak = tinggi tab terpanjang (Core Values).
-                                                               Hanya isi teks yang berganti.
-                                                               ===================================================== */
+                                                                           1. UKURAN TAB TETAP
+                                                                           Semua tab-pane menumpuk di satu sel grid, sehingga
+                                                                           tinggi kotak = tinggi tab terpanjang (Core Values).
+                                                                           Hanya isi teks yang berganti.
+                                                                           ===================================================== */
                                             .tab-info .tab-content {
                                                 display: grid;
                                             }
@@ -1717,8 +1839,8 @@
                                             }
 
                                             /* =====================================================
-                                                               2. STYLE ITEM (ikon + teks)
-                                                               ===================================================== */
+                                                                           2. STYLE ITEM (ikon + teks)
+                                                                           ===================================================== */
                                             .tab-info__item {
                                                 display: flex;
                                                 align-items: center;
@@ -1759,9 +1881,9 @@
                                             }
 
                                             /* =====================================================
-                                                               3. PERKECIL TAB CORE VALUES (#h7653)
-                                                               Tab Mission & Vision tidak terpengaruh.
-                                                               ===================================================== */
+                                                                           3. PERKECIL TAB CORE VALUES (#h7653)
+                                                                           Tab Mission & Vision tidak terpengaruh.
+                                                                           ===================================================== */
                                             #h7653 .sec-title {
                                                 margin-bottom: 25px !important;
                                                 /* sebelumnya mb-55 */
@@ -1799,10 +1921,10 @@
                                             }
 
                                             /* =====================================================
-                                                                        4. SEMBUNYIKAN GAMBAR DI MOBILE
-                                                                        Gambar latar (recruitment-photo-fcfm.png) hanya
-                                                                        tampil di desktop (>= 992px).
-                                                                        ===================================================== */
+                                                                                    4. SEMBUNYIKAN GAMBAR DI MOBILE
+                                                                                    Gambar latar (recruitment-photo-fcfm.png) hanya
+                                                                                    tampil di desktop (>= 992px).
+                                                                                    ===================================================== */
                                             @media (max-width: 991.98px) {
                                                 .tab-info .tab-info__bg {
                                                     display: none !important;
@@ -1810,9 +1932,9 @@
                                             }
 
                                             /* =====================================================
-                       5. MOBILE: TINGGI KOTAK MENYESUAIKAN TEKS TAB AKTIF
-                       Hanya berlaku <= 991.98px. Desktop tidak berubah.
-                       ===================================================== */
+                                   5. MOBILE: TINGGI KOTAK MENYESUAIKAN TEKS TAB AKTIF
+                                   Hanya berlaku <= 991.98px. Desktop tidak berubah.
+                                   ===================================================== */
                                             @media (max-width: 991.98px) {
                                                 .tab-info .tab-content {
                                                     display: block;
@@ -2264,6 +2386,101 @@
                     </div>
                 </div>
             </section>
+            {{-- ===== INDUSTRIES: versi MOBILE (statis, tanpa slider) ===== --}}
+            <section class="industries-mobile">
+
+                {{-- Kuning: 3 - 2 --}}
+                <div class="ind-group">
+                    <div class="ind-row">
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/offices-icon.png') }}"
+                                alt="Offices"></div>
+                        <div class="ind-item"><img
+                                src="{{ asset('assets/img/uploads/2025/11/manufacturing-plants-icon.png') }}"
+                                alt="Manufacturing Plants"></div>
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/hotel-icon.png') }}"
+                                alt="Hotel"></div>
+                    </div>
+                    <div class="ind-row">
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/healthcare-icon.png') }}"
+                                alt="Healthcare"></div>
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/condominiums-icon.png') }}"
+                                alt="Condominiums"></div>
+                    </div>
+                </div>
+
+                {{-- Putih: 3 - 2 - 2 --}}
+                <div class="ind-group">
+                    <div class="ind-row">
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/childcare.png') }}"
+                                alt="Childcare"></div>
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/banks-icon.png') }}"
+                                alt="Banks"></div>
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/malls-icon.png') }}"
+                                alt="Malls"></div>
+                    </div>
+                    <div class="ind-row">
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/gyms-icon.png') }}"
+                                alt="Gyms"></div>
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/restaurants-icon.png') }}"
+                                alt="Restaurants"></div>
+                    </div>
+                    <div class="ind-row">
+                        <div class="ind-item"><img src="{{ asset('assets/img/uploads/2025/11/bus-depots-icon.png') }}"
+                                alt="Bus Depots"></div>
+                        <div class="ind-item"><img
+                                src="{{ asset('assets/img/uploads/2025/11/instituitions-icon.png') }}"
+                                alt="Institutions"></div>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                /* desktop: versi statis disembunyikan, slider asli tetap dipakai */
+                .industries-mobile {
+                    display: none;
+                }
+
+                @media (max-width: 767px) {
+
+                    /* sembunyikan 2 section slider asli di mobile */
+                    .elementor-element-22b680e,
+                    .elementor-element-29f69cb {
+                        display: none !important;
+                    }
+
+                    .industries-mobile {
+                        display: block;
+                        background: #fff;
+                        padding: 10px 12px 30px;
+                    }
+
+                    .ind-group+.ind-group {
+                        margin-top: 35px;
+                    }
+
+                    .ind-row {
+                        display: flex;
+                        justify-content: center;
+                        gap: 12px;
+                        /* kecilkan untuk makin rapat */
+                        margin-bottom: 14px;
+                    }
+
+                    .ind-item {
+                        flex: 0 0 30%;
+                        max-width: 30%;
+                        text-align: center;
+                    }
+
+                    .ind-item img {
+                        display: block;
+                        width: 100%;
+                        max-width: 110px;
+                        height: auto;
+                        margin: 0 auto;
+                    }
+                }
+            </style>
             <style>
                 .social-section {
                     background-color: #f9da00;

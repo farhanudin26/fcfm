@@ -17964,3 +17964,102 @@ select {
         font-size: 24px;
     }
 }
+
+
+@media (max-width: 767px) {
+
+    /* Reset layout slider agar jadi grid fleksibel */
+    .elementor-element-22b680e .clenix-sponsor-slider,
+    .elementor-element-29f69cb .clenix-sponsor-slider {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    .elementor-element-22b680e .slider-inner-item,
+    .elementor-element-29f69cb .slider-inner-item {
+        float: none !important;
+        display: flex !important;
+        justify-content: center !important;
+        box-sizing: border-box;
+        padding: 10px 5px;
+    }
+
+    /* LOGO KUNING (5 item): 3 di atas, 2 di bawah */
+    .elementor-element-22b680e .slider-inner-item {
+        width: 33.333% !important;
+    }
+
+    /* LOGO PUTIH (7 item): 3 - 2 - 2 */
+    .elementor-element-29f69cb .slider-inner-item:nth-child(-n+3) {
+        width: 33.333% !important;   /* baris 1: 3 item */
+    }
+    .elementor-element-29f69cb .slider-inner-item:nth-child(n+4) {
+        width: 50% !important;       /* baris 2 & 3: 2 item per baris */
+    }
+
+    /* Ukuran gambar agar muat */
+    .elementor-element-22b680e .clenix-sponsor-img img,
+    .elementor-element-29f69cb .clenix-sponsor-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    /* sembunyikan item hasil clone */
+    .clenix-sponsor-slider .slick-cloned,
+    .clenix-sponsor-slider .owl-item.cloned {
+        display: none !important;
+    }
+
+    /* reset track bawaan slider */
+    .clenix-sponsor-slider .slick-track,
+    .clenix-sponsor-slider .owl-stage {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100% !important;
+        transform: none !important;
+    }
+}
+@media (max-width: 767px) {
+
+    /* inner item selalu penuh mengikuti lebar pembungkusnya */
+    .elementor-element-29f69cb .owl-item .slider-inner-item,
+    .elementor-element-29f69cb .slick-slide .slider-inner-item {
+        width: 100% !important;
+    }
+
+    /* LOGO PUTIH baris 1: 3 item (clone tidak ikut dihitung) */
+    .elementor-element-29f69cb .owl-item:nth-child(-n+3 of :not(.cloned)),
+    .elementor-element-29f69cb .slick-slide:nth-child(-n+3 of :not(.slick-cloned)),
+    .elementor-element-29f69cb .clenix-sponsor-slider > .slider-inner-item:nth-child(-n+3) {
+        width: 33.333% !important;
+    }
+
+    /* LOGO PUTIH baris 2 & 3: 2 item per baris */
+    .elementor-element-29f69cb .owl-item:nth-child(n+4 of :not(.cloned)),
+    .elementor-element-29f69cb .slick-slide:nth-child(n+4 of :not(.slick-cloned)),
+    .elementor-element-29f69cb .clenix-sponsor-slider > .slider-inner-item:nth-child(n+4) {
+        width: 50% !important;
+    }
+}
+@media (max-width: 767px) {
+
+    /* Baris 2 & 3 (Gyms, Restaurants, Bus Depots, Institutions): kolom dipersempit */
+    .elementor-element-29f69cb .clenix-sponsor-slider > .slider-inner-item:nth-child(n+4),
+    .elementor-element-29f69cb .owl-item:nth-child(n+4 of :not(.cloned)),
+    .elementor-element-29f69cb .slick-slide:nth-child(n+4 of :not(.slick-cloned)) {
+        width: 36% !important;
+    }
+
+    /* pastikan isi item tetap di tengah kolomnya */
+    .elementor-element-29f69cb .clenix-sponsor-slider .slider-inner-item {
+        justify-content: center !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
